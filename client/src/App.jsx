@@ -54,6 +54,8 @@ export default class Root extends React.Component {
         username: e.target.username.value,
         email: e.target.email.value,
         password: e.target.password.value,
+        state: e.target.state.value,
+        district: e.target.district.value
       }).then((res) => {
         console.log(res.data);
         if (res.data.auth) {

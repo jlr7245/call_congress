@@ -22,9 +22,10 @@ function coord2pol(req, res, next) {
   dstkAXIOS.get(`/${req.body.latlng}`)
     .then((result) => {
       res.locals.districtArr = extractDistrict(result.data[0].politics);
+      next();
     })
-    .catch((err) => console.log(err));
-  next();
+    .catch((err) => {return next(err)});
+  
 }
 
 module.exports = {
