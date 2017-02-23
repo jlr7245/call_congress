@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Auth from './pages/Auth';
@@ -11,10 +11,12 @@ export default class Root extends React.Component {
 
   constructor(props) {
     super(props);
+
     // bind
     this.handleLogin = this.handleLogin.bind(this);
     this.handleRegister = this.handleRegister.bind(this);
-    //this.componentDidUpdate = this.componentDidUpdate.bind(this);
+    this.componentDidUpdate = this.componentDidUpdate.bind(this);
+
     // state
     this.state = { 
       auth: false, 
@@ -24,9 +26,10 @@ export default class Root extends React.Component {
 
 
   componentDidUpdate() {
-    if (this.state.stage == 'dash') {
-      <Redirect to='/dashboard' />;
-    }
+    console.log('update');
+    // if (this.state.stage == 'dash') {
+    //   <Redirect push to='/dashboard' />;
+    // }
   }
 
 
@@ -53,7 +56,9 @@ export default class Root extends React.Component {
         password: e.target.password.value,
       }).then((res) => {
         console.log(res.data);
-        this.setState({auth: res.data.auth, user: res.data.user, stage: 'dash'});
+        if (res.data.auth) {
+          this.setState({auth: res.data.auth, user: res.data.user, stage: 'dash'});
+        }
       })
       .catch((err) => console.log(err));
     e.target.reset();
@@ -78,18 +83,18 @@ export default class Root extends React.Component {
               />} />
               <Route 
                 path='/login' 
-                render={() => <Auth 
+                render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Auth 
                   stage='login' 
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
-              />} />
+              />) } />
               <Route 
                 path='/register' 
-                render={() => <Auth 
+                render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Auth 
                   stage='register' 
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
-              />} />
+              />)} />
               <Route 
                 path='/dashboard' 
                 render={() => <Dash 
