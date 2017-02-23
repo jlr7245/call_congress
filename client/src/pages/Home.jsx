@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 class Home extends React.Component {
-    constructor(props,) {
+    constructor(props) {
         super(props);
         this.state = {
 

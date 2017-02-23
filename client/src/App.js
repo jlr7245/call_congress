@@ -17,7 +17,7 @@ export default class Root extends React.Component {
     //this.componentDidUpdate = this.componentDidUpdate.bind(this);
     // state
     this.state = { 
-      name: this.props.name, 
+      auth: false, 
     };
   }
 
@@ -30,7 +30,7 @@ export default class Root extends React.Component {
         password: e.target.password.value
     }).then((res) => {
    //   if (auth) redirect to (dash)
-    console.log(res);
+      console.log(res.data);
     })
       .catch((err) => {console.log(err)});
     e.target.reset();
