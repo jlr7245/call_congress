@@ -18,7 +18,15 @@ export default class Root extends React.Component {
     // state
     this.state = { 
       auth: false, 
+      stage: 'home'
     };
+  }
+
+
+  componentDidUpdate() {
+    if (this.state.stage == 'dash') {
+      <Redirect to='/dashboard' />;
+    }
   }
 
 
@@ -29,7 +37,7 @@ export default class Root extends React.Component {
         username: e.target.username.value,
         password: e.target.password.value
     }).then((res) => {
-   //   if (auth) redirect to (dash)
+      this.setState({auth: res.data.auth, user: res.data.user, stage: 'dash'});
       console.log(res.data);
     })
       .catch((err) => {console.log(err)});
@@ -38,12 +46,15 @@ export default class Root extends React.Component {
 
   handleRegister(e) {
     e.preventDefault();
-    axios('/api/auth/register', {
+    axios.post('/api/auth/register', {
         name: e.target.name.value,
         username: e.target.username.value,
         email: e.target.email.value,
         password: e.target.password.value,
-      }).then((res) => console.log(res.data))
+      }).then((res) => {
+        console.log(res.data);
+        this.setState({auth: res.data.auth, user: res.data.user, stage: 'dash'});
+      })
       .catch((err) => console.log(err));
     e.target.reset();
   }
@@ -60,10 +71,32 @@ export default class Root extends React.Component {
               <Link to='/register'>Register</Link>
             </nav>
             <Switch>
-              <Route exact path='/' render={(props) => <Home name={this.props.name}/> }/>
-              <Route path='/login' render={() => <Auth stage='login' handleLogin={this.handleLogin} handleRegister={this.handleRegister} />} />
-              <Route path='/register' render={() => <Auth stage='register' handleLogin={this.handleLogin} handleRegister={this.handleRegister} />} />
-              <Route path='/dashboard' render={() => <Dash user={this.state.user} auth={this.state.auth} stage='loggedin' />} />
+              <Route exact 
+                path='/' 
+                render={(props) => <Home 
+                  name={this.props.name}
+              />} />
+              <Route 
+                path='/login' 
+                render={() => <Auth 
+                  stage='login' 
+                  handleLogin={this.handleLogin} 
+                  handleRegister={this.handleRegister} 
+              />} />
+              <Route 
+                path='/register' 
+                render={() => <Auth 
+                  stage='register' 
+                  handleLogin={this.handleLogin} 
+                  handleRegister={this.handleRegister} 
+              />} />
+              <Route 
+                path='/dashboard' 
+                render={() => <Dash 
+                  user={this.state.user} 
+                  auth={this.state.auth} 
+                  stage='loggedin' 
+              />} />
             </Switch>
           </div>
         </Router>

@@ -1,14 +1,17 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var apiRoutes = require('./routes/api/index');
+const index = require('./routes/index');
+const apiRoutes = require('./routes/api/index');
 
-var app = express();
+const session = require('express-session');
+const passport = require('passport');
+
+const app = express();
 
 require('dotenv').config();
 
@@ -21,6 +24,13 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(session({
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: true,
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(cookieParser());
 app.use(require('node-sass-middleware')({
   src: path.join(__dirname, 'public'),
@@ -33,9 +43,9 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 //app.use('/', index);
 app.use('/api', apiRoutes);
 
-app.get('/api', (req, res) => {
-  res.status(200).send({message: 'Hey there!'});
-})
+// app.get('/api', (req, res) => {
+//   res.status(200).send({message: 'Hey there!'});
+// })
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));

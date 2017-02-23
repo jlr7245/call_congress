@@ -1,8 +1,8 @@
 const express = require('express');
 const authRouter = express.Router();
 
-const authHelpers = require('./auth-helpers');
-const passport = require('./local');
+const authHelpers = require('./auth/auth-helpers');
+const passport = require('./auth/local');
 
 authRouter.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
