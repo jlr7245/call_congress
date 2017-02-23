@@ -4,7 +4,7 @@ import Login from './page-partials/Login';
 import Register from './page-partials/Register';
 
 class Auth extends React.Component {
-  constructor(props, _railsContext) {
+  constructor(props) {
     super(props);
     this.state = {
       stage: this.props.stage,

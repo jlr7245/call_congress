@@ -8,15 +8,8 @@ import Dash from './pages/Dash';
 
 
 export default class Root extends React.Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired, // this is passed from the Rails view
-  };
 
-  /**
-   * @param props - Comes from your rails view.
-   * @param _railsContext - Comes from React on Rails
-   */
-  constructor(props, _railsContext) {
+  constructor(props) {
     super(props);
     // bind
     this.handleLogin = this.handleLogin.bind(this);
@@ -32,18 +25,11 @@ export default class Root extends React.Component {
 //============= AUTH HELPERS
   handleLogin(e) {
     e.preventDefault();
-    axios({
-      method: 'post',
-      url: '/login',
-      headers: {
-        'X-CSRF-TOKEN': this.props.token,
-      },
-      data: {
+    axios.post( '/api/auth/login', {
         username: e.target.username.value,
         password: e.target.password.value
-      }
     }).then((res) => {
-   //   if (auth)
+   //   if (auth) redirect to (dash)
     console.log(res);
     })
       .catch((err) => {console.log(err)});
@@ -52,19 +38,12 @@ export default class Root extends React.Component {
 
   handleRegister(e) {
     e.preventDefault();
-    axios({
-      method: 'post',
-      url: '/api/users',
-      headers: {
-        'X-CSRF-TOKEN': this.props.token,
-      },
-      data: {
+    axios('/api/auth/register', {
         name: e.target.name.value,
         username: e.target.username.value,
         email: e.target.email.value,
         password: e.target.password.value,
-      }
-    }).then((res) => console.log(res.data))
+      }).then((res) => console.log(res.data))
       .catch((err) => console.log(err));
     e.target.reset();
   }
