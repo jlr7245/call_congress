@@ -2,11 +2,11 @@ const axios = require('axios');
 const polAXIOS = require('./pol-axios');
 
 function getReps(st, dst) {
-  return polAXIOS.get(`/house/${st}/${dst}`);
+  return polAXIOS.get(`/members/house/${st.toLowerCase()}/${dst}/current.json`);
 }
 
 function getSens(st) {
-  return polAXIOS.get(`/senate/${st}`)
+  return polAXIOS.get(`/members/senate/${st.toLowerCase()}/current.json`)
 }
 
 function getLatLngFromAddr(req, res, next) {
@@ -21,10 +21,22 @@ function getLatLngFromAddr(req, res, next) {
 function getLegsOnReg(req, res, next) {
   axios.all([getReps(req.body.state, req.body.district), getSens(req.body.state)])
     .then(axios.spread((reps, sens) => {
-      console.log(sens.data);
-      console.log(reps.data);
+      let arr = [];
+      for (let sen of sens.data.results) {
+        console.log(sen);
+        arr.push(sen.id);
+      }
+      for (let rep of reps.data.results) {
+        console.log(rep);
+        arr.push(rep.id);
+      }
+      console.log(arr);
+      res.locals.legArr = arr;
       return next();
-    })).catch((err) => console.log(err));
+    })).catch((err) => {
+      console.log(err);
+      return next(err);
+    });
 }
 
 module.exports = {
