@@ -11,7 +11,7 @@ function loginRedirect(req,res,next) {
   return next();
 }
 
-function createUser(req, res) {
+function createUser(req, res, next) {
   const salt = bcrypt.genSaltSync();
   const hash = bcrypt.hashSync(req.body.password, salt);
 
@@ -20,8 +20,19 @@ function createUser(req, res) {
     password: hash,
     name: req.body.name,
     email: req.body.email,
-    state: req.body.state,
-    district: req.body.district
+    state: res.locals.state,
+    district: res.locals.district
+  }).then((user) => {
+    res.locals.user = user;
+    req.login(user, (err) => {
+      console.log(err);
+      if (err) return next(err);
+    });
+    return next();
+  })
+  .catch((err) => { 
+    console.log(err); 
+    res.status(500).json({ status: 'error' }); 
   });
 }
 

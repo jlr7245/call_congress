@@ -3,6 +3,7 @@ const authRouter = express.Router();
 
 const authHelpers = require('./auth/auth-helpers');
 const passport = require('./auth/local');
+const regHelp = require('./pol/registerHelper');
 
 authRouter.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
@@ -17,15 +18,8 @@ authRouter.post('/login', (req, res, next) => {
   })(req, res, next);
 })
 
-authRouter.post('/register', (req, res, next) => {
-  authHelpers.createUser(req, res)
-    .then((user) => {
-      req.login(user, (err) => {
-        if (err) return next(err);
-
-        res.send({auth: true, user: user});
-      });
-    }).catch((err) => {console.log(err);});
+authRouter.post('/register', regHelp.getLatLngFromAddr, authHelpers.createUser, regHelp.getLegsOnReg, /* another one to put the legs in the database */ (req, res, next) => {
+  res.send({user: res.locals.user, auth: true, })
 });
 
 authRouter.post('/logout', (req, res) => {
