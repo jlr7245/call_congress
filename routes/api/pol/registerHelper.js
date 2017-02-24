@@ -1,5 +1,6 @@
 const axios = require('axios');
 const polAXIOS = require('./pol-axios');
+const models = require('../../../db/models/index.js');
 
 function getReps(st, dst) {
   return polAXIOS.get(`/members/house/${st.toLowerCase()}/${dst}/current.json`);
@@ -39,7 +40,18 @@ function getLegsOnReg(req, res, next) {
     });
 }
 
+function putLegsInDatabase(req,res,next) {
+  res.locals.legArr.forEach((leg) => {
+    models.LegsWatched.create({
+      belongs_to: res.locals.user.id,
+      bioguide_id: leg
+    });
+  });
+  return next();
+}
+
 module.exports = {
   getLegsOnReg,
   getLatLngFromAddr,
+  putLegsInDatabase
 }

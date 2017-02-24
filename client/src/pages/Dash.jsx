@@ -5,6 +5,16 @@ import axios from 'axios';
 class Dash extends React.Component {
   constructor(props) {
     super(props);
+    // binds
+    this.componentDidMount = this.componentDidMount.bind(this);
+    // state
+    this.state = {
+      legislators: [],
+    }
+  }
+
+  componentDidMount() {
+    axios.get(`/api/dash/${this.props.user.id}`)
   }
 
   render() {

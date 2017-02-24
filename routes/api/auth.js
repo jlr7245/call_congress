@@ -18,8 +18,17 @@ authRouter.post('/login', (req, res, next) => {
   })(req, res, next);
 })
 
-authRouter.post('/register', regHelp.getLatLngFromAddr, authHelpers.createUser, regHelp.getLegsOnReg, /* another one to put the legs in the database */ (req, res, next) => {
-  res.send({user: res.locals.user, auth: true, })
+authRouter.post('/register', regHelp.getLatLngFromAddr, authHelpers.createUser, regHelp.getLegsOnReg, regHelp.putLegsInDatabase, (req, res, next) => {
+  res.send({
+    user: {
+      name: res.locals.user.name,
+      id: res.locals.user.id,
+      state: res.locals.user.state,
+      district: res.locals.user.district,
+      username: res.locals.user.username
+    }, 
+    auth: true 
+  })
 });
 
 authRouter.post('/logout', (req, res) => {

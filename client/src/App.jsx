@@ -20,7 +20,8 @@ export default class Root extends React.Component {
     // state
     this.state = { 
       auth: false, 
-      stage: 'home'
+      stage: 'home',
+      user: {}
     };
   }
 
