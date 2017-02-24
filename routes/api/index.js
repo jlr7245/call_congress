@@ -9,5 +9,8 @@ const extRoutes = require('./ext');
 
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/ext', extRoutes);
+apiRouter.use('/dash', dashRoutes);
+//apiRouter.use('/script', scriptRoutes);
+//apiRouter.use('/event', eventRoutes);
 
 module.exports = apiRouter;

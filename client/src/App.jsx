@@ -100,11 +100,11 @@ export default class Root extends React.Component {
               />)} />
               <Route 
                 path='/dashboard' 
-                render={() => <Dash 
+                render={() => ( this.state.auth ? <Dash 
                   user={this.state.user} 
                   auth={this.state.auth} 
                   stage='loggedin' 
-              />} />
+              /> : <Redirect push to='/login' /> ) } />
             </Switch>
           </div>
         </Router>

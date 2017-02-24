@@ -37,7 +37,7 @@ function createUser(req, res, next) {
 }
 
 function loginRequired(req, res, next) {
-  if (!req.user) res.send({auth: false, message: 'Please log in.'});
+  //if (!req.user) res.send({auth: false, message: 'Please log in.'});
   return next();
 }
 
