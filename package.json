@@ -6,8 +6,8 @@
     "start": "node ./bin/www",
     "dev": "nodemon .bin/www",
     "debugging": "DEBUG=*:* npm run dev",
-    "buildall": "cd client && npm run build && cd .. && npm run dev",
-    "build-debug": "cd client && npm run build && cd .. && npm run debugging"
+    "buildall": "cd client && npm run build-css && npm run build && cd .. && npm run dev",
+    "build-debug": "cd client && npm run build-css && npm run build && cd .. && npm run debugging"
   },
   "dependencies": {
     "axios": "^0.15.3",

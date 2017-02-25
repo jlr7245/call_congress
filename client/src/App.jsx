@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 
+import './App.css';
+
 import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dash from './pages/Dash';
