@@ -18,16 +18,22 @@ export default class Root extends React.Component {
     this.handleLogin = this.handleLogin.bind(this);
     this.handleRegister = this.handleRegister.bind(this);
     this.componentDidUpdate = this.componentDidUpdate.bind(this);
+    this.showModal = this.showModal.bind(this);
 
     // state
     this.state = { 
       auth: false, 
       stage: 'home',
-      user: {}
+      user: {},
+      modal: {
+        show: false,
+        id: '',
+        type: ''
+      }
     };
   }
 
-
+  //
   componentDidUpdate() {
     console.log('update');
     // if (this.state.stage == 'dash') {
@@ -69,6 +75,16 @@ export default class Root extends React.Component {
     e.target.reset();
   }
 
+  //======================= MODAL HELPERS
+
+  showModal(type, id) {
+    axios.get(`/api/ext/mod/${type}/${id}`)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+
+
+
 
   //======================= RENDER
 
@@ -106,6 +122,8 @@ export default class Root extends React.Component {
                   user={this.state.user} 
                   auth={this.state.auth} 
                   stage='loggedin' 
+                  modal={this.state.modal}
+                  showModal={this.showModal}
               /> : <Redirect push to='/login' /> ) } />
             </Switch>
           </div>

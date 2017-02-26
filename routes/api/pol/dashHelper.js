@@ -21,7 +21,6 @@ function getLegsFromJson(req,res,next) {
     return (searchFor.indexOf(leg.bioguide_id) !== -1)
   });
   res.locals.legislators = filteredLegs;
-  console.log('hello');
   return next();
 }
 
