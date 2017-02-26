@@ -28,7 +28,7 @@ class Dash extends React.Component {
   renderLegislators(arr) {
     console.log('hi');
     let formattedLegislators = arr.map((leg, i) => {
-      return <Legislator key={i} leg={leg} /* something here about adding / removing from watch list */ />
+      return <Legislator key={i} leg={leg} showModal={this.props.showModal}/* something here about adding / removing from watch list */ />
     } )
     return formattedLegislators;
   }

@@ -30,15 +30,27 @@ function organizeLegResult(legObj) {
 function addBills(billRes, legCB) {
   let bills = billRes.results[0].votes.slice(0, 25);
   let theVotes = bills.map((vote) => {
-    return ({
-      number: vote.bill.number,
-      lookup: vote.bill.number.split(' ').join('').toLowerCase(),
-      description: vote.description,
-      latest_action: vote.bill.latest_action,
-      when: `${vote.date}T${vote.time}-05:00`,
-      question: vote.question,
-      position: vote.position,
-    })
+    if (Object.getOwnPropertyNames(vote.bill).length > 0) {
+      return ({
+        number: vote.bill.number,
+        lookup: vote.bill.number.split(/[\s\.]{1}/g).join('').toLowerCase(), 
+                                      // frustratingly, these aren't normalized between
+                                      // house & senate and also vary between senate, but
+                                      // writing the regex was a fun exercise
+        description: vote.description,
+        latest_action: vote.bill.latest_action,
+        when: `${vote.date}T${vote.time}-05:00`,
+        question: vote.question,
+        position: vote.position,
+      })
+    } else {
+      return ({
+        description: vote.description,
+        when: `${vote.date}T${vote.time}-05:00`,
+        question: vote.question,
+        position: vote.position,
+      })
+    }
   });
   legCB.recent_votes = theVotes;
   return legCB;
@@ -58,10 +70,11 @@ function getBillDetails(id) {
 // middleware
 function getVotesAndDetails(req, res, next) {
   axios.all([getLegislatorDetails(req.params.id), getBillDetails(req.params.id)])
-    .then((legObj, billRes) => {
-      console.log(legObj.data);
+    .then(axios.spread((legObj, billRes) => {
+      res.locals.modalInfo = addBills(billRes.data, organizeLegResult(legObj.data));
       return next();
-    }).catch((err) => {
+    })).catch((err) => {
+      console.log(err);
       return next(err);
     })
 }
