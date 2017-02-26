@@ -7,6 +7,7 @@ import './App.css';
 import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dash from './pages/Dash';
+import Search from './pages/Search';
 
 
 export default class Root extends React.Component {
@@ -19,6 +20,7 @@ export default class Root extends React.Component {
     this.handleRegister = this.handleRegister.bind(this);
     this.componentDidUpdate = this.componentDidUpdate.bind(this);
     this.showModal = this.showModal.bind(this);
+    this.addToWatched = this.addToWatched.bind(this);
 
     // state
     this.state = { 
@@ -68,7 +70,11 @@ export default class Root extends React.Component {
       }).then((res) => {
         console.log(res.data);
         if (res.data.auth) {
-          this.setState({auth: res.data.auth, user: res.data.user, stage: 'dash'});
+          this.setState({
+            auth: res.data.auth, 
+            user: res.data.user, 
+            stage: 'dash'
+          });
         }
       })
       .catch((err) => console.log(err));
@@ -79,12 +85,32 @@ export default class Root extends React.Component {
 
   showModal(type, id) {
     axios.get(`/api/ext/mod/${type}/${id}`)
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        const modal = {...this.state.modal};
+        modal.show = true;
+        modal.id = id;
+        modal.type = type;
+        modal.info = res.data.modalInfo;
+        this.setState({ modal })
+      })
       .catch((err) => console.log(err));
   }
 
 
+  //======================= ADD TO WATCHED
 
+  addToWatched(id, type) {
+    axios.patch(`/api/dash/add/${type}/${id}`)
+      .then((res) => {console.log(res)})
+      .catch((err) => {console.log(err)});
+  }
+
+  removeFromWatched(id, type) {
+    axios.delete(`/api/dash/delete/${type}/${id}`)
+      .then((res) => {console.log(res)})
+      .catch((err) => {console.log(err)});
+  }
 
   //======================= RENDER
 
@@ -95,13 +121,16 @@ export default class Root extends React.Component {
             <nav>
               <Link to='/login'>Log In</Link>
               <Link to='/register'>Register</Link>
+              <Link to='/search'>Search</Link>
             </nav>
             <Switch>
+
               <Route exact 
                 path='/' 
                 render={(props) => <Home 
                   name={this.props.name}
               />} />
+
               <Route 
                 path='/login' 
                 render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Auth 
@@ -109,6 +138,7 @@ export default class Root extends React.Component {
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
               />) } />
+
               <Route 
                 path='/register' 
                 render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Auth 
@@ -116,6 +146,7 @@ export default class Root extends React.Component {
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
               />)} />
+
               <Route 
                 path='/dashboard' 
                 render={() => ( this.state.auth ? <Dash 
@@ -125,6 +156,14 @@ export default class Root extends React.Component {
                   modal={this.state.modal}
                   showModal={this.showModal}
               /> : <Redirect push to='/login' /> ) } />
+
+              <Route
+                path='/search'
+                render={() => <Search
+                  auth={this.state.auth}
+                  addToWatched={this.addToWatched}
+                 />}
+              />
             </Switch>
           </div>
         </Router>

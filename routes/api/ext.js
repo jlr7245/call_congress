@@ -10,7 +10,10 @@ extRouter.post('/geo', districtHelpers.coord2pol, (req, res, next) => {
 });
 
 extRouter.get('/mod/leg/:id', modalHelpers.getVotesAndDetails, (req, res, next) => {
-  res.status(200).send({message: 'ok', modalInfo: res.locals.modalInfo});
+  res.status(200).send({
+    message: 'ok', 
+    modalInfo: res.locals.modalInfo
+  });
 });
 
 module.exports = extRouter;

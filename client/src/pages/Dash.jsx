@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import axios from 'axios';
 
 import Legislator from './dash-partials/Legislator';
+import Modal from '../app-partials/Modal';
 
 
 class Dash extends React.Component {
@@ -10,6 +11,7 @@ class Dash extends React.Component {
     // binds
     this.componentDidMount = this.componentDidMount.bind(this);
     this.renderLegislators = this.renderLegislators.bind(this);
+    this.pickLegislator = this.pickLegislator.bind(this);
     // state
     this.state = {
       user: this.props.user,
@@ -33,6 +35,13 @@ class Dash extends React.Component {
     return formattedLegislators;
   }
 
+  // ======= which legislator goes in the modal?
+  pickLegislator(id) {
+    return this.state.legislators.find((legislator) => {
+      return legislator.bioguide_id === id;
+    })
+  }
+
   render() {
     return (
       <div className='dash'>
@@ -40,6 +49,12 @@ class Dash extends React.Component {
         <ul>
           {(this.state.legislators !== undefined) ? this.renderLegislators(this.state.legislators) : ('Loading legislators...')}
         </ul>
+        { (this.props.modal.show) 
+          ? <Modal 
+              legislator={this.pickLegislator(this.props.modal.id)} 
+              modal={this.props.modal} 
+            /> 
+          : 'Choose a legislator above to learn more.' }
       </div>
     )
   }
