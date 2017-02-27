@@ -1,3 +1,70 @@
+/* the main parent */
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.wrapper .container {
+  flex: 1; }
+
+#root {
+  background-image: url("../public/media/dkbg.jpg"); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 10vw; }
+
+nav .logo .svglogo {
+  max-width: 250px; }
+
+nav .toplinks ul {
+  display: flex; }
+
+nav .toplinks ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  transition: 0.5s all;
+  border-bottom: 3px solid black; }
+
+nav .toplinks ul li a:hover {
+  color: #E6625E;
+  border-bottom: 3px solid #E6625E; }
+
+footer {
+  padding: 0 20vw;
+  background-color: white;
+  box-sizing: border-box; }
+
+footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box; }
+
+footer .footer-nav li {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  box-sizing: border-box; }
+
+footer .footer-nav li a {
+  border-top: 3px solid #ddd;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+  padding: 1em 0;
+  color: black;
+  transition: 0.2s; }
+
+footer .footer-nav li a:hover {
+  background-color: #ddd;
+  border-top: 3px solid #0BBCD6; }
+
 .R {
   border: 1px solid red; }
 

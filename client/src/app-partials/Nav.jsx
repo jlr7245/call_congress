@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import logo from '../logo.svg'
+
 class Nav extends React.Component {
   constructor() {
     super();
@@ -12,9 +14,7 @@ class Nav extends React.Component {
       return (
         <ul>
           <li><Link to='/dashboard'>Dashboard</Link></li>
-          <li><Link to='/search'>Search</Link></li>
           <li><Link to='/logout'>Log Out</Link></li>
-          <li><Link to='/bills'>Bills</Link></li>
         </ul>
       )
     } else {
@@ -22,8 +22,6 @@ class Nav extends React.Component {
         <ul>
           <li><Link to='/register'>Register</Link></li>
           <li><Link to='/login'>Login</Link></li>
-          <li><Link to='/search'>Search</Link></li>
-          <li><Link to='/bills'>Bills</Link></li>
         </ul>
       )
     }
@@ -32,7 +30,12 @@ class Nav extends React.Component {
   render() {
     return (
       <nav>
-        {this.decideWhatToRender()}
+        <div className='toplinks'>
+          {this.decideWhatToRender()}
+        </div>
+        <div className='logo'>
+          <img src={logo} className='svglogo' alt='CallCongress Logo' />
+        </div>
       </nav>
     )
   }

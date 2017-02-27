@@ -79,7 +79,7 @@ body {
   background-color: #eee;
 }
 
-.container {
+/*.container {
   width: 90%;
   max-width: 1000px;
   margin: 60px auto;
@@ -88,13 +88,13 @@ body {
   background-color: white;
   display:block;
   padding:40px;
-}
+}*/
 
 
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 1000px) {
   .container {
     width: 80%;
     margin: 120px auto;
   }
   body {font-size: 14px;}
-}
+}*/

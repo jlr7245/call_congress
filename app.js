@@ -40,12 +40,9 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-//app.use('/', index);
+
 app.use('/api', apiRoutes);
 
-// app.get('/api', (req, res) => {
-//   res.status(200).send({message: 'Hey there!'});
-// })
 
 app.get('/failedlogin', (req,res,next) => {
   res.send({auth: false});

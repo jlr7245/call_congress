@@ -1,3 +1,124 @@
+//==== variables
+
+$red: #E6625E;
+$blue: #0BBCD6;
+$ltg: #eee;
+
+
+//==== mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//@include border-radius(10px)
+
+@mixin colorset($color) {
+  color: $color;
+}
+
+@mixin backgroundset($color) {
+  background-color: $color;
+}
+
+@mixin borderset($color, $rad, $width) {
+  border: $width solid $color;
+  border-radius: $rad;
+}
+
+//==== extendables
+
+
+
+
+
+//==== styles
+
+
+//====================== CONTAINER & WRAPPER
+
+/* the main parent */
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  .container {
+    flex: 1;
+  }
+}
+
+#root {
+    background-image: url('../public/media/dkbg.jpg');
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 10vw;
+  .logo {
+    .svglogo {
+      max-width: 250px;
+    }
+  }
+  .toplinks {
+    ul {
+      display: flex;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 5px 20px;
+          transition: 0.5s all;
+          border-bottom: 3px solid black;
+          &:hover {
+            @include colorset($red);
+            border-bottom: 3px solid $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 0 20vw;
+  @include backgroundset(white);
+  box-sizing: border-box;
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    li {
+      flex: 1;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      box-sizing: border-box;
+      a {
+        border-top: 3px solid #ddd;
+        display: block;
+        box-sizing: border-box;
+        text-decoration:none;
+        width: 100%;
+        padding: 1em 0;
+        @include colorset(black);
+        transition: 0.2s;
+        //transition-property: background-color;
+        &:hover {
+          @include backgroundset(#ddd);
+          border-top: 3px solid $blue;
+        }
+      }
+    }
+  }
+}
+
+
 .R {
   border: 1px solid red;
 }

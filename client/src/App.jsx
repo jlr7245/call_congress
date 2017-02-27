@@ -12,6 +12,7 @@ import Search from './pages/Search';
 import Bills from './pages/Bills';
 
 import Nav from './app-partials/Nav';
+import Footer from './app-partials/Footer';
 
 
 export default class Root extends React.Component {
@@ -174,7 +175,9 @@ export default class Root extends React.Component {
               />
             </Switch>
             </div>
+            <Footer />
           </div>
+          
         </Router>
     );
   }
