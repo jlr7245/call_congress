@@ -1,6 +1,6 @@
-import React, {PropTypes} from 'react';
-import axios from 'axios';
-import Redirect from 'react-router-dom';
+import React from 'react';
+//import axios from 'axios';
+//import Redirect from 'react-router-dom';
 
 import ShortLegislator from './search-partials/ShortLegislator';
 import sunlightArray from '../data/sunlight-array';
@@ -24,7 +24,7 @@ class Search extends React.Component {
           || (leg.last_name.toLowerCase().includes(this.state.searched))
           || (leg.state_name.toLowerCase().includes(this.state.searched))
           ).map((leg) => {
-            return (<ShortLegislator legislator={leg} />)
+            return (<ShortLegislator auth={this.props.auth} addToWatched={this.props.addToWatched} legislator={leg} key={leg.bioguide_id} />)
           });
       return shortLegsToRender;
     }

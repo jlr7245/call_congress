@@ -32,6 +32,7 @@ class ShortLegislator extends React.Component {
         </div>
         <div className='contact'>
           <h2 className='shrtphn'><i className='fa fa-phone fa-2x'></i> <span>{legislator.phone}</span></h2>
+          {(this.props.auth) ? <button onClick={() => (this.props.addToWatched('leg', legislator.bioguide_id))}>Add to watchlist</button> : 'not logged in'}
         </div>
       </article>
       )

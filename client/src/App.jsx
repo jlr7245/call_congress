@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import './App.css';
 
@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dash from './pages/Dash';
 import Search from './pages/Search';
+
+import Nav from './app-partials/Nav';
 
 
 export default class Root extends React.Component {
@@ -100,13 +102,13 @@ export default class Root extends React.Component {
 
   //======================= ADD TO WATCHED
 
-  addToWatched(id, type) {
-    axios.patch(`/api/dash/add/${type}/${id}`)
+  addToWatched(type, id) {
+    axios.get(`/api/dash/add/${type}/${id}`)
       .then((res) => {console.log(res)})
       .catch((err) => {console.log(err)});
   }
 
-  removeFromWatched(id, type) {
+  removeFromWatched(type, id) {
     axios.delete(`/api/dash/delete/${type}/${id}`)
       .then((res) => {console.log(res)})
       .catch((err) => {console.log(err)});
@@ -118,11 +120,7 @@ export default class Root extends React.Component {
     return (
         <Router>
           <div className='wrapper'>
-            <nav>
-              <Link to='/login'>Log In</Link>
-              <Link to='/register'>Register</Link>
-              <Link to='/search'>Search</Link>
-            </nav>
+              <Nav auth={this.state.auth} />
             <Switch>
 
               <Route exact 

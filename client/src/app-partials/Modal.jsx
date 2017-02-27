@@ -1,5 +1,5 @@
-import React, {PropTypes} from 'react';
-import axios from 'axios';
+import React from 'react';
+//import axios from 'axios';
 
 class Modal extends React.Component {
   constructor(props) {

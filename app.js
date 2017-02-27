@@ -47,6 +47,14 @@ app.use('/api', apiRoutes);
 //   res.status(200).send({message: 'Hey there!'});
 // })
 
+app.get('/failedlogin', (req,res,next) => {
+  res.send({auth: false});
+})
+
+app.get('/successlogin', (req,res,next) => {
+  res.send({user: req.user, auth: true});
+})
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });

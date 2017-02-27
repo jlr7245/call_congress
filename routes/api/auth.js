@@ -5,18 +5,9 @@ const authHelpers = require('./auth/auth-helpers');
 const passport = require('./auth/local');
 const regHelp = require('./pol/registerHelper');
 
-authRouter.post('/login', (req, res, next) => {
-  passport.authenticate('local', (err, user, info) => {
-    if (err) { 
-      console.log(err);
-      return res.send({auth: false, message: 'Sorry, didnt work'});
-    }
-    if (!user) {
-      return res.send({auth: false, message: 'No valid user found'});
-    }
-    return res.send({auth: true, user: user});
-  })(req, res, next);
-})
+authRouter.post('/login', passport.authenticate('local', { failureRedirect: '/failedlogin', successRedirect: '/successlogin' }), (req, res, next) => {
+    console.log(req.user);
+  });
 
 authRouter.post('/register', regHelp.getLatLngFromAddr, authHelpers.createUser, regHelp.getLegsOnReg, regHelp.putLegsInDatabase, (req, res, next) => {
   res.send({

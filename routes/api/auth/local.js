@@ -15,7 +15,7 @@ passport.use(new LocalStrategy(options, (username, password, done) => {
       username: username
     }
   }).then((user) => {
-    console.log(user);
+    //console.log(user);
     if (!user) {
       return done(null, false);
     }
