@@ -68,6 +68,7 @@ function createSortedLawSet(arr) {
   let newLawSet = [];
   for (let lawSet of arr) {
     lawSet.forEach((law) => {
+      law.lookup_cc = law.number.split(/[\s\.]{1}/g).join('').toLowerCase();
       newLawSet.push(law);
     })
   }

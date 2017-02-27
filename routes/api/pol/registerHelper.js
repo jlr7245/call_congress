@@ -24,11 +24,9 @@ function getLegsOnReg(req, res, next) {
     .then(axios.spread((reps, sens) => {
       let arr = [];
       for (let sen of sens.data.results) {
-        console.log(sen);
         arr.push(sen.id);
       }
       for (let rep of reps.data.results) {
-        console.log(rep);
         arr.push(rep.id);
       }
       console.log(arr);

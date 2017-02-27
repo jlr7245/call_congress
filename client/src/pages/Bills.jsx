@@ -32,7 +32,7 @@ class Bills extends React.Component {
   render() {
     return (
       <div>
-        <h1>Here are the current bills before congress & the house.</h1>
+        <h1>Here are the current bills before the senate & the house.</h1>
         {/* tabs */}
       </div>
     )

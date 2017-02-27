@@ -16,7 +16,6 @@ class Home extends React.Component {
         <h3>
           Hello, friend!!
         </h3>
-        <hr />
       </div>
         )
     }

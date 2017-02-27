@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
+import './styles/reset.css';
 import './App.css';
 
 import Home from './pages/Home';
@@ -122,6 +123,7 @@ export default class Root extends React.Component {
         <Router>
           <div className='wrapper'>
               <Nav auth={this.state.auth} />
+              <div className='container'>
             <Switch>
 
               <Route exact 
@@ -171,6 +173,7 @@ export default class Root extends React.Component {
                 />}
               />
             </Switch>
+            </div>
           </div>
         </Router>
     );
