@@ -10,7 +10,8 @@ extRouter.post('/geo', districtHelpers.coord2pol, (req, res, next) => {
   res.send({resultArray: res.locals.districtArr});
 });
 
-extRouter.get('/bills', lawHelpers.getBills, (res, req, next) => {
+extRouter.get('/bills', lawHelpers.getHouse, lawHelpers.getSenate, lawHelpers.manipulateBills, (req, res, next) => {
+  console.log('sending');
   res.send({
     message: 'ok',
     houseInfo: res.locals.houseInfo,

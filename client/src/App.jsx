@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dash from './pages/Dash';
 import Search from './pages/Search';
+import Bills from './pages/Bills';
 
 import Nav from './app-partials/Nav';
 
@@ -161,6 +162,13 @@ export default class Root extends React.Component {
                   auth={this.state.auth}
                   addToWatched={this.addToWatched}
                  />}
+              />
+
+              <Route
+                path='/bills'
+                render={() => <Bills
+                  auth={this.state.auth} 
+                />}
               />
             </Switch>
           </div>
