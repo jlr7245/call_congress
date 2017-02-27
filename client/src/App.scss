@@ -3,6 +3,19 @@
 $red: #E6625E;
 $blue: #0BBCD6;
 $ltg: #eee;
+$wnp: 'warnock-pro-display', Georgia, 'Times New Roman', Times, serif;
+
+.bl, .D:before {color: #0BBCD6;}
+  .blbg, .info.D {background-color: #0BBCD6}
+.rd, .R:before {color: #E6625E;}
+  .rdbg, .info.R {background-color: #E6625E;}
+.wht {color: white;}
+  .whtbg {background-color: white;}
+.ltg {color: #ddd;}
+  .ltgbg {background-color: #ddd;}
+
+.D {border-color: #0BBCD6 !important;}
+.R {border-color: #E6625E !important;}
 
 
 //==== mixins
@@ -51,7 +64,13 @@ $ltg: #eee;
 }
 
 #root {
-    background-image: url('../public/media/dkbg.jpg');
+  background-image: url('../public/media/dkbg.jpg');
+  background-size:cover;
+}
+
+.container {
+  display: flex;
+  justify-content:center;
 }
 
 nav {
@@ -88,6 +107,10 @@ footer {
   padding: 0 20vw;
   @include backgroundset(white);
   box-sizing: border-box;
+  @media screen and (max-width: 1000px) {
+    font-size: 12px;
+    padding: 0;
+  }
   .footer-nav {
     display: flex;
     flex-direction: row;
@@ -119,14 +142,247 @@ footer {
 }
 
 
-.R {
-  border: 1px solid red;
+//=========== HOME
+
+.init {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 80vw;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    justify-content:center;
+  }
+  .left {
+    display: flex;
+    flex:1;
+    max-width: 50vw;
+    padding: 50px;
+    box-sizing: border-box;
+    h1 {
+      @include colorset(white);
+      font-size: 4em;
+      font-family: $wnp;
+    }
+    @media screen and (max-width: 1000px) {
+      align-items: flex-end;
+    }
+  }
+  .right {
+    display: flex;
+    flex:1;
+    padding: 50px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1000px) {
+      align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .left, .right {
+      max-width: 80vw;
+    }
+  }
+
 }
 
-.D {
-  border: 1px solid blue;
+
+.right .initialinput input {
+  color: white;
+  font-size: 2em;
+  display: inline-block;
+  padding: 15px;
+  border-bottom: 3px solid white;
+  width: 17vw;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .right .initialinput input {
+    width: 60%;
+  }
 }
 
-.I {
-  border: 1px solid grey;
+.initialinput button i:before {
+cursor: pointer;
+color: white;
+transition: 0.2s all;
+}
+
+.initialinput button:hover i:before {
+color: #0BBCD6;
+transition: 0.2s all;
+}
+
+.right .initialinput .ziplabel {
+font-size: 0.8em;
+margin: 15px;
+}
+
+
+
+//============== SEARCH 
+
+.shortlegs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  max-width:1100px;
+  margin-bottom: 100px;
+  max-height: 700px;
+  overflow-y:scroll;
+}
+.shortlegs ul {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: center;
+}
+.shortlegs li {
+  width: 260px;
+  display: flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  padding: 15px;
+  border: 1px solid #eee;
+  margin: 5px;
+}
+.shortlegs .shorthead h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.shortlegs .shorthead h3 i {
+  margin-right: 10px;
+}
+
+.shortlegs .shorthead .info { /* decided by party*/
+  color: white;
+  padding: 2px 5px;
+  text-transform:uppercase;
+  font-size:0.8em;
+}
+
+.shrtphn {
+  display:flex;
+  align-items:center;
+}
+.contact {
+  margin-top: 10px;;
+}
+.shrtphn span {
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+.searchbar input {
+  border-bottom: 3px solid white;
+  padding: 10px;
+  margin: 10px;
+  width: 30vw;
+  font-size: 1.8em;
+  text-align:center;
+}
+.searchbar {
+  text-align:center;
+  margin: 50px 0 20px;
+}
+
+.search {
+  color: white;
+}
+
+//======= DASH LEGISLATORS 
+
+.leglist {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  max-width:800px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color:#f2f2f2;
+  margin-bottom: 50px;
+  border: 3px solid #eee;
+}
+@media screen and (max-width: 1000px) {
+  .leglist {
+    width: 80vw;
+  }
+}
+
+.leglist ul {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+}
+
+.leglist ul li {
+  display: flex;
+  width: 380px;
+  padding: 15px;
+  box-sizing: border-box;
+  float: left;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #eee;
+  margin: 20px 10px;
+  transition: all 0.25s ease;
+  background-color: white;
+}
+
+.leglist ul li .leghead {
+  display: flex;
+}
+
+.leglist img {
+  width: 150px;
+  height: 183px;
+}
+.leglist .headinfo {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.leglist .headinfo h3 {
+  font-size: 22px;
+  font-style: oblique;
+  margin: 5px 0
+}
+
+.leglist .represents {
+  color: white;
+  background-color: black;
+  padding: 0 0.8em;
+}
+
+.currentterm {
+  margin: 5px 0;
+  font-size: 0.8em;
+}
+
+.legbody {
+  padding: 1.2em;
+  display:flex;
+  flex-direction:column;
+}
+.legadd, .legphn, .legsoc {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.legphn h3 {
+  padding-left: 0.8em; font-size: 1.5em;
+}
+.legadd p {
+  padding-left:0.8em;
+}
+.legsoc {
+  display:flex;
+  justify-content:space-between;
+}
+.legbody > * {
+  padding: 0.8em 0;
 }
