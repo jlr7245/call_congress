@@ -12,7 +12,10 @@ function getLegsFromDb(req,res,next) {
     });
     res.locals.legArr = legArr;
     return next();
-  }).catch((err) => {return next(err);});
+  }).catch((err) => {
+    console.log(err);
+    return next(err);
+  });
 }
 
 function getLegsFromJson(req,res,next) {
