@@ -51,10 +51,10 @@ class Dash extends React.Component {
           </ul>
         </div>
         { (this.props.modal.show) 
-          ? <Modal 
+          ? <div className='overlay'> <Modal 
               legislator={this.pickLegislator(this.props.modal.id)} 
               modal={this.props.modal} 
-            /> 
+            /> </div>
           : 'Choose a legislator above to learn more.' }
       </div>
     )

@@ -36,14 +36,10 @@ class Register extends React.Component {
     axios.post('/api/ext/geo', {
       latlng: `${position.coords.latitude},${position.coords.longitude}`
     }).then((res) => {
-      if (res.data.resultArray.length === 1) {
-        this.setStateWithDist(res.data.resultArray);
-      } else {
         this.setState({
           resultpicker: true,
           resArray: res.data.resultArray
         })
-      }
     })
       .catch((err) => console.log(err));
   }

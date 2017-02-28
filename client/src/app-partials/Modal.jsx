@@ -10,7 +10,7 @@ class Modal extends React.Component {
   render() {
     return (
       <div>
-        <h1>More info about {this.props.legislator.bioguide_id}.</h1>
+        <h1 className='wht'>More info about {this.props.legislator.bioguide_id}.</h1>
       </div>
     )
   }
