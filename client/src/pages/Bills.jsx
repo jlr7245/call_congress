@@ -20,7 +20,6 @@ class Bills extends React.Component {
   }
 
   componentDidMount() {
-    console.log('hey there');
     axios.get('/api/ext/bills')
       .then((res) => {
         this.setState({
@@ -29,11 +28,9 @@ class Bills extends React.Component {
         })
       })
       .catch((err) => console.log(err));
-      console.log(this.state.houseInfo === this.state.senateInfo);
   }
 
   setActive(which) {
-    console.log('set ' + which);
     this.setState({active: which});
   }
 

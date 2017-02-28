@@ -28,7 +28,6 @@ class Dash extends React.Component {
   }
 
   renderLegislators(arr) {
-    console.log('hi');
     let formattedLegislators = arr.map((leg, i) => {
       return <Legislator key={i} leg={leg} showModal={this.props.showModal}/* something here about adding / removing from watch list */ />
     } )
@@ -46,9 +45,11 @@ class Dash extends React.Component {
     return (
       <div className='dash'>
         <h1>Welcome to your dashboard</h1>
-        <ul>
-          {(this.state.legislators !== undefined) ? this.renderLegislators(this.state.legislators) : ('Loading legislators...')}
-        </ul>
+        <div className='leglist'>
+          <ul>
+            {(this.state.legislators !== undefined) ? this.renderLegislators(this.state.legislators) : ('Loading legislators...')}
+          </ul>
+        </div>
         { (this.props.modal.show) 
           ? <Modal 
               legislator={this.pickLegislator(this.props.modal.id)} 

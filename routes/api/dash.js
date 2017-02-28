@@ -13,7 +13,7 @@ dashRouter.get('/add/leg/:id', dbHelpers.doNothing, dbHelpers.addLegToDb, (req, 
 
 dashRouter.get('/:id', authHelpers.loginRequired, dashHelpers.getLegsFromDb, dashHelpers.getLegsFromJson, (req, res, next) => {
   console.log('hi');
-  res.status(200).send({legislators: res.locals.legislators, message: 'yay it arrived'});
+  res.status(200).send({legislators: res.locals.legislators, message: 'Dash loaded successfully.'});
 });
 
 
