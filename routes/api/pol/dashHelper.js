@@ -4,7 +4,7 @@ const allLegs = require('./sunlight-array');
 
 function getLegsFromDb(req,res,next) {
   models.sequelize.query('SELECT "LegsWatched"."bioguide_id" FROM "LegsWatcheds" JOIN "Users" ON "User"."id" = "LegsWatched"."belongs_to" WHERE "User"."id" = :id', {
-    replacements: { id: req.params.id },
+    replacements: { id: parseInt(req.params.id) },
     type: models.sequelize.QueryTypes.SELECT
   }).then((legs) => {
     let legArr = legs.map((leg) => {
