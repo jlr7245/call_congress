@@ -42,6 +42,10 @@ $wnp: 'warnock-pro-display', Georgia, 'Times New Roman', Times, serif;
   border-radius: $rad;
 }
 
+@mixin tns($time) {
+  transition: $time;
+}
+
 //==== extendables
 
 
@@ -66,6 +70,7 @@ $wnp: 'warnock-pro-display', Georgia, 'Times New Roman', Times, serif;
 #root {
   background-image: url('../public/media/dkbg.jpg');
   background-size:cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -105,6 +110,10 @@ nav {
 
 footer {
   padding: 0 20vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   @include backgroundset(white);
   box-sizing: border-box;
   @media screen and (max-width: 1000px) {
@@ -218,6 +227,95 @@ font-size: 0.8em;
 margin: 15px;
 }
 
+//============== AUTH & MODAL
+
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+  .formcontainer {
+    position: relative;
+    .close {
+      position: absolute;
+    }
+    display: flex;
+    background-color: white;
+    padding: 25px;
+    .login-form, .regform {
+      h1 {
+        font-family: $wnp;
+        text-align: center;
+        font-size: 2em;
+        padding: 20px 0;
+      }
+      form {
+        div {
+          display: flex;
+          @media screen and (max-width: 1000px) {
+            flex-direction: column;
+          }
+          input {
+            border-bottom: 3px solid $red;
+            padding: 5px 15px;
+            margin: 10px;
+            @include tns(0.2s);
+            &:focus {
+              border-bottom: 3px solid $blue;
+              @include tns(0.2s);
+            }
+          }
+        }
+        .submitb {
+          @include borderset($blue, 1px, 3px);
+          cursor: pointer;
+          display: block;
+          margin: 25px auto;
+          padding: 15px 30px;
+          transition: 0.2s all;
+          &:hover {
+            @include backgroundset($blue);
+            transition: 0.2s all;
+          }
+        }
+      }
+    }
+    .regform {
+      .waiting {
+        display: block;
+        text-align: center;
+        font-family: $wnp;
+        font-style: oblique;
+        margin: 15px auto 25px;
+      }
+    }
+  }
+}
+
+
+//============== ABOUT
+
+.about {
+  @include backgroundset(white);
+  padding: 50px;
+  max-width: 60vw;
+  margin: 150px auto;
+  box-sizing: border-box;
+  p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 15px 0;
+  }
+  h1 {
+    font-size: 3em;
+    font-family: $wnp;
+  }
+}
 
 
 //============== SEARCH 
@@ -228,8 +326,6 @@ margin: 15px;
   flex-wrap:wrap;
   max-width:1100px;
   margin-bottom: 100px;
-  max-height: 700px;
-  overflow-y:scroll;
 }
 .shortlegs ul {
   display: flex;
@@ -260,6 +356,16 @@ margin: 15px;
   padding: 2px 5px;
   text-transform:uppercase;
   font-size:0.8em;
+}
+
+.addprompt {
+  font-size: 0.7em;
+  font-family: $wnp;
+  font-style: oblique;
+  a {
+    text-decoration: underline;
+    color: #ccc;
+  }
 }
 
 .shrtphn {

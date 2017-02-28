@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Auth from './Auth';
+
 class Home extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.inspirationalQuotes=[
     'Decisions are made by those who show up.',
     'The voice of the people cannot be silenced.',
@@ -11,15 +13,16 @@ class Home extends React.Component {
     'Thoughtful & committed citizens can change the world.'
     ]
     this.state = {
+      authRoute: this.props.authRoute,
       currentQuote: ''
     };
     this.componentDidMount = this.componentDidMount.bind(this);
+    //this.closeModal = this.closeModal.bind(this);
   }
 
   componentDidMount() {
     this.setState({ currentQuote: this.inspirationalQuotes[Math.floor(Math.random() * this.inspirationalQuotes.length)] });
   }
-
 
   render() {
     return (
@@ -33,6 +36,7 @@ class Home extends React.Component {
             <p className='ziplabel'>Please enter your zip code to get started.</p>
           </form>
         </div>
+        { this.state.authRoute ? <Auth closeModal={this.props.closeModal} stage={this.props.stage} /> : '' }
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class ShortLegislator extends React.Component {
   constructor() {
@@ -32,7 +33,7 @@ class ShortLegislator extends React.Component {
         </div>
         <div className='contact'>
           <h2 className='shrtphn'><i className='fa fa-phone fa-2x'></i> <span>{legislator.phone}</span></h2>
-          {(this.props.auth) ? <button onClick={() => (this.props.addToWatched('leg', legislator.bioguide_id))}>Add to watchlist</button> : 'not logged in'}
+          {(this.props.auth) ? <button onClick={() => (this.props.addToWatched('leg', legislator.bioguide_id))}>Add to watchlist</button> : <span className='addprompt'><Link className={legislator.party} to='/login'>Sign in</Link> to add {legislator.first_name} {legislator.last_name} to your dashboard.</span>}
         </div>
       </article>
       )

@@ -10,6 +10,7 @@ import Auth from './pages/Auth';
 import Dash from './pages/Dash';
 import Search from './pages/Search';
 import Bills from './pages/Bills';
+import About from './pages/About';
 
 import Nav from './app-partials/Nav';
 import Footer from './app-partials/Footer';
@@ -17,8 +18,8 @@ import Footer from './app-partials/Footer';
 
 export default class Root extends React.Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     // bind
     this.handleLogin = this.handleLogin.bind(this);
@@ -63,15 +64,15 @@ export default class Root extends React.Component {
     e.target.reset();
   }
 
-  handleRegister(e) {
+  handleRegister(e, st, dst) {
     e.preventDefault();
     axios.post('/api/auth/register', {
         name: e.target.name.value,
         username: e.target.username.value,
         email: e.target.email.value,
         password: e.target.password.value,
-        state: e.target.state.value,
-        district: e.target.district.value
+        state: st,
+        district: dst
       }).then((res) => {
         console.log(res.data);
         if (res.data.auth) {
@@ -130,12 +131,13 @@ export default class Root extends React.Component {
               <Route exact 
                 path='/' 
                 render={(props) => <Home 
-                  name={this.props.name}
+                  authRoute={false}
               />} />
 
               <Route 
                 path='/login' 
-                render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Auth 
+                render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Home 
+                  authRoute={true}
                   stage='login' 
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
@@ -143,7 +145,8 @@ export default class Root extends React.Component {
 
               <Route 
                 path='/register' 
-                render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Auth 
+                render={() => ( this.state.auth ? <Redirect push to='/dashboard' /> : <Home 
+                  authRoute={true}
                   stage='register' 
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
@@ -173,6 +176,12 @@ export default class Root extends React.Component {
                   auth={this.state.auth} 
                 />}
               />
+              
+              <Route
+                path='/about'
+                render={() => <About />}
+              />
+
             </Switch>
             </div>
             <Footer />

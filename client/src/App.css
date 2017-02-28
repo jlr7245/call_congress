@@ -39,7 +39,8 @@
 
 #root {
   background-image: url("../public/media/dkbg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 .container {
   display: flex;
@@ -70,6 +71,10 @@ nav .toplinks ul li a:hover {
 
 footer {
   padding: 0 20vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: white;
   box-sizing: border-box; }
 
@@ -172,14 +177,91 @@ footer .footer-nav li a:hover {
   font-size: 0.8em;
   margin: 15px; }
 
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center; }
+
+.overlay .formcontainer {
+  position: relative;
+  display: flex;
+  background-color: white;
+  padding: 25px; }
+
+.overlay .formcontainer .close {
+  position: absolute; }
+
+.overlay .formcontainer .login-form h1, .overlay .formcontainer .regform h1 {
+  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px 0; }
+
+.overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
+  display: flex; }
+
+@media screen and (max-width: 1000px) {
+  .overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
+    flex-direction: column; } }
+
+.overlay .formcontainer .login-form form div input, .overlay .formcontainer .regform form div input {
+  border-bottom: 3px solid #E6625E;
+  padding: 5px 15px;
+  margin: 10px;
+  transition: 0.2s; }
+
+.overlay .formcontainer .login-form form div input:focus, .overlay .formcontainer .regform form div input:focus {
+  border-bottom: 3px solid #0BBCD6;
+  transition: 0.2s; }
+
+.overlay .formcontainer .login-form form .submitb, .overlay .formcontainer .regform form .submitb {
+  border: 3px solid #0BBCD6;
+  border-radius: 1px;
+  cursor: pointer;
+  display: block;
+  margin: 25px auto;
+  padding: 15px 30px;
+  transition: 0.2s all; }
+
+.overlay .formcontainer .login-form form .submitb:hover, .overlay .formcontainer .regform form .submitb:hover {
+  background-color: #0BBCD6;
+  transition: 0.2s all; }
+
+.overlay .formcontainer .regform .waiting {
+  display: block;
+  text-align: center;
+  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  margin: 15px auto 25px; }
+
+.about {
+  background-color: white;
+  padding: 50px;
+  max-width: 60vw;
+  margin: 150px auto;
+  box-sizing: border-box; }
+
+.about p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 15px 0; }
+
+.about h1 {
+  font-size: 3em;
+  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
+
 .shortlegs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 1100px;
-  margin-bottom: 100px;
-  max-height: 700px;
-  overflow-y: scroll; }
+  margin-bottom: 100px; }
 
 .shortlegs ul {
   display: flex;
@@ -209,6 +291,15 @@ footer .footer-nav li a:hover {
   padding: 2px 5px;
   text-transform: uppercase;
   font-size: 0.8em; }
+
+.addprompt {
+  font-size: 0.7em;
+  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
+  font-style: oblique; }
+
+.addprompt a {
+  text-decoration: underline;
+  color: #ccc; }
 
 .shrtphn {
   display: flex;

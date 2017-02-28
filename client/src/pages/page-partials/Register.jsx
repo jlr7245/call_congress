@@ -71,16 +71,19 @@ class Register extends React.Component {
   render() {
 
     return (
-      <div>
-        {(this.state.resultpicker) ? this.districtPicker(this.state.resArray) : ''}
-        <form onSubmit={(e) => this.props.handleRegister(e)}>
-          <input type='text' name='name' placeholder='name' required />
-          <input type='text' name='username' placeholder='username' required />
-          <input type='email' name='email' placeholder='email' required />
-          <input type='password' name='password' placeholder='password' required />
-          <input type='text' name='state' defaultValue={this.state.st} required />
-          <input type='text' name='district' defaultValue={this.state.dst} required />
-          <input type='submit' value='Register!' />
+      <div className='regform'>
+        <h1>Thanks for joining CallCongress!</h1>
+        {(this.state.resultpicker) ? this.districtPicker(this.state.resArray) : <span className='waiting'>We're finding your location... please be patient</span>}
+        <form onSubmit={(e) => this.props.handleRegister(e, this.state.st, this.state.dst)}>
+          <div>
+            <input type='text' name='name' placeholder='name' required />
+            <input type='email' name='email' placeholder='email' required />
+          </div>
+          <div>
+            <input type='text' name='username' placeholder='username' required />
+            <input type='password' name='password' placeholder='password' required />
+          </div>
+          <input className='submitb' type='submit' value='Register!' />
         </form>
       </div>
     )
