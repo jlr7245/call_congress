@@ -9,7 +9,7 @@ function getLegsFromDb(req,res,next) {
   }).then((legs) => {
     let legArr = legs.map((leg) => {
       console.log(leg);
-      return Object.values(leg)[0];
+      return leg.bioguide_id;
     });
     res.locals.legArr = legArr;
     return next();
