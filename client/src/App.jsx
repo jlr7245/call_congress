@@ -27,6 +27,8 @@ export default class Root extends React.Component {
     this.componentDidUpdate = this.componentDidUpdate.bind(this);
     this.showModal = this.showModal.bind(this);
     this.addToWatched = this.addToWatched.bind(this);
+    this.learnLaw = this.learnLaw.bind(this);
+    this.watchLaw = this.watchLaw.bind(this);
 
     // state
     this.state = { 
@@ -103,6 +105,16 @@ export default class Root extends React.Component {
       .catch((err) => console.log(err));
   }
 
+  //====================== BILL HELPERS
+  
+  watchLaw(id) {
+    console.log(id);
+  }
+
+  learnLaw(id) {
+    console.log(id);
+  }
+
 
   //======================= ADD TO WATCHED
 
@@ -173,7 +185,9 @@ export default class Root extends React.Component {
               <Route
                 path='/bills'
                 render={() => <Bills
-                  auth={this.state.auth} 
+                  auth={this.state.auth}
+                  learnLaw={this.learnLaw}
+                  watchLaw={this.watchLaw} 
                 />}
               />
               

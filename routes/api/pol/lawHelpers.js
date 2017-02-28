@@ -89,7 +89,7 @@ function manipulateTime(obj) {
 function manipulateBills(req, res, next) {
   console.log('manipulating');
   res.locals.senateInfo = createSortedLawSet(res.locals.senateTemp);
-  res.locals.houseInfo = createSortedLawSet(res.locals.senateTemp);
+  res.locals.houseInfo = createSortedLawSet(res.locals.houseTemp);
   return next();
 }
 

@@ -33,9 +33,8 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column; }
-
-.wrapper .container {
-  flex: 1; }
+  .wrapper .container {
+    flex: 1; }
 
 #root {
   background-image: url("../public/media/dkbg.jpg");
@@ -51,23 +50,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1vh 10vw; }
-
-nav .logo .svglogo {
-  max-width: 250px; }
-
-nav .toplinks ul {
-  display: flex; }
-
-nav .toplinks ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 20px;
-  transition: 0.5s all;
-  border-bottom: 3px solid black; }
-
-nav .toplinks ul li a:hover {
-  color: #E6625E;
-  border-bottom: 3px solid #E6625E; }
+  nav .logo .svglogo {
+    max-width: 250px; }
+  nav .toplinks ul {
+    display: flex; }
+    nav .toplinks ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 20px;
+      transition: 0.5s all;
+      border-bottom: 3px solid black; }
+      nav .toplinks ul li a:hover {
+        color: #E6625E;
+        border-bottom: 3px solid #E6625E; }
 
 footer {
   padding: 0 20vw;
@@ -77,79 +72,67 @@ footer {
   right: 0;
   background-color: white;
   box-sizing: border-box; }
-
-@media screen and (max-width: 1000px) {
-  footer {
-    font-size: 12px;
-    padding: 0; } }
-
-footer .footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-right: 1px solid #ddd;
-  box-sizing: border-box; }
-
-footer .footer-nav li {
-  flex: 1;
-  text-align: center;
-  border-left: 1px solid #ddd;
-  box-sizing: border-box; }
-
-footer .footer-nav li a {
-  border-top: 3px solid #ddd;
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  width: 100%;
-  padding: 1em 0;
-  color: black;
-  transition: 0.2s; }
-
-footer .footer-nav li a:hover {
-  background-color: #ddd;
-  border-top: 3px solid #0BBCD6; }
+  @media screen and (max-width: 1000px) {
+    footer {
+      font-size: 12px;
+      padding: 0; } }
+  footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box; }
+    footer .footer-nav li {
+      flex: 1;
+      text-align: center;
+      border-left: 1px solid #ddd;
+      box-sizing: border-box; }
+      footer .footer-nav li a {
+        border-top: 3px solid #ddd;
+        display: block;
+        box-sizing: border-box;
+        text-decoration: none;
+        width: 100%;
+        padding: 1em 0;
+        color: black;
+        transition: 0.2s; }
+        footer .footer-nav li a:hover {
+          background-color: #ddd;
+          border-top: 3px solid #0BBCD6; }
 
 .init {
   display: flex;
   flex: 1;
   align-items: center;
   max-width: 80vw; }
-
-@media screen and (max-width: 1000px) {
-  .init {
-    flex-direction: column;
-    justify-content: center; } }
-
-.init .left {
-  display: flex;
-  flex: 1;
-  max-width: 50vw;
-  padding: 50px;
-  box-sizing: border-box; }
-
-.init .left h1 {
-  color: white;
-  font-size: 4em;
-  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
-
-@media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
+    .init {
+      flex-direction: column;
+      justify-content: center; } }
   .init .left {
-    align-items: flex-end; } }
-
-.init .right {
-  display: flex;
-  flex: 1;
-  padding: 50px;
-  box-sizing: border-box; }
-
-@media screen and (max-width: 1000px) {
+    display: flex;
+    flex: 1;
+    max-width: 50vw;
+    padding: 50px;
+    box-sizing: border-box; }
+    .init .left h1 {
+      color: white;
+      font-size: 4em;
+      font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
+    @media screen and (max-width: 1000px) {
+      .init .left {
+        align-items: flex-end; } }
   .init .right {
-    align-items: flex-start; } }
-
-@media screen and (max-width: 1000px) {
-  .init .left, .init .right {
-    max-width: 80vw; } }
+    display: flex;
+    flex: 1;
+    padding: 50px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1000px) {
+      .init .right {
+        align-items: flex-start; } }
+  @media screen and (max-width: 1000px) {
+    .init .left, .init .right {
+      max-width: 80vw; } }
 
 .right .initialinput input {
   color: white;
@@ -187,58 +170,48 @@ footer .footer-nav li a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
   justify-content: center; }
-
-.overlay .formcontainer {
-  position: relative;
-  display: flex;
-  background-color: white;
-  padding: 25px; }
-
-.overlay .formcontainer .close {
-  position: absolute; }
-
-.overlay .formcontainer .login-form h1, .overlay .formcontainer .regform h1 {
-  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
-  text-align: center;
-  font-size: 2em;
-  padding: 20px 0; }
-
-.overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
-  display: flex; }
-
-@media screen and (max-width: 1000px) {
-  .overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
-    flex-direction: column; } }
-
-.overlay .formcontainer .login-form form div input, .overlay .formcontainer .regform form div input {
-  border-bottom: 3px solid #E6625E;
-  padding: 5px 15px;
-  margin: 10px;
-  transition: 0.2s; }
-
-.overlay .formcontainer .login-form form div input:focus, .overlay .formcontainer .regform form div input:focus {
-  border-bottom: 3px solid #0BBCD6;
-  transition: 0.2s; }
-
-.overlay .formcontainer .login-form form .submitb, .overlay .formcontainer .regform form .submitb {
-  border: 3px solid #0BBCD6;
-  border-radius: 1px;
-  cursor: pointer;
-  display: block;
-  margin: 25px auto;
-  padding: 15px 30px;
-  transition: 0.2s all; }
-
-.overlay .formcontainer .login-form form .submitb:hover, .overlay .formcontainer .regform form .submitb:hover {
-  background-color: #0BBCD6;
-  transition: 0.2s all; }
-
-.overlay .formcontainer .regform .waiting {
-  display: block;
-  text-align: center;
-  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
-  font-style: oblique;
-  margin: 15px auto 25px; }
+  .overlay .formcontainer {
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 25px; }
+    .overlay .formcontainer .close {
+      position: absolute; }
+    .overlay .formcontainer .login-form h1, .overlay .formcontainer .regform h1 {
+      font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
+      text-align: center;
+      font-size: 2em;
+      padding: 20px 0; }
+    .overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
+      display: flex; }
+      @media screen and (max-width: 1000px) {
+        .overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
+          flex-direction: column; } }
+      .overlay .formcontainer .login-form form div input, .overlay .formcontainer .regform form div input {
+        border-bottom: 3px solid #E6625E;
+        padding: 5px 15px;
+        margin: 10px;
+        transition: 0.2s; }
+        .overlay .formcontainer .login-form form div input:focus, .overlay .formcontainer .regform form div input:focus {
+          border-bottom: 3px solid #0BBCD6;
+          transition: 0.2s; }
+    .overlay .formcontainer .login-form form .submitb, .overlay .formcontainer .regform form .submitb {
+      border: 3px solid #0BBCD6;
+      border-radius: 1px;
+      cursor: pointer;
+      display: block;
+      margin: 25px auto;
+      padding: 15px 30px;
+      transition: 0.2s all; }
+      .overlay .formcontainer .login-form form .submitb:hover, .overlay .formcontainer .regform form .submitb:hover {
+        background-color: #0BBCD6;
+        transition: 0.2s all; }
+    .overlay .formcontainer .regform .waiting {
+      display: block;
+      text-align: center;
+      font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
+      font-style: oblique;
+      margin: 15px auto 25px; }
 
 .about {
   background-color: white;
@@ -246,15 +219,105 @@ footer .footer-nav li a:hover {
   max-width: 60vw;
   margin: 150px auto;
   box-sizing: border-box; }
+  .about p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 15px 0; }
+  .about h1 {
+    font-size: 3em;
+    font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
 
-.about p {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 15px 0; }
+.billholder {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  margin: 150px auto;
+  width: 70vw; }
+  .billholder h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
+  .billholder .faketabs {
+    display: flex;
+    flex-direction: row; }
+    .billholder .faketabs li {
+      flex: 1;
+      padding: 15px;
+      text-align: center; }
+    .billholder .faketabs .activetab {
+      background-color: #eee;
+      border-bottom: 3px solid #E6625E;
+      transition: 0.2s; }
+    .billholder .faketabs .basetab {
+      border-bottom: 3px solid #eee;
+      transition: 0.2s; }
 
-.about h1 {
-  font-size: 3em;
-  font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
+.bills-list {
+  max-height: 800px;
+  overflow-y: scroll; }
+  .bills-list ul {
+    display: flex;
+    flex-direction: column; }
+    .bills-list ul li {
+      display: flex;
+      margin: 15px 0;
+      border: 1px solid #eee;
+      flex-direction: column; }
+      .bills-list ul li .top {
+        display: flex;
+        border-bottom: 1px solid #eee;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-around; }
+        .bills-list ul li .top .flag {
+          background-color: #E6625E;
+          padding: 5px;
+          display: block;
+          font-size: 0.5em;
+          color: white;
+          margin: 0 15px 0 0; }
+        .bills-list ul li .top .name {
+          font-size: 1.3em; }
+      .bills-list ul li .parent {
+        display: flex; }
+        .bills-list ul li .parent .about-law {
+          flex: 3;
+          padding: 15px;
+          border-right: 1px solid #eee; }
+          .bills-list ul li .parent .about-law .title {
+            display: block;
+            font-size: 1.3em;
+            margin: 0 0 15px;
+            font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif; }
+            .bills-list ul li .parent .about-law .title label {
+              display: block;
+              font-size: 0.8em;
+              text-transform: uppercase;
+              color: #aaa;
+              margin-bottom: 5px; }
+          .bills-list ul li .parent .about-law .lma {
+            font-style: oblique; }
+        .bills-list ul li .parent .smaller {
+          flex: 1;
+          padding: 15px; }
+          .bills-list ul li .parent .smaller .intr {
+            color: #E6625E;
+            display: block;
+            margin: 5px 0; }
+            .bills-list ul li .parent .smaller .intr label {
+              display: block;
+              font-size: 0.8em;
+              text-transform: uppercase;
+              color: #aaa;
+              margin-bottom: 5px; }
+          .bills-list ul li .parent .smaller .sponsor {
+            display: block;
+            margin: 5px 0; }
+          .bills-list ul li .parent .smaller .tag {
+            color: #0BBCD6;
+            font-size: 0.8em;
+            font-style: oblique; }
 
 .shortlegs {
   display: flex;
@@ -296,10 +359,9 @@ footer .footer-nav li a:hover {
   font-size: 0.7em;
   font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
   font-style: oblique; }
-
-.addprompt a {
-  text-decoration: underline;
-  color: #ccc; }
+  .addprompt a {
+    text-decoration: underline;
+    color: #ccc; }
 
 .shrtphn {
   display: flex;

@@ -318,6 +318,122 @@ margin: 15px;
 }
 
 
+//============== BILLS
+
+.billholder {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  margin: 150px auto;
+  width: 70vw;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: $wnp;
+  }
+  .faketabs {
+    display: flex;
+    flex-direction: row;
+    li {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+    }
+    .activetab {
+      background-color: $ltg;
+      border-bottom: 3px solid $red;
+      @include tns(0.2s);
+    }
+    .basetab {
+      border-bottom: 3px solid $ltg;
+      @include tns(0.2s);
+    }
+  }
+}
+
+.bills-list {
+  max-height: 800px;
+  overflow-y: scroll;
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      margin: 15px 0;
+      border: 1px solid #eee;
+      flex-direction: column;
+      .top {
+        display: flex;
+        border-bottom: 1px solid #eee;
+        padding: 15px;
+        align-items: center;
+        justify-content: space-around;
+        .flag {
+          background-color: $red;
+          padding: 5px;
+          display: block;
+          font-size: 0.5em;
+          color: white;
+          margin: 0 15px 0 0;
+        }
+        .name {
+          font-size: 1.3em;
+        }
+      }
+      .parent {
+        display: flex;
+        .about-law {
+          flex: 3;
+          padding: 15px;
+          border-right: 1px solid #eee;
+          .title {
+            display: block;
+            font-size: 1.3em;
+            margin: 0 0 15px;
+            font-family: $wnp;
+            label {
+              display: block;
+              font-size: 0.8em;
+              text-transform: uppercase;
+              color: #aaa;
+              margin-bottom: 5px;
+            }
+          }
+          .lma {
+            font-style: oblique;
+          }
+        }
+        .smaller {
+          flex: 1;
+          padding: 15px;
+          .intr {
+            label {
+              display: block;
+              font-size: 0.8em;
+              text-transform: uppercase;
+              color: #aaa;
+              margin-bottom: 5px;
+            }
+            color: $red;
+            display: block;
+            margin: 5px 0;
+          }
+          .sponsor {
+            display: block;
+            margin: 5px 0;
+          }
+          .tag {
+            color: $blue;
+            font-size: 0.8em;
+            font-style: oblique;
+          }
+        }
+      }
+    }
+  }
+}
+
 //============== SEARCH 
 
 .shortlegs {
