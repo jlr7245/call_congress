@@ -3,7 +3,7 @@ const models = require('../../../db/models/index.js');
 const allLegs = require('./sunlight-array');
 
 function getLegsFromDb(req,res,next) {
-  models.sequelize.query('SELECT "LegsWatcheds"."bioguide_id" FROM "LegsWatcheds" JOIN "Users" ON "Users"."id" = "LegsWatcheds"."belongs_to" WHERE "Users"."id" = :id', {
+  models.sequelize.query('SELECT "LegsWatcheds"."bioguide_id" FROM "LegsWatcheds" JOIN "Users" ON "Users"."id" = "LegsWatcheds"."belongs_to" WHERE "User"."id" = :id', {
     replacements: { id: req.params.id },
     type: models.sequelize.QueryTypes.SELECT
   }).then((legs) => {
