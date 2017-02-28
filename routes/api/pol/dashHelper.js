@@ -8,7 +8,6 @@ function getLegsFromDb(req,res,next) {
     type: models.sequelize.QueryTypes.SELECT
   }).then((legs) => {
     let legArr = legs.map((leg) => {
-      console.log(leg);
       return leg.bioguide_id;
     });
     res.locals.legArr = legArr;
