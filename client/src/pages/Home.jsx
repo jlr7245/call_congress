@@ -31,10 +31,10 @@ class Home extends React.Component {
           <h1>{this.state.currentQuote}</h1>
         </div>
         <div className='right'>
-          <form className='initialinput' /*onSubmit={(e) => this.props.getInput(e)}*/>
-            <input name='zip' type='number' required /> <button type='submit'><i className='fa fa-search fa-4x'></i></button>
+          {/* <form className='initialinput' >
+            <input name='zip' hidden type='number' required /> <button type='submit'><i className='fa fa-search fa-4x'></i></button>
             <p className='ziplabel'>Please enter your zip code to get started.</p>
-          </form>
+          </form> */}
         </div>
         { this.state.authRoute ? <Auth closeModal={this.props.closeModal} stage={this.props.stage} handleLogin={this.props.handleLogin} handleRegister={this.props.handleRegister} /> : '' }
       </div>
