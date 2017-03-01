@@ -254,6 +254,23 @@ margin: 15px;
         font-size: 2em;
         padding: 20px 0;
       }
+      .optext {
+        display: inline-block;
+        padding: 5px 15px;
+        border: 1px solid #ccc;
+        margin: 5px;
+        cursor: pointer;
+        @include tns(0.2s);
+        &:hover {
+          background-color: #ddd;
+          @include tns(0.2s);
+        }
+      }
+      .D {
+        background-color: lighten($blue, 40);
+        border-color: $blue;
+        @include tns(0.2s);
+      }
       form {
         div {
           display: flex;

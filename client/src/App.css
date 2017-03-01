@@ -182,6 +182,20 @@ footer {
       text-align: center;
       font-size: 2em;
       padding: 20px 0; }
+    .overlay .formcontainer .login-form .optext, .overlay .formcontainer .regform .optext {
+      display: inline-block;
+      padding: 5px 15px;
+      border: 1px solid #ccc;
+      margin: 5px;
+      cursor: pointer;
+      transition: 0.2s; }
+      .overlay .formcontainer .login-form .optext:hover, .overlay .formcontainer .regform .optext:hover {
+        background-color: #ddd;
+        transition: 0.2s; }
+    .overlay .formcontainer .login-form .D, .overlay .formcontainer .regform .D {
+      background-color: #b2f2fb;
+      border-color: #0BBCD6;
+      transition: 0.2s; }
     .overlay .formcontainer .login-form form div, .overlay .formcontainer .regform form div {
       display: flex; }
       @media screen and (max-width: 1000px) {

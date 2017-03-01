@@ -54,8 +54,17 @@ class Register extends React.Component {
 
   districtPicker(arr) {
     return arr.map((subarr, i) => {
+      let isPicked;
+      if ([this.state.dst, this.state.st].join('') == subarr.join('')) {
+        isPicked = true;
+      } else { 
+        console.log(subarr);
+        console.log([this.state.dst, this.state.st]);
+        isPicked = false;
+      }
       return (
         <ResultOption key={i} 
+          isPicked={isPicked}
           subarr={subarr} 
           setStateWithDist={this.setStateWithDist} 
         />
