@@ -7,7 +7,9 @@ const lawHelpers = require('./pol/lawHelpers');
 
 extRouter.post('/geo', districtHelpers.coord2pol, (req, res, next) => {
   // res.send({st: res.locals.stateAbb, dst: res.locals.distNum})
-  res.send({resultArray: res.locals.districtArr});
+  res.send({resultArray: res.locals.districtArr}); // maybe i'm thinking too hard
+  // about getting this to work when i'm going to have to do something totally
+  // different with finding districts anyway
 });
 
 extRouter.get('/bills', lawHelpers.getHouse, lawHelpers.getSenate, lawHelpers.manipulateBills, (req, res, next) => {

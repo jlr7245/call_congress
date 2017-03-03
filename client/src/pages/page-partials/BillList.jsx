@@ -1,3 +1,5 @@
+// this component is fine
+
 import React from 'react';
 import InListBill from './InListBill';
 

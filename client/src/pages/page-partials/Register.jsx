@@ -7,11 +7,11 @@ class Register extends React.Component {
   constructor(props) {
     super(props);
     // bind
-    this.componentDidMount = this.componentDidMount.bind(this);
-    this.locationFinder = this.locationFinder.bind(this);
-    this.getDistrict = this.getDistrict.bind(this);
-    this.setStateWithDist = this.setStateWithDist.bind(this);
-    this.districtPicker = this.districtPicker.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this); // edit
+    this.locationFinder = this.locationFinder.bind(this); // move
+    this.getDistrict = this.getDistrict.bind(this); // move
+    this.setStateWithDist = this.setStateWithDist.bind(this); // move
+    this.districtPicker = this.districtPicker.bind(this); // edit
     // state
     this.state = {
       st: '',
@@ -21,45 +21,68 @@ class Register extends React.Component {
   }
 
   componentDidMount() {
-    this.locationFinder();
+    this.locationFinder(); // this.props.locationFinder()
   }
 
   locationFinder() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(this.getDistrict);
+      navigator.geolocation.getCurrentPosition(this.getDistrict); // should also have an error handler here; see below
     } else {
       console.log('no location');
     }
   }
 
-  getDistrict(position) {
+  // navigator.geolocation.getCurrentPosition(this.getDistrict, this.showError)
+  // go back to the concept of having a 'message' field in state and just putting it 
+  // in various components as errors & so on occur?
+
+  // this error handler is from https://www.w3schools.com/HTML/html5_geolocation.asp
+
+  /* function showError(error) { 
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+} */
+
+  getDistrict(position) { // this won't even need to be passed down as a prop
+                          // if the locationFinder function is just in the app
+                          // component
     axios.post('/api/ext/geo', {
       latlng: `${position.coords.latitude},${position.coords.longitude}`
     }).then((res) => {
         this.setState({
           resultpicker: true,
-          resArray: res.data.resultArray
+          resArray: res.data.resultArray // this will need to be passed down
         })
     })
       .catch((err) => console.log(err));
   }
   
-  setStateWithDist(resArr) {
-    console.log('hi');
+  setStateWithDist(resArr) { // this lives in app.js and will need to be passed down
     this.setState({
       st: resArr[1],
       dst: resArr[0]
     });
   }
 
-  districtPicker(arr) {
+  districtPicker(arr) { // this can stay here but
     return arr.map((subarr, i) => {
       let isPicked;
       if ([this.state.dst, this.state.st].join('') == subarr.join('')) {
+            // ^^ these will need to be passed down
         isPicked = true;
       } else { 
-        console.log(subarr);
-        console.log([this.state.dst, this.state.st]);
         isPicked = false;
       }
       return (

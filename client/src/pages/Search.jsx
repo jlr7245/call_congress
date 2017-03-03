@@ -13,7 +13,7 @@ class Search extends React.Component {
     this.filterLegs = this.filterLegs.bind(this);
     ///state///
     this.state = {
-      searched: null,
+      searched: null, // this can stay here
     }
   }
 
@@ -23,7 +23,7 @@ class Search extends React.Component {
         .filter((leg) => (leg.first_name.toLowerCase().includes(this.state.searched))
           || (leg.last_name.toLowerCase().includes(this.state.searched))
           || (leg.state_name.toLowerCase().includes(this.state.searched))
-          ).map((leg) => {
+          ).map((leg) => { // work on this so ppl can do searches like 'elizabeth warren' with the space & everything
             return (<ShortLegislator auth={this.props.auth} addToWatched={this.props.addToWatched} legislator={leg} key={leg.bioguide_id} />)
           });
       return shortLegsToRender;
@@ -35,7 +35,6 @@ class Search extends React.Component {
   }
 
   render() {
-    console.log(this.state.searched);
     return (
       <div className='search'>
         <div className='searchbar'>

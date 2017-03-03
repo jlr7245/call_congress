@@ -20,14 +20,18 @@ class Dash extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`/api/dash/${this.props.user.id}`)
+    axios.get(`/api/dash/${this.props.user.id}`) // this call needs to be
+                                                // moved to app.js... maybe
+                                                // it should even be moved
+                                                // to the success-login
+                                                // middleware 🤔
       .then((res) => {
         this.setState({legislators: res.data.legislators});
       })
       .catch((err) => console.log(err));
   }
 
-  renderLegislators(arr) {
+  renderLegislators(arr) { // this can stay here
     let formattedLegislators = arr.map((leg, i) => {
       return <Legislator key={i} leg={leg} showModal={this.props.showModal}/* something here about adding / removing from watch list */ />
     } )
@@ -35,7 +39,7 @@ class Dash extends React.Component {
   }
 
   // ======= which legislator goes in the modal?
-  pickLegislator(id) {
+  pickLegislator(id) { // this goes into modal middleware
     return this.state.legislators.find((legislator) => {
       return legislator.bioguide_id === id;
     })
