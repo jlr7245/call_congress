@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import Login from './page-partials/Login';
 import Register from './page-partials/Register';
@@ -26,7 +26,7 @@ class Auth extends React.Component {
     return (
         <div className='overlay'>
           <div className='formcontainer'>
-            <span className='close' /*onClick={() => this.props.closeModal()}*/><i className='fa fa-times fa-fw'></i></span>
+            <Link to='/'><span className='close'><i className='fa fa-times fa-fw'></i></span></Link>
             {this.whichStage()}
           </div>
         </div>
