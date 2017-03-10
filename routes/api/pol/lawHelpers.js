@@ -10,6 +10,7 @@ function getSenIntroduced() {
 }
 
 function getSenPassed() {
+  console.log('getting passed');
   return polAXIOS.get('115/senate/bills/passed.json')
 }
 
@@ -39,13 +40,17 @@ function getSenate(req,res,next) {
       res.locals.senateTemp = senResults;
       return next();
     }))
-    .catch((err) => {return next(err);});
+    .catch((err) => {
+      console.log(err);
+      return next(err);
+    });
 }
 
 function getHouse(req,res,next) {
   axios.all([getHouseIntroduced(), getHousePassed()])
     .then(axios.spread((houseIntroduced, housePassed) => {
       console.log('got house');
+      console.log(houseIntroduced);
       let houseIntro = houseIntroduced.data.results[0].bills;
       houseIntro.forEach((law) => {
         law.status_tag_cc = 'introduced';
@@ -58,7 +63,10 @@ function getHouse(req,res,next) {
       res.locals.houseTemp = houseRawResults;
       return next();
     }))
-    .catch((err) => {return next(err);});
+    .catch((err) => {
+      console.log(err);
+      return next(err);
+    });
 }
 
 // the actual middleware
