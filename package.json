@@ -6,6 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon .bin/www",
     "scrape": "node ./scraper/billscrape.js",
+    "test-billscrape": "mocha ./scraper/billscrape.test.js",
     "debugging": "DEBUG=*:* npm run dev",
     "buildall": "cd client && npm run build-css && npm run build && cd .. && npm run dev",
     "build-debug": "cd client && npm run build-css && npm run build && cd .. && npm run debugging"
@@ -32,6 +33,8 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "enzyme": "^2.7.1",
+    "mocha": "^3.2.0",
     "nodemon": "^1.11.0"
   }
 }

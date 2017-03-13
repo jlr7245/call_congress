@@ -1,6 +1,6 @@
 const axios = require('axios');
 // polAXIOS
-// model for bills tables
+// models for bills tables
 
 /*
 
