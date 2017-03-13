@@ -58,6 +58,7 @@ class Dash extends React.Component {
           ? <div className='overlay'> <Modal 
               legislator={this.pickLegislator(this.props.modal.id)} 
               modal={this.props.modal} 
+              closeModal={this.props.closeModal}
             /> </div>
           : 'Choose a legislator above to learn more.' }
       </div>

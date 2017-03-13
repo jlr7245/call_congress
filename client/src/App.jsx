@@ -33,7 +33,10 @@ export default class Root extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this);
     this.componentDidUpdate = this.componentDidUpdate.bind(this);
 
-    this.showModal = this.showModal.bind(this);
+    this.showModal = this.showModal.bind(this); // works for legs, bills, committees
+    this.closeModal = this.closeModal.bind(this); // ditto
+
+
     this.addToWatched = this.addToWatched.bind(this);
     this.learnLaw = this.learnLaw.bind(this); // fold into showModal
     this.watchLaw = this.watchLaw.bind(this); // fold into addToWatched
@@ -160,7 +163,7 @@ export default class Root extends React.Component {
   //======================= MODAL HELPERS
 
   showModal(type, id) {
-    axios.get(`/api/ext/mod/${type}/${id}`)
+    axios.get(`/api/ext/mod/${type}/${id}`) // this is why it works for all types of modal... the data that's pulled is decided in the middleware, not in the frontend
       .then((res) => {
         console.log(res);
         const modal = {...this.state.modal};
@@ -171,6 +174,12 @@ export default class Root extends React.Component {
         this.setState({ modal })
       })
       .catch((err) => console.log(err));
+  }
+
+  closeModal() {
+    const modal = {...this.state.modal};
+    modal.show = false;
+    this.setState({modal});
   }
 
   //====================== BILL HELPERS
@@ -242,6 +251,7 @@ export default class Root extends React.Component {
                   stage='loggedin' 
                   modal={this.state.modal}
                   showModal={this.showModal}
+                  closeModal={this.closeModal}
               /> : <Redirect push to='/login' /> ) } />
 
               <Route
