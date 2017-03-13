@@ -20,3 +20,8 @@ function tester() {
   console.log('hello world');
 }
 tester();
+
+// for testing purposes
+module.exports = {
+  tester,
+}
