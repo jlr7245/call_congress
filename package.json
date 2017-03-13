@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon .bin/www",
+    "scrape": "node ./scraper/billscrape.js",
     "debugging": "DEBUG=*:* npm run dev",
     "buildall": "cd client && npm run build-css && npm run build && cd .. && npm run dev",
     "build-debug": "cd client && npm run build-css && npm run build && cd .. && npm run debugging"

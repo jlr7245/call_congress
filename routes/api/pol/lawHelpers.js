@@ -10,7 +10,6 @@ function getSenIntroduced() {
 }
 
 function getSenPassed() {
-  console.log('getting passed');
   return polAXIOS.get('115/senate/bills/passed.json')
 }
 
@@ -23,6 +22,8 @@ function getHousePassed() {
 }
 
 // aggretating the requests
+
+// this could be neater, probably
 
 function getSenate(req,res,next) {
   axios.all([getSenIntroduced(), getSenPassed()])
@@ -50,7 +51,6 @@ function getHouse(req,res,next) {
   axios.all([getHouseIntroduced(), getHousePassed()])
     .then(axios.spread((houseIntroduced, housePassed) => {
       console.log('got house');
-      console.log(houseIntroduced);
       let houseIntro = houseIntroduced.data.results[0].bills;
       houseIntro.forEach((law) => {
         law.status_tag_cc = 'introduced';
@@ -85,7 +85,6 @@ function createSortedLawSet(arr) {
     let timeB = manipulateTime(b);
     return timeB - timeA;
   });
-  console.log(newLawSet);
   return newLawSet;
 }
 

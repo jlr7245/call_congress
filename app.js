@@ -62,6 +62,10 @@ app.get('/successlogin', /* middleware about getting the user's legislators */ (
   res.send({user: req.user, auth: true});
 })
 
+app.get('/test', (req, res, next) => {
+  res.send({hello: 'world'});
+})
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });
