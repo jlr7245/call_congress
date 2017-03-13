@@ -18,10 +18,18 @@ this file will run every couple of hours and perform a number of tasks
 // testing out the basic concept
 function tester() {
   console.log('hello world');
+  testerWithArg('hello');
 }
+
+
+function testerWithArg(string) {
+  console.log(string);
+}
+
 tester();
 
 // for testing purposes
 module.exports = {
   tester,
+  testerWithArg
 }

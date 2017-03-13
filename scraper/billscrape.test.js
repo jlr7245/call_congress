@@ -1,16 +1,30 @@
-const assert = require('assert');
-const expect = require('expect.js');
+//const assert = require('assert');
+const chai = require('chai')
+  , spies = require('chai-spies');
+chai.use(spies);
+const expect = chai.expect;
+const should = chai.should;
+const assert = chai.assert;
 const billscrape = require('./billscrape.js');
 
+const testSpy = chai.spy(billscrape.tester);
+const testSpyWithArg = chai.spy(billscrape.testerWithArg);
+
+
 describe('check', () => {
+  before(() => {
+    testSpy();
+  })
   it('# will work if a test passes', () => {
     assert.equal(1, 1);
   });
-  it('# will work if a test fails', () => {
+  it('# will catch if a test fails', () => {
     //assert.equal(1, 2);
   });
   it('# has access to billscrape functions', () => {
     expect(billscrape.tester).to.be.a('function');
+    expect(testSpy).to.have.been.called();
+    expect(testSpyWithArg).to.have.been.called();
   })
 })
 
