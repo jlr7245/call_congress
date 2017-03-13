@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var LawsInfo = sequelize.define('LawsInfo', {
     lookup_id: DataTypes.STRING(30),
-    id: DataTypes.STRING(30),
+    bill_id: DataTypes.STRING(30),
     title: DataTypes.TEXT,
     sponsor: DataTypes.TEXT,
     sponsor_lookup_id: DataTypes.STRING(30),
