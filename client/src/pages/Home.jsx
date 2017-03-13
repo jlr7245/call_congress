@@ -36,7 +36,13 @@ class Home extends React.Component {
             <p className='ziplabel'>Please enter your zip code to get started.</p>
           </form> */}
         </div>
-        { this.state.authRoute ? <Auth closeModal={this.props.closeModal} stage={this.props.stage} handleLogin={this.props.handleLogin} handleRegister={this.props.handleRegister} /> : '' }
+        { this.state.authRoute ? <Auth 
+          stage={this.props.stage} 
+          handleLogin={this.props.handleLogin} 
+          handleRegister={this.props.handleRegister} 
+          registration={this.props.registration}  
+          setStateWithDist={this.props.setStateWithDist}
+        /> : '' }
       </div>
     )
   }

@@ -20,8 +20,8 @@ class Nav extends React.Component {
     } else {
       return (
         <ul>
-          <li><Link onClick={() => this.props.setAuthRoute()} to='/register'>Register</Link></li>
-          <li><Link onClick={() => this.props.setAuthRoute()} to='/login'>Login</Link></li>
+          <li><Link to='/register'>Register</Link></li>
+          <li><Link to='/login'>Login</Link></li>
         </ul>
       )
     }

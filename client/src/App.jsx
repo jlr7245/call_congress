@@ -24,16 +24,30 @@ export default class Root extends React.Component {
     // bind
     this.handleLogin = this.handleLogin.bind(this);
     this.handleRegister = this.handleRegister.bind(this);
+
+    this.locationFinder = this.locationFinder.bind(this);
+    this.handleLocationError = this.handleLocationError.bind(this);
+    this.getDistrict = this.getDistrict.bind(this);
+    this.setStateWithDist = this.setStateWithDist.bind(this);
+
+    this.componentDidMount = this.componentDidMount.bind(this);
     this.componentDidUpdate = this.componentDidUpdate.bind(this);
+
     this.showModal = this.showModal.bind(this);
     this.addToWatched = this.addToWatched.bind(this);
-    this.learnLaw = this.learnLaw.bind(this);
-    this.watchLaw = this.watchLaw.bind(this);
+    this.learnLaw = this.learnLaw.bind(this); // fold into showModal
+    this.watchLaw = this.watchLaw.bind(this); // fold into addToWatched
 
     // state
     this.state = { 
       auth: false, 
       stage: 'home',
+      registration: {
+        st: '',
+        dst: '',
+        resultpicker: false,
+        resArray: [],
+      },
       user: {},
       modal: {
         show: false,
@@ -41,14 +55,16 @@ export default class Root extends React.Component {
         type: ''
       }
     };
+
   }
 
-  //
+  // ========= LIFECYCLE METHODS
   componentDidUpdate() {
     console.log('update');
-    // if (this.state.stage == 'dash') {
-    //   <Redirect push to='/dashboard' />;
-    // }
+  }
+
+  componentDidMount() {
+    this.locationFinder();
   }
 
 
@@ -60,7 +76,6 @@ export default class Root extends React.Component {
         password: e.target.password.value
     }).then((res) => {
       this.setState({auth: res.data.auth, user: res.data.user, stage: 'dash'});
-      console.log(res.data);
     })
       .catch((err) => {console.log(err)});
     e.target.reset();
@@ -76,7 +91,6 @@ export default class Root extends React.Component {
         state: st,
         district: dst
       }).then((res) => {
-        console.log(res.data);
         if (res.data.auth) {
           this.setState({
             auth: res.data.auth, 
@@ -87,6 +101,60 @@ export default class Root extends React.Component {
       })
       .catch((err) => console.log(err));
     e.target.reset();
+  }
+
+  //======================= REGISTRATION
+
+  locationFinder() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this.getDistrict, this.handleLocationError); 
+    } else {
+      console.log('no location');
+    }
+  }
+
+   // this error handler is from https://www.w3schools.com/HTML/html5_geolocation.asp
+
+  handleLocationError(error) {
+    switch(error.code) {
+      case error.PERMISSION_DENIED:
+        this.setState({message: 'You denied the request for location'});
+        break;
+      case error.POSITION_UNAVAILABLE:
+        this.setState({message: 'Location information is unavailable'});
+        break;
+      case error.TIMEOUT:
+        this.setState({message: 'the request to get your information timed out.'});
+        break;
+      case error.UNKNOWN_ERROR:
+        this.setState({message: 'An unknown error occurred.'});
+        break;
+      default:
+        this.setState({message: "whoops"});
+        break;
+    }
+  }
+
+  getDistrict(position) {
+    axios.post('/api/ext/geo', {
+      latlng: `${position.coords.latitude},${position.coords.longitude}`
+    }).then((res) => {
+      const registration = {...this.state.registration};
+      registration.resultpicker = true;
+      registration.resArray = res.data.resultArray;
+      this.setState({
+        registration,
+      });
+    }).catch((err) => console.log(err));
+  }
+
+  setStateWithDist(resArr) {
+    const registration = {...this.state.registration};
+    registration.st = resArr[1];
+    registration.dst = resArr[0];
+    this.setState({
+      registration,
+    });
   }
 
   //======================= MODAL HELPERS
@@ -108,7 +176,7 @@ export default class Root extends React.Component {
   //====================== BILL HELPERS
   
   watchLaw(id) {
-    console.log(id);
+    console.log(id); // these get folded into 
   }
 
   learnLaw(id) {
@@ -162,6 +230,8 @@ export default class Root extends React.Component {
                   stage='register' 
                   handleLogin={this.handleLogin} 
                   handleRegister={this.handleRegister} 
+                  registration={this.state.registration}
+                  setStateWithDist={this.setStateWithDist}
               />)} />
 
               <Route 

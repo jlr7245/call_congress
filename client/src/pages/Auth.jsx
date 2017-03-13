@@ -17,7 +17,11 @@ class Auth extends React.Component {
     if (this.state.stage === 'login') {
       return (<Login handleLogin={this.props.handleLogin} />)
     } else {
-      return (<Register handleRegister={this.props.handleRegister} />)
+      return (<Register 
+        registration={this.props.registration} 
+        handleRegister={this.props.handleRegister} 
+        setStateWithDist={this.props.setStateWithDist}
+      />)
     }
   }
   
