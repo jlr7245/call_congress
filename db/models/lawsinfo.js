@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
     congressdotgov_url: DataTypes.TEXT,
     introduced_date: DataTypes.STRING(30),
     active: DataTypes.STRING(30),
-    cosponsors: DataTypes.NUMBER,
+    cosponsors: DataTypes.INTEGER,
     primary_subject: DataTypes.TEXT,
     committees: DataTypes.TEXT,
     summary: DataTypes.TEXT,
