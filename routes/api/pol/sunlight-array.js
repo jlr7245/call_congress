@@ -27,7 +27,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `CHENEY, Liz, (daughter of Richard Bruce Cheney) a Representative from Wyoming; born in Madison, Dane County, Wis., July 28, 1966; graduated from McLean High School, McLean, Va., 1984; B.A., Colorado College, Colorado Springs, Colo., 1988; J.D., University of Chicago Law School, Chicago, Ill., 1996; staff, United States Agency for International Development, 1989-1992; staff, United States Department of State, 1992; lawyer, private practice; lawyer, International Finance Corporation, 1999-2002; Deputy Assistant Secretary of State for Near Eastern Affairs, United States Department of State, 2002-2004; campaign staff, presidential campaign of George W. Bush, 2004; Principal Deputy Assistant Secretary of State for Near Eastern Affairs, United States Department of State, 2005-2009; nonprofit executive; television commentator; unsuccessful candidate for election to the United States Senate in 2014; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'G000579',
@@ -57,7 +58,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `GALLAGHER, Michael, a Representative from Wisconsin; born in Green Bay, Brown County, Wis., March 3, 1984; graduated from Mater Dei High School, Santa Ana, Calif., 2002; A.B., Princeton University, Princeton, N.J., 2006; M.S., National Intelligence University, Washington, D.C., 2010; M.A., Georgetown University, Washington, D.C., 2012; M.A., Georgetown University, Washington, D.C., 2013; Ph.D., Georgetown University, Washington, D.C., 2015; United States Marine Corps, 2006-2013; staff, United States Senate Foreign Relations Committee, 2013-2015; presidential campaign staff, Scott Walker, 2015; businessman; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'J000298',
@@ -87,7 +89,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `JAYAPAL, Pramila, a Representative from Washington; born in Chennai, Tamil Nadu, India, September 21, 1965; A.B., Georgetown University, Washington, D.C., 1986; M.B.A., Northwestern University, Evanston, Ill., 1990; financial analyst; member of the Washington state senate, 2015-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'G000580',
@@ -117,7 +120,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `GARRETT, Thomas Alexander Jr., a Representative from Virginia; born in Atlanta, Fulton County, Georgia, March 27, 1972; graduated from Louisa County High School, Mineral, Va., 1990; B.A., University of Richmond, Richmond, Va., 1994; J.D., University of Richmond, Richmond, Va., 2002; United States Army, 1995-2000; assistant attorney general, Va., 2002-2007; Louisa County commonwealth attorney, 2008-2012; member of the Virginia state senate, 2012-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'M001200',
@@ -147,7 +151,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `MCEACHIN, Aston Donald, a Representative from Virginia; born in Nuremberg, Germany, October 10, 1961; graduated from St. Christopherâ€™s School, Richmond, Va., 1979; B.S., American University, Washington, D.C., 1982, J.D., University of Virginia, Charlottesville, Va., 1986; M.Div., Samuel DeWitt Proctor School of Theology at Virginia Union University, Richmond, Va., 2008; lawyer, private practice; member of the Virginia state house of delegates, 1996-2002 and 2006-2008; member of the Virginia state senate, 2008-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'T000477',
@@ -177,7 +182,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `TAYLOR, Scott William, a Representative from Virginia; born in Baltimore, Md., June 27, 1979; graduated from Mardela High School, Mardela Springs, Md., 1997; attended Old Dominion University; A.L.B., Harvard University Extension School, Cambridge, Mass., 2013; United States Navy, 1998-2005; real estate broker; entrepreneur; author; unsuccessful candidate for nomination to the One Hundred Twelfth Congress in 2010; member of the Virginia state house of delegates, 2014-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'A000375',
@@ -207,7 +213,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `ARRINGTON, Jodey Cook, a Representative from Texas; born in Plainview, Tex., March 9, 1972; graduated from Plainview High School, Plainview, Hale County, Tex., 1990; B.A., Texas Tech University, Lubbock, Tex., 1994; M.A., Texas Tech University, Lubbock, Tex., 1997; special assistant to President George W. Bush, 2001; staff, chairman of the Federal Deposit Insurance Corporation, 2001-2005; Deputy Federal Coordinator and Chief Operating Officer, Office of the Federal Coordinator for Gulf Coast Rebuilding, 2005-2006; administrator, Texas Tech University, Lubbock, Tex., 2007-2014; business executive; unsuccessful candidate in a special election for the Texas state senate in 2014; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'G000581',
@@ -237,7 +244,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `GONZALEZ, Vicente Jr., a Representative from Texas; born in Corpus Christi, Nueces County, Tex., September 4, 1967; earned G.E.D., 1985; B.A., Embry-Riddle Aeronautical University, Naval Air Station, Corpus Christi, Tex., 1992; J.D., Texas Wesleyan School of Law, Fort Worth, Tex., 1996; lawyer, private practice; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'K000392',
@@ -267,7 +275,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `KUSTOFF, David, a Representative from Tennessee; born in Memphis, Tenn., October 8, 1966; graduated from White Station High School, Memphis, Shelby County, Tenn., 1985; B.B.A., University of Memphis, Memphis, Tenn., 1989; J.D., University of Memphis, Memphis, Tenn., 1992; lawyer, private practice; United States Attorney for the Western District of Tennessee, 2006-2008; unsuccessful candidate for nomination to the One Hundred Eighth Congress in 2002; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'G000582',
@@ -297,7 +306,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Com',
-    website: null
+    website: null,
+    bio: `GONZÁLEZ-CÓLON, Jenniffer, a Resident Commissioner from Puerto Rico; born in San Juan, P.R., August 5, 1976; B.A., Universidad de Puerto Rico, Rio Piedras, P.R.; J.D., Universidad Interamericana de Puerto Rico, Aibonito, P.R.; L.L.M., Universidad Interamericana de Puerto Rico, Aibonito, P.R.; chair, Puerto Rico Republican Party; president, Puerto Rico Republican Party, 2004-2016; vice-president, New Progressive Party, 2008-2016; member of the Puerto Rico house of representatives, 2002-2016; speaker, 2009-2012; minority leader, 2012-2016; elected as a New Progressive to the One Hundred Fifteenth Congress to a four-year term in 2017 (January 3, 2017-present).`
   },
   {
     bioguide_id: 'S001199',
@@ -327,7 +337,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `SMUCKER, Lloyd K., a Representative from Pennsylvania; born in Lancaster, Lancaster County, Pa., January 23, 1964; attended Lebanon Valley College, Annville, Pa.; attended Franklin & Marshall College, Lancaster, Pa., 1988-1991; business owner; member of the West Lampeter, Pa., planning commission, 2001-2005; member of the West Lampeter, Pa., township board of supervisors, 2005-2009; member of the Pennsylvania state senate, 2009-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'F000466',
@@ -357,7 +368,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `FITZPATRICK, Brian K., (brother of Michael G. Fitzpatrick), a Representative from Pennsylvania; born in Philadelphia, Philadelphia County, Pa., December 17, 1973; graduated from Bishop Egan High School, Fairless Hills, Pa.; B.S.B.A., La Salle University, Philadelphia, Pa., 1996; M.B.A., Pennsylvania State University, University Park, Pa., 2001; J.D., Dickinson School of Law, Pennsylvania State University, Carlisle, Pa., 2001; judicial clerk, Eastern District of Pennsylvania, 2001-2002; special agent, Federal Bureau of Investigation; special assistant United States attorney for the Eastern District of Pennsylvania; lawyer, private practice; accountant; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'T000478',
@@ -387,7 +399,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `TENNEY, Claudia, a Representative from New York; born in New Hartford, Oneida County, N.Y., February 4, 1961; graduated from New Hartford High School, New Hartford, N.Y., 1979; B.A., Colgate University, Hamilton Township, N.Y., 1983; J.D., Cincinnati University, Cincinnati, Ohio, 1987; staff, consulate general of Yugoslavia; media owner; lawyer, private practice; member of the New York state assembly, 2011-2016; unsuccessful candidate for election to the One Hundred Fourteenth Congress in 2014; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'F000464',
@@ -417,7 +430,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `FASO, John J., a Representative from New York; born in Massapequa, Nassau County, N.Y., August 25, 1952; graduated from Archbishop Molloy High School, New York City, N.Y., 1970; B.S., State University of New York, Brockport, N.Y., 1974; J.D., Georgetown University, Washington, D.C., 1979; staff, United States House of Representatives Committee on Government Operations, 1979-1981; staff, New York state senate Washington office, 1981-1983; commissioner, New York state legislative bill drafting commission, 1983-1986; member of the New York state assembly, 1986-2002; unsuccessful candidate for election as New York state comptroller in 2002; member of the Buffalo Fiscal Stability Authority, N.Y., 2003-2006; unsuccessful candidate for election as Governor of New York in 2006; political consultant; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'E000297',
@@ -447,7 +461,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `ESPAILLAT, Adriano J., a Representative from New York; born in Santiago, Dominican Republic, September 27, 1954; graduated from Bishop Dubois High School, New York City, N.Y., 1974; B.S., Queens College, New York City, N.Y., 1978; attended New York University, New York City, N.Y; attended Rutgers University, New Brunswick, N.J.; coordinator, New York City Criminal Justice Agency, 1980-1988; director, Washington Heights, N.Y., victim services community office, 1992-1994; director, Project Right Start, 1994-1996; member of the New York state assembly, 1996-2010; member of the New York state senate, 2010-2016; unsuccessful candidate for nomination to the One Hundred Thirteenth Congress in 2012 and the One Hundred Fourteenth Congress in 2014; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'S001201',
@@ -477,7 +492,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `SUOZZI, Thomas, a Representative from New York; born in Glen Cove, Nassau County, N.Y., August 31, 1962; graduated from Chaminade High School, Mineola, N.Y., 1980; B.S., Boston College, Chestnut Hill, Mass., 1984; J.D., Fordham University, New York City, N.Y., 1989; certified public accountant; lawyer, private practice; Mayor of Glen Cove, N.Y., 1994-2001; Nassau County, N.Y., executive, 2002-2009; unsuccessful candidate for nomination as Governor of New York in 2006; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'K000390',
@@ -507,7 +523,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `KIHUEN, Ruben Jesus, a Representative from Nevada; born in Guadalajara, Mexico, April 25, 1980; graduated from Rancho High School, Las Vegas, Nev., 1998; attended College of Southern Nevada, Henderson, Nev.; B.S., University of Nevada, Las Vegas, Nev., 2004; academic adviser, College of Southern Nevada, Henderson, Nev.; staff, United States Senator Harry Reid of Nevada, 2004-2006; member of the Nevada state assembly, 2007-2010; member of the Nevada state senate, 2011-2016, majority whip, 2013-2014, minority whip, 2015; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'R000608',
@@ -537,7 +554,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `ROSEN, Jacklyn Sheryl, a Representative from Nevada; born in Chicago, Cook County, Ill., in 1957; B.A., University of Minnesota, Minneapolis, Minn., 1979; computer software developer; business owner; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'G000583',
@@ -567,7 +585,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `GOTTHEIMER, Josh S., a Representative from New Jersey; born in North Caldwell, Essex County, N.J., March 8, 1975; graduated from West Essex Senior High School, North Caldwell, N.J., 1993; B.A., University of Pennsylvania, Philadelphia, Pa., 1997; J.D., Harvard Law School, Cambridge, Mass., 2004; special assistant and speechwriter for President William J. Clinton, 1998-2001; staff, Wesley Cark presidential campaign, 2004; staff, John Forbes Kerry presidential campaign, 2004; business executive; senior counselor to the chairman of the Federal Communications Commission, 2010-2012; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001298',
@@ -597,7 +616,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BACON, Donald J., a Representative from Nebraska; born in Chicago Heights, Cook County, Ill., August 16, 1963; graduated from Grace Baptist High School, Kankakee, Ill.; B.A., Northern Illinois University, DeKalb, Ill., 1984; M.B.A., University of Phoenix, Phoenix, Ariz., 1996; M.A., National War College, Washington, D.C., 2004; United States Air Force, 1985-2014; staff, United States Representative Jeff Fortenberry of Nebraska, 2014-2015; assistant professor, University of Bellevue, Bellevue, Nebr., 2014-2017; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001305',
@@ -627,7 +647,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BUDD, Theodore Paul, a Representative from North Carolina; born in Davie County, N.C., October 21, 1971; B.S., Appalachian State University, Boone, N.C.; M.A., Dallas Theological Seminary, Dallas, Tex.; M.B.A., Wake Forest University, Winston-Salem, N.C.; investment analyst; business owner; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'L000587',
@@ -657,7 +678,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `LEWIS, Jason Mark, a Representative from Minnesota; born in Waterloo, Black Hawk County, Iowa, September 23, 1955; graduated from Central High School, Waterloo, Iowa, 1973; B.A., University of Iowa, Iowa City, Iowa, 1979; M.A., University of Colorado, Denver, Denver, Colo., 1992; radio broadcaster; television host; columnist; unsuccessful candidate for election to the One Hundred Second Congress in 1990; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'M001201',
@@ -687,7 +709,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `MITCHELL, Paul, a Representative from Michigan; May 8, 1961; B.A., Michigan State University, Lansing, Mich., 1978; businessman; business executive; member of the St. Clair, Mich., city council; unsuccessful candidate for nomination to the One Hundred Fourteenth Congress in 2014; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001301',
@@ -717,7 +740,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BERGMAN, John, a Representative from Michigan; born in Shakopee, Scott County, Minn., February 2, 1947; B.A., Gustuvus Adolphus College, St. Peter, Minn., 1969; M.A., University of West Florida, Pensacola, Fla., 1975; United States Marine Corps, 1969-2009; commercial pilot; business owner; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'R000606',
@@ -747,7 +771,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `RASKIN, Jamie Ben, a Representative from Maryland; born in Washington, D.C., December 13, 1962; graduated from Georgetown Day High School, Washington, D.C., 1979; A.B., Harvard College, Cambridge, Mass., 1983; J.D. Harvard University, Cambridge, Mass., 1987; assistant attorney general, office of the Massachusetts attorney general, 1987-1989; professor, American University Washington College of Law, Washington, D.C., 1990-2017; member of the Maryland state senate, 2007-2016, majority whip, 2012-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001304',
@@ -777,7 +802,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BROWN, Anthony Gregory, a Representative from Maryland; born in Huntington, Suffolk County, N.Y., November 21, 1961; graduated from Huntington High School, Huntington, N.Y., 1979; attended United States Military Academy, West Point, N.Y.; A.B., Harvard University, Cambridge, Mass., 1984; J.D., Harvard University, Cambridge, Mass.,1992; United States Army, 1984-1989; United States Army Reserve, 1989-2014; lawyer, private practice; member of the Maryland state general assembly, 1999-2007, majority whip, 2004-2007; lieutenant governor of Maryland, 2007-2015; unsuccessful candidate for Governor of Maryland in 2014; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'J000299',
@@ -807,7 +833,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `JOHNSON, Mike, a Representative from Louisiana; born in Shreveport, Caddo Parish, La., January 30, 1972; graduated from Captain Shreve High School, Shreveport, La., 1990; B.S., Louisiana State University, Baton Rouge, La., 1995; J.D., Louisiana State University, Baton Rouge, La., 1998; lawyer, private practice; member of the Louisiana state house of representatives, 2015-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'H001077',
@@ -837,7 +864,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `HIGGINS, Clay, a Representative from Louisiana; born in New Orleans, Orleans Parish, La., August 24, 1961; graduated from Covington High School, Covington, La.; attended Louisiana State University, Baton Rouge, La., 1979-1983, 1989-1990; United States Army; Louisiana Army National Guard; business manager; sheriff, St. Landry Parish, La., 2008-2016; deputy marshal, Lafayette, La.; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'M001198',
@@ -867,7 +895,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `MARSHALL, Roger Wayne, a Representative from Kansas; born in El Dorado, Butler County, Kans., August 9, 1960; graduated from El Dorado High School, El Dorado, Kans., 1978; A.S., Butler Community College, El Dorado, Kans., 1980; B.S., Kansas State University, Manhattan, Kan; M.D. University of Kansas School of Medicine, Kansas City, Kans, 1987; United States Army Reserves, 1984-1991; physician; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'H001074',
@@ -897,7 +926,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `HOLLINGSWORTH, Joseph Albert III, a Representative from Indiana; born in Clinton, Anderson County, Tenn., September 12, 1983; graduated from Webb School, Knoxville, Tenn.; B.S.E., Wharton School of the University of Pennsylvania, Philadelphia, Penn., 2004; M.P.P., Georgetown University, Washington, D.C., 2014; entrepreneur; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001299',
@@ -927,7 +957,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BANKS, James E., a Representative from Indiana; born in Columbia City, Whitley County, Ind., July 16, 1979; graduated from Columbia City High School, Columbia City, Ind., 1997; B.A., Indiana University, Bloomington, Ind., 2004; M.B.A., Grace College and Seminary, Winona Lake, Ind., 2013; United States Navy Reserve, 2012-2015; staff, United States Representative John Hostettler of Indiana; commercial real estate broker; political consultant; chairman, Whitley County, Ind., Republican Party, 2007-2011; member of the Whitley County, Ind. Council, 2008-2010; member of the Indiana state senate, 2010-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'K000391',
@@ -957,7 +988,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `KRISHNAMOORTHI, S. Raja, a Representative from Illinois; born in New Delhi, India, July 19, 1973; graduated from Richwoods High School, Peoria, Ill., 1991; B.A., Princeton University, Princeton, N.J., 1995; J.D., Harvard Law School, Cambridge, Mass., 2000; lawyer, private practice; business executive; clerk, United States District Court for Northern District of Illinois, 2000-2002; campaign staff, Barack Obama, 2004, 2008; staff, Illinois housing development authority, 2005-2007; Illinois special assistant attorney general, 2006-2007; deputy state treasurer of Illinois, 2008-2009; unsuccessful candidate for Illinois state comptroller, 2010; unsuccessful candidate for nomination to the One Hundred Thirteenth Congress in 2012; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'F000465',
@@ -987,7 +1019,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `FERGUSON, Anderson Drew IV, a Representative from Georgia; born in West Point, Troup County, Ga., November 15, 1967; graduated from Springwood School, Lanett, Ala., 1985; attended University of Georgia, Athens, Ga., 1988; D.M.D., Medical College of Georgia, Augusta, Ga., 1992; dentist; faculty, Medical College of Georgia, Augusta, Ga., 1998-2016; member of the West Point, Ga., board of aldermen, 1997-1999; Mayor of West Point, Ga., 2008-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'R000607',
@@ -1017,7 +1050,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `ROONEY, Francis, a Representative from Florida; born in Tulsa, Tulsa County, Okla., December 4, 1953; graduated from Georgetown Preparatory School, North Bethesda, Md., 1971; A.B., Georgetown University, Washington, D.C., 1975; J.D., Georgetown University, Washington, D.C., 1978; business owner; United States Ambassador to the Holy See, 2005-2008; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'M001199',
@@ -1047,7 +1081,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `MAST, Brian Jeffery, a Representative from Florida; born in Grand Rapids, Kent County, Mich., July 10, 1980; graduated from South Christian High School, Grand Rapids, Mich., 1999; attended Palm Beach Atlantic University, West Palm Beach, Fla., 2000-2002; attended American Military University, Charles Town, W.Va., 2008-2010; A.L.B., Harvard University Extension School, Cambridge, Mass., 2016; United States Army, 2000-2012; analyst, National Nuclear Security Administration, 2011-2012; explosive specialist, United States Department of Homeland Security, 2012-2015; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'C001111',
@@ -1077,7 +1112,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `CRIST, Charlie Joseph Jr., a Representative from Florida; born in Altoona, Blair County, Pa., July 24, 1956; graduated from St. Petersburg High School, St. Petersburg, Fla., 1974; attended Wake Forest University, Winston-Salem, N.C.; B.S., Florida State University, Tallahassee, Fla., 1978; J.D., Cumberland School of Law, Birmingham, Ala., 1981; lawyer, private practice; unsuccessful candidate for election to the Florida state senate in 1986; staff, United States Senator Connie Mack of Florida, 1988-1989; member of the Florida state senate, 1993-1999; unsuccessful candidate for election to the United States Senate in 1998; Florida deputy secretary of business and professional regulation, 1999-2001; Florida state education commissioner, 2001-2003; Florida state attorney general, 2003-2007; Governor of Florida, 2007-2011; unsuccessful candidate for election to the United States Senate in 2010; unsuccessful candidate for election for Governor of Florida in 2014; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'D000627',
@@ -1107,7 +1143,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `DEMINGS, Valdez Butler, a Representative from Florida; born in Jacksonville, Duvall County, Fla., March 12, 1957; graduated from Wolfson High School, Jacksonville, Fla.; B.S., Florida State University, Tallahassee, Fla., 1979; M.P.A., Webster University, Orlando, Fla., 1996; social worker; police officer; commander of special operations, Orlando, Fla., police department, 2003-2006, chief, 2007-2012; unsuccessful candidate for election to the One Hundred Thirteenth Congress in 2012; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'S001200',
@@ -1137,7 +1174,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `SOTO, Darren Michael, a Representative from Florida; born in Ringwood, Passaic County, N.J., February 25, 1978; B.A., Rutgers College, New Brunswick , N.J., 2000; J.D., George Washington University, Washington, D.C., 2004; lawyer, private practice; financial analyst; member of the Florida state house of representatives, 2007-2012; member of the Florida state senate, 2012-2016; deputy minority whip, 2012-2014; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'M001202',
@@ -1167,7 +1205,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `MURPHY, Stephanie, a Representative from Florida; born in Ho Chi Minh City, Vietnam, September 16, 1978; B.A., College of William and Mary, Williamsburg, Va., 2000; M.S.F.S., Georgetown University, Washington, D.C., 2004; consultant; businesswoman; foreign affairs specialist, United States Department of Defense, 2004-2008; faculty, Rollins College, Winter Park, Fla., 2014-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'L000586',
@@ -1197,7 +1236,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `LAWSON, Alfred Jr., a Representative from Florida; born in Midway, Gadsden County, Fla., September 21, 1948; graduated from Havana Northside High School, Havana, Fla., 1966; B.S., Florida Agricultural and Mechanical University, Tallahassee, Fla., 1970; M.S.P.A., Florida State University, Tallahassee, Fla., 1973; business owner; member of the Florida state house of representatives, 1982-2000; member of the Florida state senate, 2000-2010; minority leader, 2008-2010; unsuccessful candidate for Democratic nomination to the One Hundred Twelfth Congress in 2010; unsuccessful candidate for election to the One Hundred Thirteenth Congress in 2012; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'R000609',
@@ -1227,7 +1267,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `RUTHERFORD, John Henry, a Representative from Florida; born in Omaha, Douglas County, Nebr., September 2, 1952; graduated from Nathan Bedford Forrest High School, Jacksonville, Fla., 1970; attended Jacksonville Junior College, Jacksonville, Fla.; B.S., Florida State University, Tallahassee, Fla., 1974; police officer; director of corrections, city of Jacksonville, Fla., sheriff's office, 1995-2003; sheriff, city of Jacksonville, Fla., 2003-2015; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'D000628',
@@ -1257,7 +1298,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `DUNN, Neal Patrick, a Representative from Florida; born in Boston, Suffolk County, Mass., February 16, 1953; B.S., Washington & Lee University, Lexington, Va.; M.D., George Washington University, Washington, D.C.; United States Army, 1989-2010; urologist; banker; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'G000578',
@@ -1287,7 +1329,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `GAETZ, Matthew L. II, a Representative from Florida; born in Hollywood, Broward County, Fla., May 7, 1982; graduated from Niceville High School, Niceville, Fla.; B.S., Florida State University, Tallahassee, Fla., 2003; J.D., William & Mary Law School, Williamsburg, VA, 2007; lawyer, private practice; member of the Florida state house of representatives, 2010-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001303',
@@ -1317,7 +1360,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BLUNT ROCHESTER, Lisa, a Representative from Delaware; born in Philadelphia, Philadelphia County, Pa., February 10, 1962; graduated from Padua Academy, Wilmington, Del., 1980; B.A., Farleigh Dickinson University, Rutherford, N.J., 1985; M.A., University of Delaware, Newark, Del., 2003; staff, United States Representative Thomas Richard Carper of Delaware; deputy secretary, Delaware department of health and social services, 1993-1998; Delaware state secretary of labor, 1998-2001; personnel director, Delaware office of management and budget, 2001-2004; chief executive, Metropolitan Wilmington Urban League, 2004-2007; senior fellow, University of Massachusetts, Boston, Mass., 2012-2015; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'C001110',
@@ -1347,7 +1391,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `CORREA, Jose Luis, a Representative from California; born in Los Angeles, Los Angeles County, Calif., January 24, 1958; B.A., California State University, Fullerton, Calif., 1980; J.D.,University of California, Los Angeles, Calif., 1985; M.B.A., University of California, Los Angeles, Calif., 1985; investment banker; real estate broker; unsuccessful candidate for nomination to the California state assembly in 1996; member of the California state assembly, 1998-2004; member of the Orange County, Calif., board of supervisors, 2005-2006; member of the California state senate, 2006-2014; unsuccessful candidate for election to the Orange County, Calif., board of supervisors in 2015; member of the California high speed rail authority, 2015-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'B001300',
@@ -1377,7 +1422,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BARRAGÁN, Nanette Diaz, a Representative from California; born in California, September 15, 1976; B.A., University of California, Los Angeles, Calif., 2000; J.D., University of Southern California, Los Angeles, Calif., 2005; lawyer, private practice; member of the Hermosa Beach, Calif., city council, 2013-2015; Mayor pro tem and member of the Hermosa Beach, Calif., city council, 2015; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'C001112',
@@ -1407,7 +1453,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `CARBAJAL, Salud, a Representative from California; born in Moroleon, Mexico, November 18, 1964; B.A., University of California, Santa Barbara, Calif., 1990; M.A., Fielding Graduate University, Santa Barbara, Calif., 1994; United States Marine Corps Reserve; staff, Santa Barbara County, Calif., public health department; staff, county supervisor Naomi Schwartz, 1993-2004; member of the Santa Barbara County, Calif., board of supervisors, 2004-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'P000613',
@@ -1437,7 +1484,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `PANETTA, James Varni, (son of Leon Panetta), a Representative from California; born in Washington, D.C., October 1, 1969; A.A., Monterey Peninsula College, Monterey, Calif., 1989; B.A. University of California, Davis, Calif., 1991; J.D., Santa Clara University, Santa Clara, Calif., 1996; United States Navy Reserve, 2003-2011; clerk, United States Department of State, 1992; Alameda County, Calif., prosecutor, 1996-2010; Alameda County Calif., deputy district attorney, 1996-2010; Monterey County, Calif., prosecutor, 2010-2016; Monterey County, Calif., deputy district attorney, 2010-2016; Monterey County, Calif., central Democratic committee vice chairman, 2012-2016; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'K000389',
@@ -1467,7 +1515,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `KHANNA, Ro, a Representative from California; born in Philadelphia, Philadelphia County, Pa., September 13, 1976; A.B., University of Chicago, Chicago, Ill., 1998; J.D. Yale University, New Haven, Conn., 2001; lawyer, private practice; professor; author; unsuccessful candidate for nomination to the One Hundred Ninth Congress in 2004; deputy assistant secretary, United States Department of Commerce, 2009-2011; member, Calif. workforce development board, 2012-2016; unsuccessful candidate for election to the One Hundred Fourteenth Congress in 2014; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present)`,
   },
   {
     bioguide_id: 'B001302',
@@ -1497,7 +1546,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `BIGGS, Andrew S., a Representative from Arizona; born in Tucson, Pima County, Ariz., November 7, 1958; B.A., Brigham Young University, Provo, Utah, 1982; J.D., University of Arizona, Tucson, Ariz., 1984; M.A., Arizona State University, Phoenix, Ariz, 1999; lawyer, private practice; member of the Arizona state house of representatives, 2003-2011; member of the Arizona state senate, 2011-2016, majority leader, 2011-2012, president, 2013-2016; elected as a Republican to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'O000171',
@@ -1527,7 +1577,8 @@ let sunlightArray = [
     term_start: '2017-01-03',
     thomas_id: '',
     title: 'Rep',
-    website: null
+    website: null,
+    bio: `O'HALLERAN, Thomas C., a Representative from Arizona; born in Chicago, Cook County, Ill., January 24, 1946; graduated from St. Mel High School, Chicago, Ill., 1964; attended Lewis University, Romeoville, Ill., 1965-1966; attended DePaul University, Chicago, Ill., 1991-1992; police officer, Chicago, Ill., 1966-1979; bond trader; business owner; member of the Arizona state house of representatives, 2001-2007; member of the Arizona state senate, 2007-2009; elected as a Democrat to the One Hundred Fifteenth Congress (January 3, 2017-present).`,
   },
   {
     bioguide_id: 'C001113',
@@ -1563,7 +1614,8 @@ let sunlightArray = [
     thomas_id: '',
     title: 'Sen',
     votesmart_id: 69579,
-    website: null
+    website: null,
+    bio: `CORTEZ MASTO, Catherine Marie, a Senator from Nevada; born in Las Vegas, Nev., March 29, 1964; B.A., University of Nevada, 1986; J.D., Gonzaga University School of Law, 1990; admitted to the Nevada bar in 1990; assistant county manager, Clark County, Nev.; chief of staff to Nevada governor Bob Miller; federal prosecutor; attorney general of Nevada 2007-2015; executive vice chancellor for the Nevada System of Higher Education; elected as a Democrat to the United States Senate in 2016 for the term ending January 3, 2023.`,
   },
   {
     bioguide_id: 'H001076',
@@ -1599,7 +1651,8 @@ let sunlightArray = [
     thomas_id: '',
     title: 'Sen',
     votesmart_id: 42552,
-    website: null
+    website: null,
+    bio: `HASSAN, Margaret Wood (Maggie), a Senator from New Hampshire; born in Boston, Mass., February 27, 1958; B.A., Brown University, Providence, R.I.., 1980; J.D., Northeastern University School of Law, Boston, Mass., 1985; attorney; member of the New Hampshire Advisory Committee to the Adequacy in Education and Finance Commission; member of the New Hampshire state senate 2004-2010, serving as majority leader 2008-2010; governor of New Hampshire 2013-2016; elected as a Democrat to the United States Senate in 2016 for the term ending January 3, 2023.`,
   },
   {
     bioguide_id: 'K000393',
@@ -1635,7 +1688,8 @@ let sunlightArray = [
     thomas_id: '',
     title: 'Sen',
     votesmart_id: 35496,
-    website: null
+    website: null,
+    bio: `KENNEDY, John Neely, a Senator from Louisiana; born in Centreville, Miss., November 21, 1951; B.A., Vanderbilt University, 1973; J.D., University of Virginia School of Law, 1977; B.C.L., Oxford University, Oxford, England, 1979; lawyer; special counsel to Louisiana governor Buddy Roemer; secretary to Governor Roemer’s Cabinet; secretary of the state Department of Revenue in the Cabinet of Louisiana governor Mike Foster 1996-1999; Louisiana state treasurer 1999-2016; elected as a Republican to the United States Senate in 2016 for the term ending January 3, 2023.`,
   },
   {
     bioguide_id: 'H001075',
@@ -1671,7 +1725,8 @@ let sunlightArray = [
     thomas_id: '',
     title: 'Sen',
     votesmart_id: 120012,
-    website: null
+    website: null,
+    bio: `HARRIS, Kamala Devi, a Senator from California; born in Oakland, Calif., October 20, 1964; B.A., Howard University, 1986; J.D., University of California, Hastings College of the Law, 1989; admitted to the California bar in 1990; deputy district attorney, Alameda County, Calif., 1990-1998; managing attorney, San Francisco District Attorney’s Office; chief of the San Francisco City Attorney’s Division on Children and Families; district attorney of San Francisco 2004-2011; attorney general of California 2011-2016; elected as a Democrat to the United States Senate in 2016 for the term ending January 3, 2023.`,
   },
   {
     bioguide_id: 'E000296',
@@ -1705,7 +1760,8 @@ let sunlightArray = [
     thomas_id: '',
     title: 'Rep',
     votesmart_id: 9128,
-    website: 'https://evans.house.gov/'
+    website: 'https://evans.house.gov/',
+    bio: `EVANS, Dwight, a Representative from Pennsylvania; born in Philadelphia, Philadelphia County, Pa., May 16, 1954; graduated from Germantown High School, Philadelphia, Pa., 1971; A.A., Community College of Philadelphia, Philadelphia, Pa.,1973; B.A., La Salle University, Philadelphia, Pa., 1975; teacher, Philadelphia, Pa., public schools; employment counselor, Urban League of Philadelphia, Pa.; member of the Pennsylvania state house of representatives, 1980-2016; unsuccessful candidate for nomination as lieutenant governor of Pennsylvania in 1986; unsuccessful candidate for nomination for Governor of Pennsylvania in 1994; unsuccessful candidate for nomination as Mayor of Philadelphia, Pa., in 1999 & 2007; elected simultaneously as a Democrat to the One Hundred Fourteenth and the One Hundred Fifteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Chaka Fattah (November 8, 2016-present).`,
   },
   {
     bioguide_id: 'C001108',
@@ -1739,7 +1795,8 @@ let sunlightArray = [
     thomas_id: '',
     title: 'Rep',
     votesmart_id: 35169,
-    website: 'https://comer.house.gov/'
+    website: 'https://comer.house.gov/',
+    bio: `COMER, James, a Representative from Kentucky; born in Carthage, Smith County, Tenn., August 19, 1972; graduated from Monroe County High School, Thompkinsville, Ky.; B.S., Western Kentucky University, Bowling Green, Ky., 1993; businessman; farmer; chairman, Monroe County, Ky., Republican party, 1993-1995; Delegate, Republican National Convention, 1996; member of the Kentucky state house of representatives, 2001-2012; Kentucky department of agriculture commissioner, 2012-2015; unsuccessful candidate for nomination for Governor of Kentucky in 2015; elected simultaneously as a Republican to the One Hundred Fourteenth and to the One Hundred Fifteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Ed Whitfield (November 8, 2016-present).`,
   },
   {
     bioguide_id: 'D000626',
@@ -1773,7 +1830,8 @@ let sunlightArray = [
     thomas_id: '02296',
     title: 'Rep',
     votesmart_id: 166760,
-    website: null
+    website: null,
+    bio: `DAVIDSON, Warren, a Representative from Ohio; born in Ohio, March 1, 1970; graduated from Sidney High School, Sidney, Ohio, 1989; B.A., United States Military Academy, West Point, N.Y., 1996; M.B.A., University of Notre Dame, Notre Dame, Ind.; United States Army; business owner; Concord Township, Ohio, trustee; elected as a Republican to the One Hundred Fourteenth Congress, by special election, to fill the vacancy caused by the resignation of United State Representative John Andrew Boehner, and reelected to the succeeding Congress (June 7, 2016-present).`,
   },
   {
     bioguide_id: 'L000585',
@@ -1809,7 +1867,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepLaHood',
     votesmart_id: 128760,
-    website: 'https://lahood.house.gov/'
+    website: 'https://lahood.house.gov/',
+    bio: `LaHOOD, Darin, (son of Ray LaHood), a Representative from Illinois; born in Peoria, Peoria County, Ill., 1968; graduated from Spalding Institute, Peoria, Ill., 1986; B.A., Loras College, Dubuque, Iowa, 1990; J.D., John Marshall Law School, Chicago, Ill., 1997; lawyer, private practice; staff, United States Representative Charles Jeremy (Jerry) Lewis of California, 1990-1994; Cook County, Ill., prosecutor, 1997-1999; Tazewell County, Ill., prosecutor, 1999-2001; prosecutor, United States attorney for the District of Nevada, 2001-2005; adjunct professor, University of Nevada, Las Vegas, Nev., 2003-2005; member of the Illinois state senate, 2011-2015; elected as a Republican to the One Hundred Fourteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Aaron Schock, and reelected to the succeeding Congress (September 10, 2015-present).`,
   },
   {
     bioguide_id: 'K000388',
@@ -1845,7 +1904,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'reptrentkelly',
     votesmart_id: 156389,
-    website: 'https://trentkelly.house.gov'
+    website: 'https://trentkelly.house.gov',
+    bio: `KELLY, Trent, a Representative from Mississippi; born March 1, 1966, Union, Union County, Miss.; graduated from Union High School, Union, Miss., 1984; A.A., East Central Community College, Decatur, Miss., 1986; B.A., University of Mississippi, University, Miss., 1989; J.D., University of Mississippi, Oxford, Miss., 1994; M.A., United States Army War College, Carlisle, Penn., 2010; United States Army National Guard; lawyer, private practice; prosecutor, Tupelo, Miss., 1999-2011; district attorney, 2012-2015; elected as a Republican to the One Hundred Fourteenth Congress, by special election, to fill the vacancy caused by the death of United States Representative Alan Nunnelee, and reelected to the succeeding Congress (June 2, 2015-present).`,
   },
   {
     bioguide_id: 'D000625',
@@ -1881,7 +1941,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepDanDonovan',
     votesmart_id: 127760,
-    website: 'https://donovan.house.gov'
+    website: 'https://donovan.house.gov',
+    bio: `DONOVAN, Daniel M., Jr., a Representative from New York; born in Staten Island, Richmond County, N.Y., November 6, 1956; graduated from Monsignor Farrell High School, Staten Island, N.Y., 1974; B.A., St. John’s University, New York, N.Y., 1978; J.D., Fordham University, New York, N.Y., 1988; detective investigator; youth counselor; Manhattan, N.Y. assistant district attorney, 1989-1996; chief of staff, Staten Island, N.Y. borough president Guy V. Molinari, 1996-2002; Staten Island, N.Y. deputy borough president, 2002-2003; Richmond County, N.Y. district attorney, 2003-2015; elected as a Republican to the One Hundred Fourteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Michael G. Grimm, and reelected to the succeeding Congress (May 5, 2015-present).`,
   },
   {
     bioguide_id: 'S001197',
@@ -1919,7 +1980,8 @@ let sunlightArray = [
     thomas_id: '02289',
     title: 'Sen',
     twitter_id: 'SenSasse',
-    website: 'http://www.sasse.senate.gov/public'
+    website: 'http://www.sasse.senate.gov/public',
+    bio: `SASSE, Benjamin Eric, a Senator from Nebraska; born in Plainview, Pierce County, Nebr., February 22, 1972; B.A., Harvard University, 1994; M.A., St. John’s College, Annapolis, Md., 1998; Ph.D., Yale University, 2004; management consultant; university professor; chief of staff to U.S. Representative Jeff Fortenberry; counselor to the secretary, U.S. Department of Health and Human Services; assistant secretary for planning and evaluation, U.S. Department of Health and Human Services; president of Midland University, Fremont, Nebr.; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'W000819',
@@ -1954,7 +2016,8 @@ let sunlightArray = [
     thomas_id: '02255',
     title: 'Rep',
     twitter_id: 'RepMarkWalker',
-    website: 'https://walker.house.gov'
+    website: 'https://walker.house.gov',
+    bio: `WALKER, Bradley Mark, a Representative from North Carolina; born in Dothan, Houston County, Ala., May 20, 1969; attended Trinity Baptist College, Jacksonville, Fla., 1987-1988; B.A., Piedmont International University, Winston-Salem, N.C., 1999; businessman; minister; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'R000605',
@@ -1992,7 +2055,8 @@ let sunlightArray = [
     thomas_id: '02288',
     title: 'Sen',
     twitter_id: 'SenatorRounds',
-    website: 'http://www.rounds.senate.gov'
+    website: 'http://www.rounds.senate.gov',
+    bio: `ROUNDS, Marion Michael (Mike), a Senator from South Dakota; born in Huron, Beadle County, S. Dak., October 24, 1954; B.S., South Dakota State University, 1977; insurance and real estate executive; member of the South Dakota state senate 1991-2000, serving as majority leader 1995-2000; governor of South Dakota 2003-2011; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'T000476',
@@ -2030,7 +2094,8 @@ let sunlightArray = [
     thomas_id: '02291',
     title: 'Sen',
     twitter_id: 'senthomtillis',
-    website: 'https://www.tillis.senate.gov/public/index.cfm/home'
+    website: 'https://www.tillis.senate.gov/public/index.cfm/home',
+    bio: `TILLIS, Thomas Roland (Thom), a Senator from North Carolina; born in Jacksonville, Duval County, Fla., August 30, 1960; B.A., University of Maryland University College, 1997; management consultant; member of the Cornelius (N.C.) board of commissioners 2003-2005; member of the North Carolina house of representatives 2007-2014, serving as speaker of the house 2011-2014; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'E000295',
@@ -2068,7 +2133,8 @@ let sunlightArray = [
     thomas_id: '02283',
     title: 'Sen',
     twitter_id: 'SenJoniErnst',
-    website: 'http://www.ernst.senate.gov/public'
+    website: 'http://www.ernst.senate.gov/public',
+    bio: `ERNST, Joni, a Senator from Iowa; born in Red Oak, Montgomery County, Iowa, July 1, 1970; B.A., Iowa State University, 1992; M.P.A., Columbus College (now Columbus State University), Columbus, Ga., 1995; United States Army Reserves, 1993-2001; Iowa Army National Guard, 2001-present, attaining the rank of lieutenant colonel; auditor of Montgomery County, Iowa, 2005-2011; member of the Iowa state senate 2011-2014; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'P000612',
@@ -2106,7 +2172,8 @@ let sunlightArray = [
     thomas_id: '02286',
     title: 'Sen',
     twitter_id: 'sendavidperdue',
-    website: 'http://www.perdue.senate.gov'
+    website: 'http://www.perdue.senate.gov',
+    bio: `PERDUE, David Alfred, Jr., a Senator from Georgia; born in Macon, Bibb County, Ga., December 10, 1949; B.S., Georgia Institute of Technology, 1972; M.S., Georgia Institute of Technology, 1976; management consultant; company executive; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'S001198',
@@ -2144,7 +2211,8 @@ let sunlightArray = [
     thomas_id: '02290',
     title: 'Sen',
     twitter_id: 'SenDanSullivan',
-    website: 'http://www.sullivan.senate.gov'
+    website: 'http://www.sullivan.senate.gov',
+    bio: `SULLIVAN, Daniel Scott, a Senator from Alaska; born in Fairview Park, Cuyahoga County, Ohio, November 13, 1964; graduated Culver Military Academy, Culver, Ind., 1983; B.A., Harvard University, 1987; M.F.S. and J.D., Georgetown University, 1993; United States Marine Corps 1993-1997; United States Marine Corps Reserves 1997-present, attaining the rank of lieutenant colonel; lawyer; White House aide and director on the National Security Council staff during the George W. Bush administration; assistant U.S. secretary of state for economic, energy and business affairs 2006-2009; attorney general of Alaska 2009-2010; commissioner of Alaska Department of Natural Resources 2010-2013; elected as a Republican to the United States Senate in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'R000600',
@@ -2162,7 +2230,7 @@ let sunlightArray = [
     gender: 'F',
     govtrack_id: '412664',
     in_office: true,
-    last_name: 'Amata',
+    last_name: 'Radewagen',
     leadership_role: null,
     middle_name: null,
     name_suffix: null,
@@ -2179,7 +2247,8 @@ let sunlightArray = [
     thomas_id: '02222',
     title: 'Del',
     twitter_id: 'RepAmata',
-    website: 'https://radewagen.house.gov'
+    website: 'https://radewagen.house.gov',
+    bio: `RADEWAGEN, Aumua Amata Coleman, a Delegate from American Samoa; born on December 29, 1947; attended Sacred Hearts Academy, Honolulu, Hawaii; B.S., University of Guam, 1975; attended George Mason University, Fairfax, Va.; attended Loyola Marymount University, Los Angeles, Calif.; journalist; staff, United States Representative Philip Crane of Illinois, 1997-1999; staff, United States Representative Julius Caesar (J.C.) Watts, Jr. of Oklahoma, 1999-2003; staff, House Republican Conference, 2003-2005; unsuccessful candidate for election to the One Hundred Fourth Congress in 1994, One Hundred Sixth Congress in 1998, One Hundred Eighth Congress in 2002, One Hundred Ninth Congress in 2004, One Hundred Tenth Congress in 2006, One Hundred Eleventh Congress in 2008, One Hundred Twelfth Congress in 2010, and One Hundred Thirteenth Congress in 2012; unsuccessful candidate for nomination to the One Hundred Fifth Congress in 1996 and One Hundred Seventh Congress in 2000; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`
   },
   {
     bioguide_id: 'J000297',
@@ -2214,7 +2283,8 @@ let sunlightArray = [
     thomas_id: '02278',
     title: 'Rep',
     twitter_id: 'RepEvanJenkins',
-    website: 'https://evanjenkins.house.gov'
+    website: 'https://evanjenkins.house.gov',
+    bio: `JENKINS, Evan H., a Representative from West Virginia; born in Huntington, Cabell County, W.Va., September 12, 1960; B.S., University of Florida, Gainesville, Fla., 1983; J.D., Cumberland School of Law, Samford University, Birmingham, Ala., 1987; lawyer, private practice; businessman; instructor, Marshall University, Huntington, W.Va.; member of the West Virginia state house of delegates, 1994-1998; member of the West Virginia state senate, 2002-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'M001195',
@@ -2249,7 +2319,8 @@ let sunlightArray = [
     thomas_id: '02277',
     title: 'Rep',
     twitter_id: 'RepAlexMooney',
-    website: 'https://mooney.house.gov'
+    website: 'https://mooney.house.gov',
+    bio: `MOONEY, Alex X., a Representative from West Virginia; born in Washington, D.C., June 5, 1971; graduated from Frederick High School, Frederick, Md.; A.B., Dartmouth College, Hanover, N.H., 1993; unsuccessful candidate for the New Hampshire state house of representatives, 1992; staff, United States Representative Roscoe Gardner Bartlett of Maryland, 1993-1995; staff, House Republican Conference, 1995; member of the Maryland state senate, 1999-2010; chairman, Maryland Republican Party, 2010-2013; member, Republican National Committee, 2011-2013; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'G000576',
@@ -2284,7 +2355,8 @@ let sunlightArray = [
     thomas_id: '02276',
     title: 'Rep',
     twitter_id: 'RepGrothman',
-    website: 'http://grothman.house.gov'
+    website: 'http://grothman.house.gov',
+    bio: `GROTHMAN, Glenn, a Representative from Wisconsin; born in Milwaukee, Milwaukee County, Wis., July 3, 1955; graduated from Homestead High School, Mequon, Wisconsin, 1973; B.B.A., University of Wisconsin, Madison, Wis., 1978; J.D., University of Wisconsin, Madison, Wis., 1983; lawyer, private practice; member of the Wisconsin state assembly, 1993-2004; member of the Wisconsin state senate, 2004-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'N000189',
@@ -2319,7 +2391,8 @@ let sunlightArray = [
     thomas_id: '02275',
     title: 'Rep',
     twitter_id: 'RepNewhouse',
-    website: 'https://newhouse.house.gov'
+    website: 'https://newhouse.house.gov',
+    bio: `NEWHOUSE, Daniel Milton, a Representative from Washington; born in Sunnyside, Yakima County, Wash., July 10, 1955; graduated from Sunnyside High School, Sunnyside, Wash., 1973; B.S., Washington State University, Pullman, Wash., 1977; farmer; member of the Washington state house of representatives, 2003-2009; director of the Washington state department of agriculture, 2009-2013; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'P000610',
@@ -2354,7 +2427,8 @@ let sunlightArray = [
     thomas_id: '02274',
     title: 'Del',
     twitter_id: 'staceyplaskett',
-    website: 'https://plaskett.house.gov'
+    website: 'https://plaskett.house.gov',
+    bio: `PLASKETT, Stacey E., a Delegate from the Virgin Islands; born in New York, Kings County, New York, May 13, 1964; graduated from Choate Rosemary Hall, Wallingford, Conn., 1984; B.S.F.S., Georgetown University, Washington, D.C., 1988; J.D., American University, Washington, D.C., 1994; lawyer, private practice; professional advocate; staff, United States Delegate Ron de Lugo of the Virgin Islands; Bronx County, N.Y., assistant district attorney, 1994-1997; staff, House Committee on Ethics; staff, United States Department of Justice, 2002-2004; general counsel, Virgin Islands economic development authority, 2007-2014; unsuccessful candidate for nomination to the United States House of Representatives in 2012; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'C001105',
@@ -2389,7 +2463,8 @@ let sunlightArray = [
     thomas_id: '02273',
     title: 'Rep',
     twitter_id: 'RepComstock',
-    website: 'https://comstock.house.gov'
+    website: 'https://comstock.house.gov',
+    bio: `COMSTOCK, Barbara J., a Representative from Virginia; born in Springfield, Hampden County, Mass., June 30, 1959; B.A., Middlebury College, Middlebury, Vt., 1981; J.D., Georgetown University, Washington, D.C., 1986; staff, United States Senator Edward Kennedy of Massachusetts; lawyer, private practice; staff, United States Representative Frank Wolf of Virginia, 1991-1995; staff, United States House of Representatives Committee on Oversight and Government Reform, 1995-1999; campaign aide; staff, United States Justice Department, 2002-2003; consultant; member of the Virginia state house of delegates, 2009-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001292',
@@ -2424,7 +2499,8 @@ let sunlightArray = [
     thomas_id: '02272',
     title: 'Rep',
     twitter_id: 'repdonbeyer',
-    website: 'http://beyer.house.gov'
+    website: 'http://beyer.house.gov',
+    bio: `BEYER, Donald Sternoff Jr., a Representative from Virginia; born in Trieste, Italy, June 20, 1950; graduated from Gonzaga College High School, Washington, D.C., 1968; B.A., Williams College, Williamstown, Mass., 1972; automobile dealer; lieutenant governor of Virginia, 1990-1998; unsuccessful candidate for Governor of Virginia in 1997; United States Ambassador to Switzerland and Liechtenstein, 2009-2013; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'L000584',
@@ -2459,7 +2535,8 @@ let sunlightArray = [
     thomas_id: '02271',
     title: 'Rep',
     twitter_id: 'repmialove',
-    website: 'https://love.house.gov'
+    website: 'https://love.house.gov',
+    bio: `LOVE, Ludmya Bourdeau (Mia), a Representative from Utah; born in Brooklyn, Kings County, N.Y., December 6, 1975; graduated from Norwalk High School, Norwalk, Conn.; B.A., University of Hartford, West Hartford, Conn., 1997; flight attendant; call center operator; member of the Saratoga Springs, Utah, city council, 2003-2009; Mayor of Saratoga Springs, Utah, 2010-2013; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001291',
@@ -2494,7 +2571,8 @@ let sunlightArray = [
     thomas_id: '02270',
     title: 'Rep',
     twitter_id: 'RepBrianBabin',
-    website: 'http://babin.house.gov'
+    website: 'http://babin.house.gov',
+    bio: `BABIN, Brian, a Representative from Texas; born in Port Arthur, Jefferson County, Tex., March 23, 1948; graduated from Forest Park High School, Beaumont, Tex., 1966; B.S., Lamar University, Beaumont, Tex., 1973; D.D.S., University of Texas, Houston, Tex., 1976; United States Air Force, 1975-1979; Texas Army National Guard, 1969-1975; dentist; alderman, Woodville, Tex., 1981-1982, 1984-1989; mayor of Woodville, Tex., 1982-1984; member, Texas Historical Commission, 1989-1995; member of the Woodville, Tex., school board, 1992-1995; unsuccessful candidate for nomination to the United States House of Representatives in 1996 and 1998; member, Lower Neches Valley Authority, 1999-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'H001073',
@@ -2529,7 +2607,8 @@ let sunlightArray = [
     thomas_id: '02269',
     title: 'Rep',
     twitter_id: 'hurdonthehill',
-    website: 'https://hurd.house.gov'
+    website: 'https://hurd.house.gov',
+    bio: `HURD, William Ballard, a Representative from Texas; born in San Antonio, Bexar County, Tex., August 19, 1977; graduated from John Marshall High School, San Antonio, Tex., 1995; B.S., Texas A&M University, College Station, Tex., 2000; business owner; operations officer, Central Intelligence Agency, 2000-2009; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'R000601',
@@ -2564,7 +2643,8 @@ let sunlightArray = [
     thomas_id: '02268',
     title: 'Rep',
     twitter_id: 'RepRatcliffe',
-    website: 'https://ratcliffe.house.gov'
+    website: 'https://ratcliffe.house.gov',
+    bio: `RATCLIFFE, John, a Representative from Texas; born in Chicago, Cook County, Ill., October 20, 1965; B.A., University of Notre Dame, Notre Dame, Ind., 1987; J.D., Southern Methodist University, Dallas, Tex., 1989; lawyer, private practice; professor; United States attorney for the Eastern District of Texas, 2007-2008; mayor of Heath, Tex., 2004-2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001296',
@@ -2599,7 +2679,8 @@ let sunlightArray = [
     thomas_id: '02267',
     title: 'Rep',
     twitter_id: 'RepBrendanBoyle',
-    website: 'https://boyle.house.gov'
+    website: 'https://boyle.house.gov',
+    bio: `BOYLE, Brendan Francis, a Representative from Pennsylvania; born in Philadelphia, Philadelphia County, Pa., on February 6, 1977; graduated from Cardinal Dougherty High School, Philadelphia, Pa., 1995; B.A., University of Notre Dame, Notre Dame, Ind., 1999; M.P.P., Harvard University Kennedy School of Government, Cambridge, Mass., 2005; radio broadcaster; management consultant; adjunct professor, Drexel University, Philadelphia, Pa.; member of the Pennsylvania state house of representatives, 2008-2014; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'C001106',
@@ -2634,7 +2715,8 @@ let sunlightArray = [
     thomas_id: '02266',
     title: 'Rep',
     twitter_id: 'RepRyanCostello',
-    website: 'https://costello.house.gov'
+    website: 'https://costello.house.gov',
+    bio: `COSTELLO, Ryan, a Representative from Pennsylvania; born in Chester County, Pa., on September 7, 1976; graduated from Owen J. Roberts High School, Pottstown, Pa., 1995; B.A., Ursinus College, Collegeville, Pa., 1999; LL.B., Villanova University, Villanova, Pa., 2002; lawyer, private practice; member of the Chester County, Pa., board of commissioners, 2011-2013; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'R000604',
@@ -2669,7 +2751,8 @@ let sunlightArray = [
     thomas_id: '02265',
     title: 'Rep',
     twitter_id: 'RepRussell',
-    website: 'https://russell.house.gov'
+    website: 'https://russell.house.gov',
+    bio: `RUSSELL, Steve, a Representative from Oklahoma; born in Oklahoma City, Oklahoma County, Okla., on May 25, 1963; graduated from Del City High School, Del City, Okla., 1981; B.A., Ouachita Baptist University, Arkadelphia, Ark., 1985; United States Army, 1985-2006; author; small business owner; member of the Oklahoma state senate, 2008-2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'K000386',
@@ -2704,7 +2787,8 @@ let sunlightArray = [
     thomas_id: '02264',
     title: 'Rep',
     twitter_id: 'RepJohnKatko',
-    website: 'https://katko.house.gov'
+    website: 'https://katko.house.gov',
+    bio: `KATKO, John, a Representative from New York; born in Camillus, Onondaga County, N.Y., November 9, 1962; graduated from Bishop Ludden High School, Syracuse, N.Y., 1980; B.A., Niagara University, Lewiston, N.Y., 1984; J.D., Syracuse University, Syracuse, N.Y., 1988; lawyer, private practice; staff, United States Securities and Exchange Commission, 1991-1995; staff, United States Justice Department, 1995-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'S001196',
@@ -2739,7 +2823,8 @@ let sunlightArray = [
     thomas_id: '02263',
     title: 'Rep',
     twitter_id: 'RepStefanik',
-    website: 'https://stefanik.house.gov'
+    website: 'https://stefanik.house.gov',
+    bio: `STEFANIK, Elise M, a Representative from New York; born in Albany, Albany County, N.Y., July 2, 1984; graduated from Albany Academy for Girls, Albany, N.Y., 2002; A.B., Harvard University, Cambridge, Mass., 2006; staff, President George W. Bush administration, 2006-2009; campaign aide; businesswoman; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'R000602',
@@ -2774,7 +2859,8 @@ let sunlightArray = [
     thomas_id: '02262',
     title: 'Rep',
     twitter_id: 'RepKathleenRice',
-    website: 'http://kathleenrice.house.gov'
+    website: 'http://kathleenrice.house.gov',
+    bio: `RICE, Kathleen Maura, a Representative from New York; born in Manhattan, New York County, N.Y., February 15, 1965; graduated from Garden City High School, Garden City, N.Y., 1983; B.A., Catholic University of America, Washington, D.C., 1987; J.D., Touro Law Center, Long Island, N.Y., 1991; lawyer; Nassau County, N.Y., district attorney, 2005-2014; unsuccessful candidate for election as New York state attorney general in 2010; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'Z000017',
@@ -2809,7 +2895,8 @@ let sunlightArray = [
     thomas_id: '02261',
     title: 'Rep',
     twitter_id: 'RepLeeZeldin',
-    website: 'https://zeldin.house.gov'
+    website: 'https://zeldin.house.gov',
+    bio: `ZELDIN, Lee M, a Representative from New York; born in East Meadow, Nassau County, N.Y., January 30, 1980; graduated from William Floyd High School, Brookhaven, N.Y., 1998; B.A., State University of New York, Albany, N.Y., 2001; J.D., Albany Law School, Albany, N.Y., 2003; United States Army, 2003-2007; United States Army Reserve, 2007-present; lawyer, private practice; unsuccessful candidate for election to the One Hundred Eleventh Congress in 2008; member of the New York state senate, 2010-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'W000822',
@@ -2844,7 +2931,8 @@ let sunlightArray = [
     thomas_id: '02259',
     title: 'Rep',
     twitter_id: 'RepBonnie',
-    website: 'https://watsoncoleman.house.gov'
+    website: 'https://watsoncoleman.house.gov',
+    bio: `WATSON COLEMAN, Bonnie, a Representative from New Jersey; born in Camden, Camden County, N.J., February 6, 1945; B.A., Thomas Edison State College, Trenton, N.J., 1985; member of the New Jersey state assembly, 1998-2014, majority leader, 2006-2009; member, New Jersey state democratic committee, 2002-2006; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'M001193',
@@ -2879,7 +2967,8 @@ let sunlightArray = [
     thomas_id: '02258',
     title: 'Rep',
     twitter_id: 'RepTomMacArthur',
-    website: 'https://macarthur.house.gov'
+    website: 'https://macarthur.house.gov',
+    bio: `MacARTHUR, Thomas Charles, a Representative from New Jersey; born in Hebron, Tolland County, Conn., October 16, 1960; graduated from RHAM High School, Hebron, Conn., 1978; B.A., Hofstra University, Hempstead, N.Y., 1982; insurance executive; member of the Randolph, N.J., city council, 2011-2013; deputy mayor of Randolph, N.J., 2012; mayor of Randolph, N.J., 2013-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'R000603',
@@ -2914,7 +3003,8 @@ let sunlightArray = [
     thomas_id: '02256',
     title: 'Rep',
     twitter_id: 'RepDavidRouzer',
-    website: 'https://rouzer.house.gov'
+    website: 'https://rouzer.house.gov',
+    bio: `ROUZER, David, a Representative from North Carolina; born in Landstuhl, Germany, February 16, 1972; graduated from Northern High School, Durham, N.C.; B.S., North Carolina State University, Raleigh, N.C., 1994; businessman; associate administrator and rural administrator, United States Department of Agriculture, 2005-2006; staff, United States Senator Jesse Helms of North Carolina, 1996-2000; staff, United States Senator Elizabeth Dole of North Carolina, 2003-2005; member of the North Carolina state senate, 2009-2012; unsuccessful candidate for election to the One Hundred Thirteenth Congress in 2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'Z000018',
@@ -2949,7 +3039,8 @@ let sunlightArray = [
     thomas_id: '02254',
     title: 'Rep',
     twitter_id: 'RepRyanZinke',
-    website: 'https://zinke.house.gov'
+    website: 'https://zinke.house.gov',
+    bio: `ZINKE, Ryan, a Representative from Montana; born in Bozeman, Gallatin County, Mont., November 1, 1961; graduated from Whitefish High School, Whitefish, Mont., 1980; B.S., University of Oregon, Eugene, Ore., 1984; M.B.A., National University, San Diego, Calif., 1991; M.S., University of San Diego, Calif., 2003; United States Navy, 1985-2008; business executive; member of the Montana state senate, 2009-2012; unsuccessful candidate for nomination for lieutenant governor of Montana in 2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress until his resignation on March 1, 2017 (January 3, 2015-March 1, 2017); Secretary of the Interior in the Cabinet of President Donald J. Trump, 2017-present.`,
   },
   {
     bioguide_id: 'E000294',
@@ -2984,7 +3075,8 @@ let sunlightArray = [
     thomas_id: '02253',
     title: 'Rep',
     twitter_id: 'RepTomEmmer',
-    website: 'https://emmer.house.gov'
+    website: 'https://emmer.house.gov',
+    bio: `EMMER, Thomas Earl II, a Representative from Minnesota; born in South Bend, St. Joseph County, Ind., March 3, 1961; graduated from St. Thomas Academy, Mendota Heights, Minn.; B.A., University of Alaska, Fairbanks, Alaska, 1984; J.D., Mitchell College of Law, St. Paul, Minn., 1988; radio host; lawyer, private practice; member of the Independence, Minn., city council, 1995-2002; member of the Delano, Minn., city council, 2003-2004; member of the Minnesota state house of representatives, 2004-2010, deputy minority leader, 2007-2008; unsuccessful candidate for Governor of Minnesota in 2004; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'L000581',
@@ -3019,7 +3111,8 @@ let sunlightArray = [
     thomas_id: '02252',
     title: 'Rep',
     twitter_id: 'RepLawrence',
-    website: 'https://lawrence.house.gov'
+    website: 'https://lawrence.house.gov',
+    bio: `LAWRENCE, Brenda L., a Representative from Michigan; born in Detroit, Wayne County, Mich., October 18, 1954; graduated from Pershing High School, Detroit, Mich.; attended University of Detroit Mercy, Detroit, Mich.; B.A., Central Michigan University, Mt. Pleasant, Mich., 2005; manager, United States Postal Service; member of the Southfield, Mich., board of education, 1992-1996; member of the Southfield, Mich., city council, 1997-2001; Mayor of Southfield, Mich., 2001-2014; unsuccessful candidate for Oakland County, Mich., executive in 2008; unsuccessful candidate for Michigan lieutenant governor in 2010; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'D000624',
@@ -3054,7 +3147,8 @@ let sunlightArray = [
     thomas_id: '02251',
     title: 'Rep',
     twitter_id: 'RepDebDingell',
-    website: 'https://debbiedingell.house.gov'
+    website: 'https://debbiedingell.house.gov',
+    bio: `DINGELL, Debbie, (wife of John David Dingell, Jr.), a Representative from Michigan; born in Detroit, Wayne County, Mich., November 23, 1953; graduated from the Convent of the Sacred Heart, Grosse Pointe, Mich.; B.S.F.S., Georgetown University, Washington, D.C., 1975; M.S., Georgetown University, Washington, D.C., 1996; analyst; professional advocate; business executive; non-profit executive; board of governors, Wayne State University, 2007-2014; member of the Democratic National Committee; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'T000475',
@@ -3089,7 +3183,8 @@ let sunlightArray = [
     thomas_id: '02250',
     title: 'Rep',
     twitter_id: 'repdavetrott',
-    website: 'https://trott.house.gov'
+    website: 'https://trott.house.gov',
+    bio: `TROTT, David A., a Representative from Michigan; born in Birmingham, Oakland County, Mich., October 16, 1960; graduated from the Cranbrook Schools, Bloomfield Township, Mich.; A.B., University of Michigan, Ann Arbor, Mich., 1981; J.D., Duke University, Durham, N.C., 1985; lawyer, private practice; business owner; member of the Bingham Farms, Mich., village council, 1987-1988; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001293',
@@ -3124,7 +3219,8 @@ let sunlightArray = [
     thomas_id: '02249',
     title: 'Rep',
     twitter_id: 'RepMikeBishop',
-    website: 'https://mikebishop.house.gov'
+    website: 'https://mikebishop.house.gov',
+    bio: `BISHOP, Michael Dean, a Representative from Michigan; born in Almont, Lapeer County, Mich., March 18, 1967; graduated from Rochester Adams High School, Rochester Hills, Mich.; A.B., University of Michigan, Ann Arbor, Mich., 1989; J.D., Detroit College of Law (now Michigan State College of Law), East Lansing, Mich., 1993; lawyer, private practice; realtor; business owner; member of the Michigan state house of representatives, 1999-2002; member of the Michigan state senate, 2003-2010, majority leader, 2007-2010; unsuccessful candidate for nomination for Michigan state attorney general, 2010; unsuccessful candidate for election as Oakland County, Mich., prosecutor, 2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'M001194',
@@ -3159,7 +3255,8 @@ let sunlightArray = [
     thomas_id: '02248',
     title: 'Rep',
     twitter_id: 'RepMoolenaar',
-    website: 'https://moolenaar.house.gov'
+    website: 'https://moolenaar.house.gov',
+    bio: `MOOLENAAR, John, a Representative from Michigan; born in Midland, Midland County, Mich., May 8, 1961; graduated from Herbert Henry Dow High School, Midland, Mich.; B.S., Hope College, Holland, Mich., 1983; M.P.A., Harvard University, Cambridge, Mass., 1989; chemist; businessman; school administrator; member of the Midland, Mich., city council, 1997-2000; member of the Michigan state house of representatives, 2003-2008; member of the Michigan state senate, 2011-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`
   },
   {
     bioguide_id: 'P000611',
@@ -3195,7 +3292,8 @@ let sunlightArray = [
     thomas_id: '02247',
     title: 'Rep',
     twitter_id: 'RepPoliquin',
-    website: 'https://poliquin.house.gov'
+    website: 'https://poliquin.house.gov',
+    bio: `POLIQUIN, Bruce Lee, a Representative from Maine; born in Waterville, Kennebec County, Maine, November 1, 1953; graduated from Phillips Academy, Andover, Massachusetts, 1972; A.B., Harvard University, Cambridge, Mass., 1976; businessman; unsuccessful candidate for Governor of Maine in 2010; state treasurer of Maine, 2010-2012; unsuccessful candidate for election to the United States Senate in 2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`
   },
   {
     bioguide_id: 'M001196',
@@ -3230,7 +3328,8 @@ let sunlightArray = [
     thomas_id: '02246',
     title: 'Rep',
     twitter_id: 'teammoulton',
-    website: 'https://moulton.house.gov'
+    website: 'https://moulton.house.gov',
+    bio: `MOULTON, Seth, a Representative from Massachusetts; born in Salem, Essex County, Mass., October 24, 1978; graduated from Phillips Academy Andover, Andover, Mass., 1997; B.S., Harvard University, Cambridge, Mass., 2001; M.B.A., M.P.P., Harvard University, Cambridge, Mass., 2011; United States Marine Corps, 2002-2008; business manager; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`
   },
   {
     bioguide_id: 'G000577',
@@ -3265,7 +3364,8 @@ let sunlightArray = [
     thomas_id: '02245',
     title: 'Rep',
     twitter_id: 'RepGarretGraves',
-    website: 'https://garretgraves.house.gov'
+    website: 'https://garretgraves.house.gov',
+    bio: `GRAVES, Garret, a Representative from Louisiana; born in Baton Rouge, East Baton Rouge Parish, Louisiana, on January 31, 1972; graduated from Catholic High School, Baton Rouge, La., 1990; attended the University of Alabama, Tuscaloosa, Ala., Louisiana Tech University, Ruston, La., and American University, Washington, D.C.; staff, United States Senator John Breaux of Louisiana; staff, United States Representative Billy Tauzin of Louisiana; staff, United States Senator David Vitter of Louisiana; staff, United States Senate Committee on Commerce; staff, United States Senate Committee on Science and Transportation; staff, United States House Committee on Energy and Commerce; appointed to National Resource Damage Assessment, Gulf Coast; chairman, the Coastal Protection and Restoration Authority of Louisiana; vice chairman of the Gulf Coast Ecosystem Restoration Task Force, United States Environmental Protection Agency; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'A000374',
@@ -3300,7 +3400,8 @@ let sunlightArray = [
     thomas_id: '02244',
     title: 'Rep',
     twitter_id: 'RepAbraham',
-    website: 'https://abraham.house.gov'
+    website: 'https://abraham.house.gov',
+    bio: `ABRAHAM, Ralph, a Representative from Louisiana; born in Alto, Richland Parish, La., September 16, 1954; graduated from Mangham High School, Mangham, La., 1972; B.A., Louisiana State University, Baton Rouge, La., 1980; D.V.M., Louisiana State University School of Veterinary Medicine, Baton Rouge, La., 1980; M.D., Louisiana State University School of Medicine, New Orleans, La., 1994; Mississippi National Guard Special Forces, 1986-1989; flight instructor; general family practitioner; aviation medical examiner; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001295',
@@ -3335,7 +3436,8 @@ let sunlightArray = [
     thomas_id: '02243',
     title: 'Rep',
     twitter_id: 'RepBost',
-    website: 'https://bost.house.gov'
+    website: 'https://bost.house.gov',
+    bio: `BOST, Mike, a Representative from Illinois; born in Murphysboro, Jackson County, Ill., December 30, 1960; graduated from Murphysboro High School, Murphysboro, Ill., 1979; Certified Firefighter II Academy, University of Illinois, 1993; United States Marine Corps, 1979-1982; truck manager; firefighter; business owner; member of the Jackson County, Ill., board, 1984-1988; Murphysboro Township, Ill., treasurer, 1989-1992; Murphysboro Township, Ill., trustee, 1993-1995; member of the Illinois state house of representatives, 1995-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'Y000066',
@@ -3371,7 +3473,8 @@ let sunlightArray = [
     thomas_id: '02242',
     title: 'Rep',
     twitter_id: 'RepDavidYoung',
-    website: 'https://davidyoung.house.gov'
+    website: 'https://davidyoung.house.gov',
+    bio: `YOUNG, David, a Representative from Iowa; born in Van Meter, Dallas County, Iowa, May 11, 1968; graduated from Johnston High School, Johnston, Iowa, 1986; B.A., Drake University, Des Moines, Iowa, 1991; businessman; staff, United States Senator George Hanks (Hank) Brown of Colorado, 1993-1996; staff, campaign manager, United States Senator James Paul David Bunning of Kentucky, 1998-2006; chief of staff, United States Senator Charles Ernest Grassley of Iowa, 2006-2013; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001294',
@@ -3406,7 +3509,8 @@ let sunlightArray = [
     thomas_id: '02241',
     title: 'Rep',
     twitter_id: 'RepRodBlum',
-    website: 'https://blum.house.gov'
+    website: 'https://blum.house.gov',
+    bio: `BLUM, Rod, a Representative from Iowa; born in Dubuque, Dubuque County, Iowa, April 26, 1955; graduated from Dubuque Senior High School, Dubuque, Iowa, 1973; B.A., Loras College, Dubuque, Iowa, 1977; M.B.A., University of Dubuque, Dubuque, Iowa, 1989; business executive; unsuccessful candidate for nomination to the One Hundred Thirteenth Congress in 2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'A000372',
@@ -3441,7 +3545,8 @@ let sunlightArray = [
     thomas_id: '02239',
     title: 'Rep',
     twitter_id: 'reprickallen',
-    website: 'http://allen.house.gov'
+    website: 'http://allen.house.gov',
+    bio: `ALLEN, Rick W., a Representative from Georgia; born in Augusta, Richmond County, Ga., November 7, 1951; graduated from Evans High School, Evans, Ga., 1969; B.S., Auburn University, Auburn, Ala., 1973; business owner; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'L000583',
@@ -3476,7 +3581,8 @@ let sunlightArray = [
     thomas_id: '02238',
     title: 'Rep',
     twitter_id: 'RepLoudermilk',
-    website: 'http://loudermilk.house.gov'
+    website: 'http://loudermilk.house.gov',
+    bio: `LOUDERMILK, Barry D., a Representative from Georgia; born in Riverdale, Clayton County, Ga., December 22, 1963; A.A., United States Air Force Community College, 1987; B.S., Wayland Baptist University, Plainview, Tex., 1992; United States Air Force, 1984-1992; chairman, Bartow County, Ga., Republican Party, 2001-2004; business owner; member of the Georgia state house of representatives, 2005-2010; member of the Georgia state senate, 2011-2013; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'H001071',
@@ -3511,7 +3617,8 @@ let sunlightArray = [
     thomas_id: '02237',
     title: 'Rep',
     twitter_id: 'congressmanhice',
-    website: 'https://hice.house.gov'
+    website: 'https://hice.house.gov',
+    bio: `HICE, Jody Brownlow, a Representative from Georgia; born in Atlanta, Fulton County, Ga., April 22, 1960; graduated from Tucker High School, Tucker, Ga., 1978; B.A., Asbury College, Wilmore, Ky., 1982; M.Div., Southwestern Baptist Theological Seminary, Fort Worth, Tex., 1986; D.Min., Luther Rice University and Seminary, Lithonia, Ga., 1988; pastor; talk radio host; unsuccessful candidate for nomination to the One Hundred Thirteenth Congress in 2010; elected as a Republican to the One Hundred Fourteenth and to the two succeeding Congresses (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'C001103',
@@ -3546,7 +3653,8 @@ let sunlightArray = [
     thomas_id: '02236',
     title: 'Rep',
     twitter_id: 'RepBuddyCarter',
-    website: 'http://buddycarter.house.gov'
+    website: 'http://buddycarter.house.gov',
+    bio: `CARTER, Buddy, a Representative from Georgia; born in Port Wentworth, Chatham County, Ga., September 6, 1957; graduated from Robert W. Groves High School, Garden City, Ga., 1975; A.A., Young Harris College, Young Harris, Ga., 1977; B.S., University of Georgia, Athens, Ga., 1980; pharmacist; business owner; member of the Pooler, Ga., city council, 1994-1995; Mayor of Pooler, Ga., 1996-2004; member of the Georgia state house of representatives, 2005-2009; member of the Georgia state senate, 2009-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'C001107',
@@ -3581,7 +3689,8 @@ let sunlightArray = [
     thomas_id: '02235',
     title: 'Rep',
     twitter_id: 'RepCurbelo',
-    website: 'http://curbelo.house.gov'
+    website: 'http://curbelo.house.gov',
+    bio: `CURBELO, Carlos, a Representative from Florida; born in Miami, Miami-Dade County, Fla., March 1, 1980; graduated from Belen Jesuit Preparatory School, Miami, Fla., 1998; B.A., University of Miami, Coral Gables, Fla., 2002; M.A., University of Miami, Coral Gables, Fla., 2011; businessman; staff, United States Senator George LeMieux of Florida, 2009-2011; member of the Miami-Dade County school board, 2010; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'B001297',
@@ -3617,7 +3726,8 @@ let sunlightArray = [
     thomas_id: '02233',
     title: 'Rep',
     twitter_id: 'RepKenBuck',
-    website: 'https://buck.house.gov'
+    website: 'https://buck.house.gov',
+    bio: `BUCK, Kenneth Robert, a Representative from Colorado; born in Ossining, Westchester County, N.Y., February 16, 1959; graduated from Ossining High School, Ossining, N.Y., 1977; A.B., Princeton University, Princeton, N.J., 1981; J.D., University of Wyoming, Laramie, Wyo., 1985; business executive; staff, United States House of Representatives Select Committee to Investigate Covert Arms Transactions with Iran, 1986-1987; attorney, United States Department of Justice, 1987-1990; attorney, Office of the United States Attorney, District of Colorado, 1990-2002; Weld County Colorado, district attorney, 2005-2014; unsuccessful candidate for election to the United States Senate in 2010; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'W000820',
@@ -3652,7 +3762,8 @@ let sunlightArray = [
     thomas_id: '02232',
     title: 'Rep',
     twitter_id: 'RepMimiWalters',
-    website: 'https://walters.house.gov'
+    website: 'https://walters.house.gov',
+    bio: `WALTERS, Mimi, a Representative from California; born in Pasadena, Los Angeles County, Calif., May 14, 1962; B.A., University of California, Los Angeles, Calif., 1984; sales representative; business executive; member of the Laguna Niguel, Calif., city council, 1996-2004; Mayor of Laguna Niguel, Calif., 2000; member of the California state assembly, 2005-2008; member of the California state senate, 2008-2015; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'T000474',
@@ -3687,7 +3798,8 @@ let sunlightArray = [
     thomas_id: '02231',
     title: 'Rep',
     twitter_id: 'NormaJTorres',
-    website: 'https://torres.house.gov'
+    website: 'https://torres.house.gov',
+    bio: `TORRES, Norma Judith, a Representative from California; born in Escuintla, Guatemala, April 4, 1965; attended Mount Saint Antonio College, Walnut, Calif., 1999-2000; attended Rio Hondo College, Whittier, Calif.; B.A., National Labor College, Silver Spring, Md., 2012; emergency dispatcher; sales representative; member of Pomona, Calif., city council, 2000-2006; Mayor of Pomona, Calif., 2006-2008; member of the California state assembly, 2008-2013; member of the California state senate, 2013-2014; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'L000582',
@@ -3722,7 +3834,8 @@ let sunlightArray = [
     thomas_id: '02230',
     title: 'Rep',
     twitter_id: 'RepTedLieu',
-    website: 'https://lieu.house.gov'
+    website: 'https://lieu.house.gov',
+    bio: `LIEU, Ted, a Representative from California; born in Taipei, Taiwan, March 29, 1969; graduated from St. Ignatius High School, Cleveland, Ohio, 1987; B.A., Stanford University, Stanford, Calif., 1991; B.S., Stanford University, Stanford, Calif., 1991; J.D., Georgetown University, Washington, D.C., 1994; United States Air Force, 1995-1999; United States Air Force Reserve, 2000-present; judicial clerk, United States Court of Appeals, Ninth Circuit; lawyer, private practice; member of the Torrance, Calif., city council, 2002-2005; member of the California state assembly, 2005-2010; unsuccessful candidate for election for California state attorney general in 2010; member of the California state senate, 2011-2014; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'A000371',
@@ -3757,7 +3870,8 @@ let sunlightArray = [
     thomas_id: '02229',
     title: 'Rep',
     twitter_id: 'reppeteaguilar',
-    website: 'https://aguilar.house.gov'
+    website: 'https://aguilar.house.gov',
+    bio: `AGUILAR, Peter Rey, a Representative from California; born in Fontana, San Bernadino County, Calif., June 19, 1979; B.S., University of Redlands, Redlands, Calif., 2001; business owner; interim director and deputy director, Inland Empire regional office of the Governor of California, 2001; member of the Redlands, Calif., city council, 2006-2014; Mayor of Redlands, Calif., 2010-2014; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'K000387',
@@ -3792,7 +3906,8 @@ let sunlightArray = [
     thomas_id: '02228',
     title: 'Rep',
     twitter_id: 'SteveKnight25',
-    website: 'https://knight.house.gov'
+    website: 'https://knight.house.gov',
+    bio: `KNIGHT, Steve, a Representative from California; born in Edwards Air Force Base, Edwards, Kern County, Calif., December 17, 1966; graduated from Palmdale High School; A.A., Antelope Valley College, Lancaster, Calif., 2006; United States Army, 1985-1987; United States Army Reserve, 1987-1993; police officer, Los Angeles Calif.; member of the Palmdale, Calif., city council, 2005-2008; member of the California state assembly, 2008-2012, assistant minority leader, 2010-2012; vice mayor of Palmdale, Calif.; member of the California state senate, 2012-2014; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'D000623',
@@ -3827,7 +3942,8 @@ let sunlightArray = [
     thomas_id: '02227',
     title: 'Rep',
     twitter_id: 'RepDeSaulnier',
-    website: 'https://desaulnier.house.gov'
+    website: 'https://desaulnier.house.gov',
+    bio: `DESAULNIER, Mark James, a Representative from California; born in Lowell, Middlesex County, Mass., March 31, 1952; B.A. College of the Holy Cross, Worcester, Mass., 1974; fellow, John F. Kennedy School of Government, Harvard University, Cambridge, Mass., 2003; deputy probation officer; warehouse worker; hotel service employee; restaurant worker; general manager; business owner; member of the Concord, Calif., city council, 1991-1994; Mayor of Concord, Calif., 1993; member of the Contra Costa County, Calif., board of supervisors, 1994-2006, chairman, 1994; member of the California state assembly, 2006-2008; unsuccessful candidate for nomination to the One Hundred Eleventh Congress in 2009; member of the California state senate, 2008-2014; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'G000574',
@@ -3862,7 +3978,8 @@ let sunlightArray = [
     thomas_id: '02226',
     title: 'Rep',
     twitter_id: 'RepRubenGallego',
-    website: 'https://rubengallego.house.gov'
+    website: 'https://rubengallego.house.gov',
+    bio: `GALLEGO, Ruben, a Representative from Arizona; born in Chicago, Cook County, Ill., November 20, 1979; A.B., Harvard University, Cambridge, Mass., 2004; United States Marine Corps, 2002-2006; public affairs consultant, 2007-2008; delegate, Democratic National Convention, 2008; vice-chair, Arizona Democratic party, 2009; member of the Arizona state house of representatives, 2010-2014, assistant minority leader, 2012-2014; elected as a Democrat to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'M001197',
@@ -3897,7 +4014,8 @@ let sunlightArray = [
     thomas_id: '02225',
     title: 'Rep',
     twitter_id: 'RepMcSally',
-    website: 'https://mcsally.house.gov'
+    website: 'https://mcsally.house.gov',
+    bio: `McSALLY, Martha, a Representative from Arizona; born in Warwick, Kent County, R.I., March 22, 1966; B.S., United States Air Force Academy, Colorado Springs, Colo., 1988; M.P.P., John F. Kennedy School of Government, Harvard University, Cambridge, Mass., 1990; United States Air Force, 1988-2010; fighter pilot; professor; unsuccessful candidate for nomination for special election to the One Hundred Twelfth Congress in 2012; unsuccessful candidate for election to the One Hundred Thirteenth Congress in 2012; elected as a Republican to the One Hundred Fourteenth and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'W000821',
@@ -3932,7 +4050,8 @@ let sunlightArray = [
     thomas_id: '02224',
     title: 'Rep',
     twitter_id: 'RepWesterman',
-    website: 'https://westerman.house.gov'
+    website: 'https://westerman.house.gov',
+    bio: `WESTERMAN, Bruce Eugene, a Representative from Arkansas; born in Hot Springs, Hot Springs County, Ark., November 18, 1967; graduated from Fountain Lake High School, Hot Springs, Ark., 1986; B.S., University of Arkansas, Fayetteville, Ark., 1990; M.F., Yale Forestry School, New Haven, Conn., 2001; engineer; member of the Fountain Lake, Ark., school board, 2006-2010; member of the Arkansas state house of representatives 2010-2014; elected as a Republican to the One Hundred Fourteenth Congress and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'H001072',
@@ -3967,7 +4086,8 @@ let sunlightArray = [
     thomas_id: '02223',
     title: 'Rep',
     twitter_id: 'RepFrenchHill',
-    website: 'https://hill.house.gov'
+    website: 'https://hill.house.gov',
+    bio: `HILL, French, a Representative from Arkansas; born in Little Rock, Pulaski County, Ark., December 5, 1956; graduated from Little Rock Catholic High School, Little Rock, Ark., 1975; B.S., Vanderbilt University, Nashville, Tenn., 1979; banker; businessman; staff, United States Senate Committee on Banking, Housing, and Urban Affairs, 1982-1984; deputy assistant, United States Treasury, 1989-1991; special assistant to the President and Executive Secretary of Economic Policy Council, 1991-1993; senior advisor, Governor Mike Huckabee of Arkansas, 2008; elected as a Republican to the One Hundred Fourteenth Congress and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'P000609',
@@ -4002,7 +4122,8 @@ let sunlightArray = [
     thomas_id: '02221',
     title: 'Rep',
     twitter_id: 'USRepGaryPalmer',
-    website: 'https://palmer.house.gov'
+    website: 'https://palmer.house.gov',
+    bio: `PALMER, Gary James, a Representative from Alabama; born in Haleyville, Winston County, Ala., May 14, 1954; graduated from Hackleburg High School, Hackleburg, Ala., 1972; attended Northwest Alabama Junior College, Phil Campbell, Ala., 1972-1974; B.S., University of Alabama, Tuscaloosa, Ala., 1977; engineer; professional advocate; elected as a Republican to the One Hundred Fourteenth Congress and to the succeeding Congress (January 3, 2015-present).`,
   },
   {
     bioguide_id: 'A000370',
@@ -4037,7 +4158,8 @@ let sunlightArray = [
     thomas_id: '02201',
     title: 'Rep',
     twitter_id: 'RepAdams',
-    website: 'http://adams.house.gov'
+    website: 'http://adams.house.gov',
+    bio: `ADAMS, Alma, a Representative from North Carolina; born in High Point, Guilford County, N.C., May 27, 1946; graduated from West Side High School, Newark, N.J., 1964; B.S., North Carolina Agricultural and Technical State University, Greensboro, N.C., 1968; M.S., North Carolina Agricultural and Technical State University, Greensboro, N.C., 1972; Ph.D., Ohio State University, Columbus, Ohio, 1981; artist; faculty, Bennett College, Greensboro, N.C., 1972-2012; member of the Greensboro, N.C., school board, 1984-1986; member of the Greensboro, N.C., city council, 1987-1994; member of the North Carolina state house of representatives, 1994-2014; elected simultaneously as a Democrat to the One Hundred Thirteenth and One Hundred Fourteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Melvin L. Watt, and reelected to the succeeding Congress (November 4, 2014-present).`,
   },
   {
     bioguide_id: 'N000188',
@@ -4072,7 +4194,8 @@ let sunlightArray = [
     thomas_id: '02202',
     title: 'Rep',
     twitter_id: 'DonaldNorcross',
-    website: 'http://norcross.house.gov'
+    website: 'http://norcross.house.gov',
+    bio: `NORCROSS, Donald, a Representative from New Jersey; born in Camden, Camden County, N.J., December 13, 1958; graduated from Pennsauken High School, Pennsauken, N.J., 1977; A.S., Camden County College, Camden, N.J., 1979; electrician; union representative; member of the New Jersey state assembly, 2010; member of the New Jersey state senate, 2010-2014; elected simultaneously as a Democrat to the One Hundred Thirteenth and One Hundred Fourteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Robert Ernest Andrews and reelected to the succeeding Congress (November 4, 2014-present).`,
   },
   {
     bioguide_id: 'B001290',
@@ -4107,7 +4230,8 @@ let sunlightArray = [
     thomas_id: '02203',
     title: 'Rep',
     twitter_id: 'RepDaveBrat',
-    website: 'http://brat.house.gov'
+    website: 'http://brat.house.gov',
+    bio: `BRAT, David A., a Representative from Virginia; born in Detroit, Wayne County, Mich., July 27, 1964; graduated from Park Center Senior High School, Brooklyn, Minn., 1982; B.A., Hope College, Holland, Mich., 1986; M.Div., Princeton Theological Seminary, Princeton, N.J., 1990; Ph.D., American University, Washington, D.C., 1995; accountant; professor, Randolph-Macon College, Ashland, Va., 1996-2014; elected simultaneously as a Republican to the One Hundred Thirteenth and One Hundred Fourteenth Congresses, by special election, to fill the vacancy caused by the resignation of United States Representative Eric Cantor, and reelected to the succeeding Congress (November 4, 2014-present).`,
   },
   {
     bioguide_id: 'B001289',
@@ -4143,7 +4267,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepByrne',
     votesmart_id: 27584,
-    website: 'https://byrne.house.gov'
+    website: 'https://byrne.house.gov',
+    bio: `BYRNE, Bradley, a Representative from Alabama; born in Mobile, Mobile County, Ala., February 16, 1955; graduated from University Military School, Mobile, Ala., 1973; B.A., Duke University, Durham, N.C., 1977; J.D., University of Alabama School of Law, Tuscaloosa, Ala., 1980; lawyer, private practice; member of the Alabama state board of education, 1994-2002; member of the Alabama state senate, 2002-2007; chancellor of the Alabama department of postsecondary education, 2007-2009; unsuccessful candidate for nomination for governor of Alabama in 2010; elected as a Republican, by special election, to the One Hundred Thirteenth Congress to fill the vacancy caused by the resignation of United States Representative Josiah Robins (Jo) Bonner, Jr., and to the two succeeding Congresses (December 17, 2013-Present).`,
   },
   {
     bioguide_id: 'C001101',
@@ -4179,7 +4304,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepKClark',
     votesmart_id: 35858,
-    website: 'https://katherineclark.house.gov'
+    website: 'https://katherineclark.house.gov',
+    bio: `CLARK, Katherine M., a Representative from Massachusetts; born in New Haven, New Haven County, Conn., July 17, 1963; B.A., Saint Lawrence University, Canton, N.Y., 1985; J.D., Cornell University, Ithaca, N.Y., 1989; M.P.A., John F. Kennedy School of Government, Harvard University, Cambridge, Mass., 1997; lawyer, private practice; lawyer, Colorado district attorney’s council; general counsel, Massachusetts state office of child care services; policy division chief, Office of the Attorney General, State of Massachusetts; clerk, federal court, 1990-1991; prosecutor, Office of the Attorney General, State of Colorado, 1991-1993; member of the Melrose, Mass. school committee, 2001-2007; member of the Massachusetts state house of representatives, 2008-2010; member of the Massachusetts state senate, 2010-2013; elected as a Democrat to the One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Edward J. Markey, and to the two succeeding Congresses (December 10, 2013-present).`,
   },
   {
     bioguide_id: 'B001288',
@@ -4217,7 +4343,8 @@ let sunlightArray = [
     twitter_id: 'CoryBooker',
     votesmart_id: 76151,
     website: 'http://www.booker.senate.gov',
-    youtube_id: 'SenCoryBooker'
+    youtube_id: 'SenCoryBooker',
+    bio: `BOOKER, Cory Anthony, a Senator from New Jersey; born on April 27, 1969, in Washington, D.C.; graduated Northern Valley Regional High School, Old Tappan, N.J., 1987; B.A., Stanford University, 1991; M.A., Stanford University, 1992; attended The Queen’s College, University of Oxford, Oxford, England, as a Rhodes Scholar and received a graduate degree in 1994; J.D., Yale Law School, 1997; worked as an attorney in the non-profit sector; Newark City Council 1998-2002; Mayor of Newark, N.J. 2006-2013; elected as a Democrat to the United States Senate in a special election on October 16, 2013, to fill the vacancy caused by the death of Frank Lautenberg, a seat subsequently held by appointed senator Jeffrey Chiesa, and took the oath of office on October 31, 2013; reelected in 2014 for the term ending January 3, 2021.`,
   },
   {
     bioguide_id: 'S001195',
@@ -4254,7 +4381,8 @@ let sunlightArray = [
     twitter_id: 'RepJasonSmith',
     votesmart_id: 59318,
     website: 'http://jasonsmith.house.gov',
-    youtube_id: 'RepJasonSmith'
+    youtube_id: 'RepJasonSmith',
+    bio: `SMITH, Jason, a Representative from Missouri; born in St. Louis, Mo., on June 16, 1980; graduated from Salem High School, Salem, Mo., 1998; B.S., University of Missouri, Columbia, Mo., 2001; J.D., Oklahoma City University School of Law, Oklahoma City, Oklahoma, 2004; farmer; lawyer, private practice; member of the Missouri state house of representatives, 2005-2013; elected as a Republican to the One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Jo Ann Emerson, and reelected to the two succeeding Congresses (June 4, 2013-present).`,
   },
   {
     bioguide_id: 'K000385',
@@ -4290,7 +4418,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepRobinKelly',
     votesmart_id: 33384,
-    website: 'http://robinkelly.house.gov'
+    website: 'http://robinkelly.house.gov',
+    bio: `KELLY, Robin L., a Representative from Illinois; born in New York, N.Y., April 30, 1956; graduated from Rhodes Prep High School, New York, N.Y., 1973; B.A., Bradley University, Peoria, Ill., 1977; M.A., Bradley University, Peoria, Ill., 1982; Ph.D., Northern Illinois University, DeKalb, Ill., 2004; counselor; community affairs director, Matteson, Ill., 1992-2006; member of the Illinois state house of representatives, 2003-2007; chief of staff, Illinois state treasurer, 2007-2010; Cook County, Ill., chief administrative officer, 2010-2012; elected as a Democrat to the One Hundred Thirteenth Congress, by special election, to fill the vacancy caused by the resignation of United States Representative Jesse L. Jackson, Jr., and reelected to the two succeeding Congresses (April 9, 2013-present).`,
   },
   {
     bioguide_id: 'P000607',
@@ -4327,7 +4456,8 @@ let sunlightArray = [
     twitter_id: 'RepMarkPocan',
     votesmart_id: 26238,
     website: 'http://pocan.house.gov',
-    youtube_id: 'repmarkpocan'
+    youtube_id: 'repmarkpocan',
+    bio: `POCAN, Mark, a Representative from Wisconsin; born in Kenosha, Kenosha County, Wis., August 14, 1964; graduated from Mary D. Bradford High School, Kenosha, Wis., 1982; B.A., University of Wisconsin, Madison, Wis., 1986; businessman; member of the Dane County, Wis., board of supervisors, 1991-1996; member of the Wisconsin state assembly, 1999-2013; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'H001064',
@@ -4364,7 +4494,8 @@ let sunlightArray = [
     twitter_id: 'RepDennyHeck',
     votesmart_id: 126058,
     website: 'http://dennyheck.house.gov',
-    youtube_id: 'RepDennyHeck'
+    youtube_id: 'RepDennyHeck',
+    bio: `HECK, Denny, a Representative from Washington; born in Vancouver, Clark County, Wash., July 29, 1952; B.A., Evergreen State College, Olympia, Wash., 1973; attended Portland State University, Portland, Oreg., 1974-1975; businessman; television broadcaster; member of the Washington state house of representatives, 1976-1986; minority leader, 1977-1985; chief clerk, 1985-1987; unsuccessful candidate for election to the One Hundred Twelfth Congress in 2010; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'K000381',
@@ -4400,7 +4531,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepDerekKilmer',
     votesmart_id: 51516,
-    website: 'http://kilmer.house.gov'
+    website: 'http://kilmer.house.gov',
+    bio: `KILMER, Derek, a Representative from Washington; born in Port Angeles, Clallam County, Wash., January 1, 1974; A.B., Princeton University, Princeton, N.J., 1996; D.Phil., University of Oxford, Oxford, England, 2003; businessman; member of the Washington state house of representatives, 2005-2007; member of the Washington state senate, 2007-2012; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'K000384',
@@ -4440,7 +4572,8 @@ let sunlightArray = [
     twitter_id: 'SenKaineOffice',
     votesmart_id: 50772,
     website: 'http://www.kaine.senate.gov',
-    youtube_id: 'SenatorTimKaine'
+    youtube_id: 'SenatorTimKaine',
+    bio: `KAINE, Timothy Michael (Tim), a Senator from Virginia; born in St. Paul, Minn., February 26, 1958; graduated University of Missouri, B.A., 1979; graduated Harvard University, J.D., 1983; lawyer; Richmond City Council 1994-1998; mayor of Richmond, Va., 1998-2001; lieutenant governor of Virginia 2002-2006; governor of Virginia 2006-2010; chairman of the Democratic National Committee 2009-2011; elected as a Democrat to the United States Senate in 2012 for the term ending January 3, 2019; unsuccessful candidate for vice president on the Democratic ticket with Hillary Rodham Clinton in 2016.`,
   },
   {
     bioguide_id: 'S001192',
@@ -4477,7 +4610,8 @@ let sunlightArray = [
     twitter_id: 'RepChrisStewart',
     votesmart_id: 135930,
     website: 'http://stewart.house.gov',
-    youtube_id: 'repchrisstewart'
+    youtube_id: 'repchrisstewart',
+    bio: `STEWART, Chris, a Representative from Utah; born in Logan, Cache County, Utah, July 15, 1960; graduated from Sky View High School, Smithfield, Utah, 1978; B.S., Utah State University, Logan, Utah, 1984; United States Air Force, 1984-1998; author; business executive; elected as a Republican to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'V000132',
@@ -4513,7 +4647,8 @@ let sunlightArray = [
     title: 'Rep',
     twitter_id: 'RepFilemonVela',
     votesmart_id: 137719,
-    website: 'http://vela.house.gov'
+    website: 'http://vela.house.gov',
+    bio: `VELA, Filemon, a Representative from Texas; born in Harlingen, Cameron County, Tex., February 13, 1963; graduated from St. Joseph’s Academy, Brownsville, Tex.; B.A., Georgetown University, Washington, D.C., 1985; J.D., University of Texas, Austin, Tex., 1987; civil attorney; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'V000131',
@@ -4550,7 +4685,8 @@ let sunlightArray = [
     twitter_id: 'RepVeasey',
     votesmart_id: 49671,
     website: 'http://veasey.house.gov',
-    youtube_id: 'marcveasey'
+    youtube_id: 'marcveasey',
+    bio: `VEASEY, Marc, a Representative from Texas; born in Fort Worth, Tarrant County, Tex., January 3, 1971; graduated from Arlington Heights High School, Fort Worth, Tex., 1990; B.S., Texas Wesleyan University, Fort Worth, Tex., 1995; journalist; staff, United States Representative J. Martin Frost of Texas; real estate broker; member of the Texas state house of representatives, 2004-2012; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'W000816',
@@ -4588,7 +4724,8 @@ let sunlightArray = [
     twitter_id: 'RepRWilliams',
     votesmart_id: 50112,
     website: 'http://williams.house.gov',
-    youtube_id: null
+    youtube_id: null,
+    bio: `WILLIAMS, Roger, a Representative from Texas; born in Evanston, Cook County, Ill., September 13, 1949; graduated from Arlington Heights High School, Fort Worth, Tex.; B.A., Texas Christian University, Fort Worth, Tex., 1972; athletic coach; business owner; Texas secretary of state, 2005-2007; elected as a Republican to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'C001091',
@@ -4625,7 +4762,8 @@ let sunlightArray = [
     twitter_id: 'JoaquinCastrotx',
     votesmart_id: 49227,
     website: 'http://castro.house.gov',
-    youtube_id: 'JoaquinCastroTX'
+    youtube_id: 'JoaquinCastroTX',
+    bio: `CASTRO, Joaquin, a Representative from Texas; born in San Antonio, Bexar County, Tex., September 16, 1974; graduated from Thomas Jefferson High School, San Antonio, Tex., 1992; B.A., Stanford University, Stanford, Calif., 1996; J.D., Harvard University, Cambridge, Mass., 2000; lawyer, private practice; member of the Texas state house of representatives, 2002-2012; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'O000170',
@@ -4662,7 +4800,8 @@ let sunlightArray = [
     twitter_id: 'RepBetoORourke',
     votesmart_id: 78533,
     website: 'http://orourke.house.gov',
-    youtube_id: 'betoorourketx16'
+    youtube_id: 'betoorourketx16',
+    bio: `O'ROURKE, Beto, a Representative from Texas; born in El Paso, El Paso County, Tex., September 26, 1972; attended El Paso High School and graduated from Woodberry Forest School, Woodberry Forest, Va.; B.A., Columbia University, New York, N.Y., 1995; business owner; member of the El Paso, Tex., city council, 2005-2011; elected as a Democrat to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'W000814',
@@ -4699,7 +4838,8 @@ let sunlightArray = [
     twitter_id: 'TXRandy14',
     votesmart_id: 102026,
     website: 'http://weber.house.gov',
-    youtube_id: 'TXRandy14'
+    youtube_id: 'TXRandy14',
+    bio: `WEBER, Randy, a Representative from Texas; born in Pearland, Brazoria County, Tex., July 2, 1953; attended Alvin Community College in Alvin, Tex., 1971-1974; B.S., University of Houston-Clear Lake, Houston, Tex., 1977; business owner; member of the Pearland, Tex., city council, 1990-1996; member of the Texas state house of representatives, 2008-2012; elected as a Republican to the One Hundred Thirteenth and to the two succeeding Congresses (January 3, 2013-present).`,
   },
   {
     bioguide_id: 'C001098',
@@ -4739,7 +4879,8 @@ let sunlightArray = [
     twitter_id: 'SenTedCruz',
     votesmart_id: 135705,
     website: 'https://www.cruz.senate.gov',
-    youtube_id: 'sentedcruz'
+    youtube_id: 'sentedcruz',
+    bio: `CRUZ, Rafael Edward (Ted), a Senator from Texas; born in Calgary, Alberta, Canada, December 22, 1970; graduated Princeton University, B.A., 1992; graduated Harvard University, J.D., 1995; law clerk to Chief Justice of the United States William Rehnquist; associate deputy attorney general, U.S. Department of Justice; director of the Office of Policy Planning, Federal Trade Commission; solicitor general of Texas 2003-2008; lawyer; elected as a Republican to the United States Senate in 2012 for the term ending January 3, 2019; was an unsuccessful candidate for the Republican presidential nomination in 2016.`,
   },
   {
     bioguide_id: 'R000597',
