@@ -162,7 +162,7 @@ footer {
 
 .overlay {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -482,3 +482,44 @@ footer {
 
 .legbody > * {
   padding: 0.8em 0; }
+
+.overlay .overlay-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 1;
+  margin: 10vw; }
+  .overlay .overlay-container .baseinfo {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eee; }
+    .overlay .overlay-container .baseinfo div {
+      flex: 1;
+      padding: 15px; }
+  .overlay .overlay-container .bio-contact {
+    padding: 50px;
+    display: flex; }
+    .overlay .overlay-container .bio-contact div {
+      flex: 1;
+      padding: 15px;
+      box-sizing: border-box; }
+  .overlay .overlay-container .votes {
+    border-top: 1px solid #eee;
+    padding: 15px; }
+    .overlay .overlay-container .votes .votecontainer {
+      max-height: 200px;
+      overflow-y: scroll; }
+      .overlay .overlay-container .votes .votecontainer .vote {
+        display: flex;
+        flex-direction: row; }
+        .overlay .overlay-container .votes .votecontainer .vote div {
+          display: flex;
+          padding: 10px; }
+        .overlay .overlay-container .votes .votecontainer .vote .time-vote {
+          flex-direction: row;
+          flex: 1;
+          justify-content: space-around;
+          align-items: center; }
+        .overlay .overlay-container .votes .votecontainer .vote .vote-meta {
+          flex: 3;
+          flex-direction: column; }

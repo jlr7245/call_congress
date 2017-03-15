@@ -231,7 +231,7 @@ margin: 15px;
 
 .overlay {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -619,4 +619,61 @@ margin: 15px;
 }
 .legbody > * {
   padding: 0.8em 0;
+}
+
+//================= modals
+
+.overlay {
+  .overlay-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 1;
+    margin: 10vw;
+    .baseinfo {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #eee;
+      div {
+        flex: 1;
+        padding: 15px;
+      }
+    }
+    .bio-contact {
+      padding: 50px;
+      display: flex;
+      div {
+        flex: 1;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+    }
+    .votes {
+      border-top: 1px solid #eee;
+      padding: 15px;
+      .votecontainer {
+        max-height: 200px;
+        overflow-y: scroll;
+        .vote {
+          display: flex;
+          flex-direction: row;
+          div {
+            display: flex;
+            padding: 10px;
+          }
+          .time-vote {
+            flex-direction: row;
+            flex: 1;
+            justify-content: space-around;
+            align-items: center;
+            
+          }
+          .vote-meta {
+            flex: 3;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
 }

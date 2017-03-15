@@ -16,14 +16,14 @@ class Modal extends React.Component {
       return (
         <div className='vote'>
           <div className='time-vote'>
-            <span className='time'>March 13, 3:30PM</span>
-            <span className='thevote'><i className='fa fa-check fa-fw'></i> Yes</span>
+            <span className='time'>{moment(vote.when).format('MMMM DD, h:mm a')}</span>
+            <span className='thevote'>{(vote.position == 'Yes') ? <span><i className='fa fa-check fa-fw'></i> {vote.position}</span> : <span><i className='fa fa-ban fa-fw'></i> {vote.position}</span> } </span>
           </div>
 
           <div className='vote-meta'>
-            <span className='meta-top'>On Concurring in the Senate Amendment with an Amendment of HR 2028</span>
+            <span className='meta-top'>{vote.question} for {vote.description}</span>
             <span className='meta-bottom'>
-              This bill Became Public Law No: 114-254.
+              {vote.number} {vote.latest_action}
             </span>
           </div>
         </div>
