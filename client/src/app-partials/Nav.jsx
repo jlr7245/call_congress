@@ -34,7 +34,7 @@ class Nav extends React.Component {
           {this.decideWhatToRender()}
         </div>
         <div className='logo'>
-          <img src={logo} className='svglogo' alt='CallCongress Logo' />
+          <Link to='/'><img src={logo} className='svglogo' alt='CallCongress Logo' /></Link>
         </div>
       </nav>
     )
