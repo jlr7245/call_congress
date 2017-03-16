@@ -70,7 +70,7 @@ class Modal extends React.Component {
 
           <div className='baseinfo'>
             <div className='position'>
-              <h3>{legislator.chamber.toUpperCase()}</h3>
+              <h3 className={legislator.party}>{legislator.chamber.toUpperCase()}</h3>
             </div>
             <div className='st-dst'>
               <h3>{legislator.state_name} {(legislator.district !== null) ? `, District ${legislator.district}` : ''}</h3>
@@ -90,7 +90,7 @@ class Modal extends React.Component {
               <img src={`https://theunitedstates.io/images/congress/225x275/${legislator.bioguide_id}.jpg`} alt={`${legislator.first_name} ${legislator.last_name}`}/>
             </div>
             <div>
-              {(legislator.hasOwnProperty('bio')) ? legislator.bio : 'Biography coming soon!'}
+             <p> {(legislator.hasOwnProperty('bio')) ? legislator.bio : 'Biography coming soon!'}</p>
             </div>
             <div>
               Contact info of some kind goes here.

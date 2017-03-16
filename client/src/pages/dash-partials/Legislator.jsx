@@ -57,7 +57,7 @@ const Legislator = (props) => {
         {legSite} {legTwit} {legFb} {legTube}
         </div>
       </div>
-      <button onClick={() => props.showModal('leg', leg.bioguide_id)}>More Info</button>
+      <button className='infoclick' onClick={() => props.showModal('leg', leg.bioguide_id)}>More Info</button>
     </li>
   )
 };

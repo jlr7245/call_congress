@@ -495,14 +495,33 @@ footer {
     border-bottom: 1px solid #eee; }
     .overlay .overlay-container .baseinfo div {
       flex: 1;
-      padding: 15px; }
+      padding: 15px;
+      text-align: center; }
+      .overlay .overlay-container .baseinfo div h3 {
+        display: inline;
+        padding: 5px 10px;
+        margin: 0px auto; }
+      .overlay .overlay-container .baseinfo div h3.D {
+        background-color: #0BBCD6; }
+      .overlay .overlay-container .baseinfo div h3.R {
+        background-color: #E6625E; }
+      .overlay .overlay-container .baseinfo div h3.I {
+        background-color: #ddd; }
   .overlay .overlay-container .bio-contact {
     padding: 50px;
     display: flex; }
     .overlay .overlay-container .bio-contact div {
       flex: 1;
-      padding: 15px;
+      padding: 10px;
       box-sizing: border-box; }
+      .overlay .overlay-container .bio-contact div h3 {
+        font-family: "warnock-pro-display", Georgia, "Times New Roman", Times, serif;
+        font-size: 2em;
+        margin-bottom: 30px;
+        padding: 5px 10px; }
+      .overlay .overlay-container .bio-contact div p {
+        font-size: 1.2em;
+        line-height: 1.2em; }
   .overlay .overlay-container .votes {
     border-top: 1px solid #eee;
     padding: 15px; }
@@ -523,3 +542,13 @@ footer {
         .overlay .overlay-container .votes .votecontainer .vote .vote-meta {
           flex: 3;
           flex-direction: column; }
+
+.infoclick {
+  cursor: pointer;
+  border-bottom: 3px solid #0BBCD6;
+  padding: 5px 10px;
+  transition: 0.3s all; }
+  .infoclick:hover {
+    border-bottom: 3px solid #E6625E;
+    background-color: #eee;
+    transition: 0.3s all; }
