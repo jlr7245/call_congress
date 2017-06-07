@@ -51,16 +51,15 @@ function getHouse(req,res,next) {
   axios.all([getHouseIntroduced(), getHousePassed()])
     .then(axios.spread((houseIntroduced, housePassed) => {
       console.log('got house');
-      let houseIntro = houseIntroduced.data.results[0].bills;
+      const houseIntro = houseIntroduced.data.results[0].bills;
       houseIntro.forEach((law) => {
         law.status_tag_cc = 'introduced';
       })
-      let housePass = housePassed.data.results[0].bills;
+      const housePass = housePassed.data.results[0].bills;
       housePass.forEach((law) => {
         law.status_tag_cc = 'passed';
-      })
-      const houseRawResults = [houseIntro, housePass];
-      res.locals.houseTemp = houseRawResults;
+      }) 
+      res.locals.houseTemp = [houseIntro, housePass];
       return next();
     }))
     .catch((err) => {
