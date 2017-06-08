@@ -2,6 +2,13 @@ const axios = require('axios');
 const models = require('../../../db/models/index.js');
 const allLegs = require('./sunlight-array');
 
+/**
+ * get legislators from the database and store them in `res.locals`
+ * 
+ * @param {object} req - the request object
+ * @param {object} res - the response object
+ * @param {function} next - the express next function
+ */
 function getLegsFromDb(req,res,next) {
   models.sequelize.query('SELECT "LegsWatcheds"."bioguide_id" FROM "LegsWatcheds" JOIN "Users" ON "Users"."id" = "LegsWatcheds"."belongs_to" WHERE "Users"."id" = :id', {
     replacements: { id: parseInt(req.params.id) },
@@ -18,6 +25,14 @@ function getLegsFromDb(req,res,next) {
   });
 }
 
+/**
+ * get legislators from the large json object instead of from the API
+ * 
+ * @param {object} req - the request object
+ * @param {object} res - the response object
+ * @param {function} next - the express next function
+ * @returns - next() => to go to the next middleware
+ */
 function getLegsFromJson(req,res,next) {
   const searchFor = res.locals.legArr;
   const filteredLegs = allLegs.filter((leg) => {
