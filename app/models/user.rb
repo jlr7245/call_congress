@@ -2,6 +2,8 @@ class User < ApplicationRecord
   validates_uniqueness_of :username
   has_secure_password
   has_secure_token :auth_token
+  has_many :legislators, through: :watched_legislators
+  has_many :watched_legislators
 
   def invalidate_token
     self.update_columns(auth_token: nil)
