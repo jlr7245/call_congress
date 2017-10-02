@@ -14,7 +14,7 @@ class Nav extends React.Component {
       return (
         <ul>
           <li><Link to='/dashboard'>Dashboard</Link></li>
-          <li><Link to='/logout'>Log Out</Link></li>
+          <li><a href="#" onCloick={this.props.handleLogoutSubmit}>Logout</a></li>
         </ul>
       )
     } else {

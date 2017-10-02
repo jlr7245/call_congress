@@ -24,6 +24,7 @@ export default class Root extends React.Component {
     // bind
     this.handleLogin = this.handleLogin.bind(this);
     this.handleRegister = this.handleRegister.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
 
     this.locationFinder = this.locationFinder.bind(this);
     this.handleLocationError = this.handleLocationError.bind(this);
@@ -104,6 +105,18 @@ export default class Root extends React.Component {
       })
       .catch((err) => console.log(err));
     e.target.reset();
+  }
+
+  handleLogout() {
+    axios.post('/logout')
+      .then(res => {
+        console.log(res);
+        this.setState({
+          auth: false,
+        })
+      }).catch(err => {
+        console.log(err);
+      })
   }
 
   //======================= REGISTRATION
@@ -213,7 +226,7 @@ export default class Root extends React.Component {
     return (
         <Router>
           <div className='wrapper'>
-              <Nav auth={this.state.auth} />
+              <Nav auth={this.state.auth} handleLogout={this.handleLogout} />
               <div className='container'>
             <Switch>
 

@@ -40,6 +40,11 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+app.use((req, res, next) => {
+  console.log(req.headers);
+  next();
+});
+
 
 app.use('/api', apiRoutes);
 
